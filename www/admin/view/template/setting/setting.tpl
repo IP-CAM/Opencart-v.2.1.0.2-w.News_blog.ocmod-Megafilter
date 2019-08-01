@@ -144,6 +144,17 @@
                     <?php } ?>
                   </div>
                 </div>
+
+
+                <div class="form-group required">
+                    <label class="col-sm-2 control-label" for="input-facebook"><?php echo $entry_facebook; ?></label>
+                    <div class="col-sm-10">
+                        <input type="text" name="config_facebook" value="<?php echo $config_facebook; ?>" placeholder="<?php echo $entry_facebook; ?>" id="input-facebook" class="form-control" />
+                    </div>
+                </div>
+
+
+
                 <div class="form-group">
                   <label class="col-sm-2 control-label" for="input-fax"><?php echo $entry_fax; ?></label>
                   <div class="col-sm-10">

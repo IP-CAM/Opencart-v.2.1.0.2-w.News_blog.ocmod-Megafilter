@@ -85,6 +85,8 @@ class ControllerCommonHeader extends Controller {
 		$data['contact'] = $this->url->link('information/contact');
 		$data['telephone'] = $this->config->get('config_telephone');
 
+
+
 		$status = true;
 
 		if (isset($this->request->server['HTTP_USER_AGENT'])) {

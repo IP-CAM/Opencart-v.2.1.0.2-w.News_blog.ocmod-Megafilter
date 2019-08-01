@@ -1,0 +1,13 @@
+2019-08-01 14:17:50 - PHP Notice:  Undefined variable: entry_facebook in /var/www/opencart/www/admin/view/template/setting/setting.tpl on line 150
+2019-08-01 14:17:50 - PHP Notice:  Undefined variable: config_facebook in /var/www/opencart/www/admin/view/template/setting/setting.tpl on line 152
+2019-08-01 14:17:50 - PHP Notice:  Undefined variable: entry_facebook in /var/www/opencart/www/admin/view/template/setting/setting.tpl on line 152
+2019-08-01 14:18:15 - PHP Notice:  Undefined variable: entry_facebook in /var/www/opencart/www/admin/view/template/setting/setting.tpl on line 150
+2019-08-01 14:18:15 - PHP Notice:  Undefined variable: config_facebook in /var/www/opencart/www/admin/view/template/setting/setting.tpl on line 152
+2019-08-01 14:18:15 - PHP Notice:  Undefined variable: entry_facebook in /var/www/opencart/www/admin/view/template/setting/setting.tpl on line 152
+2019-08-01 14:20:08 - PHP Notice:  Undefined variable: entry_facebook in /var/www/opencart/www/admin/view/template/setting/setting.tpl on line 150
+2019-08-01 14:20:08 - PHP Notice:  Undefined variable: config_facebook in /var/www/opencart/www/admin/view/template/setting/setting.tpl on line 152
+2019-08-01 14:20:08 - PHP Notice:  Undefined variable: entry_facebook in /var/www/opencart/www/admin/view/template/setting/setting.tpl on line 152
+2019-08-01 14:21:22 - PHP Notice:  Undefined variable: config_facebook in /var/www/opencart/www/admin/view/template/setting/setting.tpl on line 152
+2019-08-01 14:41:05 - PHP Notice:  Undefined variable: language in /var/www/opencart/www/catalog/view/theme/default/template/common/language.tpl on line 13
+2019-08-01 15:12:55 - PHP Notice:  Undefined index: sort_order in /var/www/opencart/www/admin/controller/design/banner.php on line 386
+2019-08-01 15:12:55 - PHP Notice:  Undefined index: sort_order in /var/www/opencart/www/admin/controller/design/banner.php on line 386

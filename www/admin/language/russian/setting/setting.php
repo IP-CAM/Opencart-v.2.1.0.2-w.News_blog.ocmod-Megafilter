@@ -36,6 +36,7 @@ $_['entry_address']                    = 'Адрес магазина';
 $_['entry_geocode']                    = 'Geocode';
 $_['entry_email']                      = 'E-Mail';
 $_['entry_telephone']                  = 'Телефон';
+$_['entry_facebook']                   = 'Facebook';
 $_['entry_fax']                        = 'Факс';
 $_['entry_image']                      = 'Изображение';
 $_['entry_open']                       = 'Режим работы';

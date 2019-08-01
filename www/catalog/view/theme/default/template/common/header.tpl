@@ -22,11 +22,18 @@
 <script src="catalog/view/javascript/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
 <link href="catalog/view/javascript/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
 <link href="//fonts.googleapis.com/css?family=Open+Sans:400,400i,300,700" rel="stylesheet" type="text/css" />
-<link href="catalog/view/theme/default/stylesheet/stylesheet.css" rel="stylesheet">
+<!--<link href="catalog/view/theme/default/stylesheet/stylesheet.css" rel="stylesheet">-->
 <?php foreach ($styles as $style) { ?>
 <link href="<?php echo $style['href']; ?>" type="text/css" rel="<?php echo $style['rel']; ?>" media="<?php echo $style['media']; ?>" />
 <?php } ?>
 <script src="catalog/view/javascript/common.js" type="text/javascript"></script>
+
+
+    <link href="catalog/view/html/css/lib.css" rel="stylesheet">
+    <link href="catalog/view/html/css/main.css" rel="stylesheet">
+    <link href="catalog/view/html/css/media.css" rel="stylesheet">
+
+
 <?php foreach ($links as $link) { ?>
 <link href="<?php echo $link['href']; ?>" rel="<?php echo $link['rel']; ?>" />
 <?php } ?>
@@ -38,53 +45,210 @@
 <?php } ?>
 </head>
 <body class="<?php echo $class; ?>">
-<nav id="top">
-  <div class="container">
-    <?php echo $currency; ?>
-    <?php echo $language; ?>
-    <div id="top-links" class="nav pull-right">
-      <ul class="list-inline">
-        <li><a href="<?php echo $contact; ?>"><i class="fa fa-phone"></i></a> <span class="hidden-xs hidden-sm hidden-md"><?php echo $telephone; ?></span></li>
-        <li class="dropdown"><a href="<?php echo $account; ?>" title="<?php echo $text_account; ?>" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> <span class="hidden-xs hidden-sm hidden-md"><?php echo $text_account; ?></span> <span class="caret"></span></a>
-          <ul class="dropdown-menu dropdown-menu-right">
-            <?php if ($logged) { ?>
-            <li><a href="<?php echo $account; ?>"><?php echo $text_account; ?></a></li>
-            <li><a href="<?php echo $order; ?>"><?php echo $text_order; ?></a></li>
-            <li><a href="<?php echo $transaction; ?>"><?php echo $text_transaction; ?></a></li>
-            <li><a href="<?php echo $download; ?>"><?php echo $text_download; ?></a></li>
-            <li><a href="<?php echo $logout; ?>"><?php echo $text_logout; ?></a></li>
-            <?php } else { ?>
-            <li><a href="<?php echo $register; ?>"><?php echo $text_register; ?></a></li>
-            <li><a href="<?php echo $login; ?>"><?php echo $text_login; ?></a></li>
-            <?php } ?>
-          </ul>
-        </li>
-        <li><a href="<?php echo $wishlist; ?>" id="wishlist-total" title="<?php echo $text_wishlist; ?>"><i class="fa fa-heart"></i> <span class="hidden-xs hidden-sm hidden-md"><?php echo $text_wishlist; ?></span></a></li>
-        <li><a href="<?php echo $shopping_cart; ?>" title="<?php echo $text_shopping_cart; ?>"><i class="fa fa-shopping-cart"></i> <span class="hidden-xs hidden-sm hidden-md"><?php echo $text_shopping_cart; ?></span></a></li>
-        <li><a href="<?php echo $checkout; ?>" title="<?php echo $text_checkout; ?>"><i class="fa fa-share"></i> <span class="hidden-xs hidden-sm hidden-md"><?php echo $text_checkout; ?></span></a></li>
-      </ul>
+
+<div class="hiden_menu">
+    <div class="hiden_menu_iner">
+        <div class="close_btn"></div>
+        <ul>
+            <li><a href="#">Про нас</a></li>
+            <li><a href="#">Галерея</a></li>
+            <li><a href="#">Таблиця розмірів</a></li>
+            <li><a href="javascript:void(0);" class="item">Клієнтам</a>
+                <ul class="child">
+                    <li><a href="#">Питання-відповідь</a></li>
+                    <li><a href="#">Доставка і оплата</a></li>
+                    <li><a href="#">Повернення товару</a></li>
+                </ul>
+            </li>
+            <li><a href="javascript:void(0);" class="item">Партнерам</a>
+                <ul class="child">
+                    <li><a href="#">Опт</a></li>
+                    <li><a href="#">Крупний опт</a></li>
+                    <li><a href="#">Дропшипінг</a></li>
+                    <li><a href="#">Корпоративні замовлення</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Новини</a></li>
+            <li><a href="#">відгуки</a></li>
+            <li><a href="#">Контакти</a></li>
+        </ul>
     </div>
-  </div>
-</nav>
+</div>
 <header>
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-4">
-        <div id="logo">
-          <?php if ($logo) { ?>
-          <a href="<?php echo $home; ?>"><img src="<?php echo $logo; ?>" title="<?php echo $name; ?>" alt="<?php echo $name; ?>" class="img-responsive" /></a>
-          <?php } else { ?>
-          <h1><a href="<?php echo $home; ?>"><?php echo $name; ?></a></h1>
-          <?php } ?>
+    <div class="container">
+        <div class="header_top">
+
+            <div class="top-left">
+                <div class="menu-logo">
+                    <a href="javascript:void(0);" class="js_logo_btn"><span>MENU</span></a>
+                </div>
+                <div class="phone">
+                    <a href="tel:<?php echo $telephone; ?>"><?php echo $telephone; ?></a>
+                </div>
+            </div>
+            <div class="logo">
+<!--                <img src="img/logo.svg" alt="logo" class="img-respons">-->
+                <?php if ($logo) { ?>
+                    <a href="<?php echo $home; ?>"><img src="<?php echo $logo; ?>" title="<?php echo $name; ?>" alt="<?php echo $name; ?>" class="img-responsive" /></a>
+                <?php } else { ?>
+                    <h1><a href="<?php echo $home; ?>"><?php echo $name; ?></a></h1>
+                <?php } ?>
+            </div>
+            <div class="top-right">
+                <ul class="icons">
+                    <li><div href="#" class="search"></div></li>
+                    <li><a href="#" class="heart"><span>4</span></a></li>
+                    <li><a href="#" class="bag"><span>4</span></a></li>
+                    <li><a href="#" class="user"></a></li>
+                </ul>
+                <div class="select">
+                    <button class="currency">
+                        UAH
+                    </button>
+                    <ul class="currency_list">
+                        <li><a href="#">RUB</a></li>
+                        <li><a href="#">USD</a></li>
+                    </ul>
+                    <div class="language">
+                        <?php echo $language; ?>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <nav>
+            <div class="header_bottom">
+                <div class="header_bottom_menu_btn"><a href="javascript:void(0);"class="js_header_bottom_menu_btn">каталог продукції</a></div>
+                <ul class="hidden_menu_inner">
+                    <li><a href="#" class="women">ЖІНКАМ</a>
+                        <div class="hidden_menu">
+                            <div class="container">
+                                <a href="#" class="hidden_item">
+                                    <div class="hidden_icons"><img src="img/woman-1.svg" alt=""></div>
+                                    <div class="hidden_text">Довгі шкарпетки</div>
+                                </a>
+                                <a href="#" class="hidden_item">
+                                    <div class="hidden_icons"><img src="img/woman-2.svg" alt=""></div>
+                                    <div class="hidden_text">Класичні шкарпетки</div>
+                                </a>
+                                <a href="#" class="hidden_item">
+                                    <div class="hidden_icons"><img src="img/woman-3.svg" alt=""></div>
+                                    <div class="hidden_text">Короткі шкарпетки</div>
+                                </a>
+                                <a href="#" class="hidden_item">
+                                    <div class="hidden_icons"><img src="img/woman-4.svg" alt=""></div>
+                                    <div class="hidden_text">слід, підслідок</div>
+                                </a>
+                            </div>
+                        </div>
+
+                    </li>
+                    <li><a href="#" class="men">ЧОЛОВІКАМ</a>
+                        <div class="hidden_menu">
+                            <div class="container">
+                                <a href="#" class="hidden_item">
+                                    <div class="hidden_icons"><img src="img/man-1.svg" alt=""></div>
+                                    <div class="hidden_text">Довгі шкарпетки</div>
+                                </a>
+                                <a href="#" class="hidden_item">
+                                    <div class="hidden_icons"><img src="img/man-2.svg" alt=""></div>
+                                    <div class="hidden_text">Класичні шкарпетки</div>
+                                </a>
+                                <a href="#" class="hidden_item">
+                                    <div class="hidden_icons"><img src="img/man-3.svg" alt=""></div>
+                                    <div class="hidden_text">Короткі шкарпетки</div>
+                                </a>
+                                <a href="#" class="hidden_item">
+                                    <div class="hidden_icons"><img src="img/man-4.svg" alt=""></div>
+                                    <div class="hidden_text">Cлід, підслідок</div>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="#" class="kid">ДІТЯМ</a>
+                        <div class="hidden_menu">
+                            <div class="container">
+                                <a href="#" class="hidden_item">
+                                    <div class="hidden_icons"><img src="img/kid-1.svg" alt=""></div>
+                                    <div class="hidden_text">Довгі шкарпетки</div>
+                                </a>
+                                <a href="#" class="hidden_item">
+                                    <div class="hidden_icons"><img src="img/kid-2.svg" alt=""></div>
+                                    <div class="hidden_text">Класичні шкарпетки</div>
+                                </a>
+                                <a href="#" class="hidden_item">
+                                    <div class="hidden_icons"><img src="img/kid-3.svg" alt=""></div>
+                                    <div class="hidden_text">Короткі шкарпетки</div>
+                                </a>
+                                <a href="#" class="hidden_item">
+                                    <div class="hidden_icons"><img src="img/kid-4.svg" alt=""></div>
+                                    <div class="hidden_text">Cлід, підслідок</div>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="#">SALE</a></li>
+                    <li><a href="#">ПІДПИСКА</a></li>
+                    <li><a href="#">ПОДАРУНКОВІ КОРОБКИ</a></li>
+                </ul>
+            </div>
+
+
+        </nav>
+    </div>
+    <div class="search-box">
+        <?php echo $search; ?>
+    </div>
+</header>
+
+<?php if(0){ ?>
+    <nav id="top">
+      <div class="container">
+        <?php echo $currency; ?>
+        <?php echo $language; ?>
+        <div id="top-links" class="nav pull-right">
+          <ul class="list-inline">
+            <li><a href="<?php echo $contact; ?>"><i class="fa fa-phone"></i></a> <span class="hidden-xs hidden-sm hidden-md"><?php echo $telephone; ?></span></li>
+            <li class="dropdown"><a href="<?php echo $account; ?>" title="<?php echo $text_account; ?>" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> <span class="hidden-xs hidden-sm hidden-md"><?php echo $text_account; ?></span> <span class="caret"></span></a>
+              <ul class="dropdown-menu dropdown-menu-right">
+                <?php if ($logged) { ?>
+                <li><a href="<?php echo $account; ?>"><?php echo $text_account; ?></a></li>
+                <li><a href="<?php echo $order; ?>"><?php echo $text_order; ?></a></li>
+                <li><a href="<?php echo $transaction; ?>"><?php echo $text_transaction; ?></a></li>
+                <li><a href="<?php echo $download; ?>"><?php echo $text_download; ?></a></li>
+                <li><a href="<?php echo $logout; ?>"><?php echo $text_logout; ?></a></li>
+                <?php } else { ?>
+                <li><a href="<?php echo $register; ?>"><?php echo $text_register; ?></a></li>
+                <li><a href="<?php echo $login; ?>"><?php echo $text_login; ?></a></li>
+                <?php } ?>
+              </ul>
+            </li>
+            <li><a href="<?php echo $wishlist; ?>" id="wishlist-total" title="<?php echo $text_wishlist; ?>"><i class="fa fa-heart"></i> <span class="hidden-xs hidden-sm hidden-md"><?php echo $text_wishlist; ?></span></a></li>
+            <li><a href="<?php echo $shopping_cart; ?>" title="<?php echo $text_shopping_cart; ?>"><i class="fa fa-shopping-cart"></i> <span class="hidden-xs hidden-sm hidden-md"><?php echo $text_shopping_cart; ?></span></a></li>
+            <li><a href="<?php echo $checkout; ?>" title="<?php echo $text_checkout; ?>"><i class="fa fa-share"></i> <span class="hidden-xs hidden-sm hidden-md"><?php echo $text_checkout; ?></span></a></li>
+          </ul>
         </div>
       </div>
-      <div class="col-sm-5"><?php echo $search; ?>
+    </nav>
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <div id="logo">
+              <?php if ($logo) { ?>
+              <a href="<?php echo $home; ?>"><img src="<?php echo $logo; ?>" title="<?php echo $name; ?>" alt="<?php echo $name; ?>" class="img-responsive" /></a>
+              <?php } else { ?>
+              <h1><a href="<?php echo $home; ?>"><?php echo $name; ?></a></h1>
+              <?php } ?>
+            </div>
+          </div>
+          <div class="col-sm-5"><?php echo $search; ?>
+          </div>
+          <div class="col-sm-3"><?php echo $cart; ?></div>
+        </div>
       </div>
-      <div class="col-sm-3"><?php echo $cart; ?></div>
-    </div>
-  </div>
-</header>
-<?php if ($categories) { ?>
+    </header>
+    <?php if ($categories) { ?>
 <div class="container">
   <nav id="menu" class="navbar">
     <div class="navbar-header"><span id="category" class="visible-xs"><?php echo $text_category; ?></span>
@@ -115,4 +279,6 @@
     </div>
   </nav>
 </div>
+<?php } ?>
+
 <?php } ?>
