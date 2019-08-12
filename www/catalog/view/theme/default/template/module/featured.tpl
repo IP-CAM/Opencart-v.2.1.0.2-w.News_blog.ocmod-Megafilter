@@ -1,3 +1,42 @@
+
+
+<section class="our_prod">
+  <div class="container">
+    <div class="top_prod">
+      <div class="prod-title">
+        наша продукція
+      </div>
+      <div class="prod-togle">
+        <div class="togle active">
+          Новинки
+        </div>
+        <div class="togle">
+          sale
+        </div>
+      </div>
+    </div>
+    <div class="prod-items active">
+      <div class="prod-slider">
+        <div class="prod-iner">
+          <?php foreach ($products as $product) { ?>
+          <div class="prod-item">
+            <div class="prod-img"><a href="#"><img src="<?php echo $product['thumb']; ?>" alt="<?php echo $product['name']; ?>"></a></div>
+            <div class="prod-title"><a href="#"><?php echo $product['name']; ?></a></div>
+            <div class="prod-price"><a href="#"><?php echo $product['price']; ?></a></div>
+          </div>
+          <?php } ?>
+        </div>
+      </div>
+    </div>
+    <div class="prod-items">
+      ТУТ МОЖЕ БУТИ ВАША РЕКЛАМА
+    </div>
+  </div>
+  </div>
+</section>
+
+
+<?php if(0) { ?>
 <h3><?php echo $heading_title; ?></h3>
 <div class="row">
   <?php foreach ($products as $product) { ?>
@@ -40,3 +79,4 @@
   </div>
   <?php } ?>
 </div>
+<?php } ?>

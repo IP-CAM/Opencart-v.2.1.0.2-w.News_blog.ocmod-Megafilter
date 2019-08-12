@@ -100,7 +100,19 @@ class ControllerCommonHeader extends Controller {
 				}
 			}
 		}
+//information
+        $this->load->model('catalog/information');
 
+        $data['informations'] = array();
+
+        foreach ($this->model_catalog_information->getInformations() as $result) {
+            if ($result['bottom']) {
+                $data['informations'][] = array(
+                    'title' => $result['title'],
+                    'href'  => $this->url->link('information/information', 'information_id=' . $result['information_id'])
+                );
+            }
+        }
 		// Menu
 		$this->load->model('catalog/category');
 
@@ -124,8 +136,9 @@ class ControllerCommonHeader extends Controller {
 					);
 
 					$children_data[] = array(
-						'name'  => $child['name'] . ($this->config->get('config_product_count') ? ' (' . $this->model_catalog_product->getTotalProducts($filter_data) . ')' : ''),
-						'href'  => $this->url->link('product/category', 'path=' . $category['category_id'] . '_' . $child['category_id'])
+						'name'  => $child['name'],
+                        'href'  => $this->url->link('product/category', 'path=' . $category['category_id'] . '_' . $child['category_id']),
+                        'image'  => $this->model_tool_image->resize($child['image'],100,100)
 					);
 				}
 

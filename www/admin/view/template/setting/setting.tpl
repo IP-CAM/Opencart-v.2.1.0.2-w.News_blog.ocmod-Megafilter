@@ -153,6 +153,26 @@
                     </div>
                 </div>
 
+              <div class="form-group required">
+                <label class="col-sm-2 control-label" for="input-instagram"><?php echo $entry_instagram; ?></label>
+                <div class="col-sm-10">
+                  <input type="text" name="config_instagram" value="<?php echo $config_instagram; ?>" placeholder="<?php echo $entry_instagram; ?>" id="input-instagram" class="form-control" />
+                </div>
+              </div>
+
+              <div class="form-group required">
+                <label class="col-sm-2 control-label" for="input-twitter"><?php echo $entry_twitter; ?></label>
+                <div class="col-sm-10">
+                  <input type="text" name="config_twitter" value="<?php echo $config_twitter; ?>" placeholder="<?php echo $entry_twitter; ?>" id="input-twitter" class="form-control" />
+                </div>
+              </div>
+
+              <div class="form-group required">
+                <label class="col-sm-2 control-label" for="input-youtube"><?php echo $entry_youtube; ?></label>
+                <div class="col-sm-10">
+                  <input type="text" name="config_youtube" value="<?php echo $config_youtube; ?>" placeholder="<?php echo $entry_youtube; ?>" id="input-youtube" class="form-control" />
+                </div>
+              </div>
 
 
                 <div class="form-group">

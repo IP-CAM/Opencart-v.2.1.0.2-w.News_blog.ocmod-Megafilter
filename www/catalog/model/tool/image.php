@@ -7,6 +7,14 @@ class ModelToolImage extends Model {
 
 		$extension = pathinfo($filename, PATHINFO_EXTENSION);
 
+        if('svg' == $extension) {
+            if ($this->request->server['HTTPS']) {
+                return HTTPS_SERVER . 'image/' . $filename;
+            } else {
+                return HTTP_SERVER . 'image/' . $filename;
+            }
+        }
+
 		$old_image = $filename;
 		$new_image = 'cache/' . utf8_substr($filename, 0, utf8_strrpos($filename, '.')) . '-' . $width . 'x' . $height . '.' . $extension;
 

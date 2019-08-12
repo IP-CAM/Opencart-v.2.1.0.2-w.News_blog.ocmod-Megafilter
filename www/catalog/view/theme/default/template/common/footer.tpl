@@ -54,23 +54,17 @@
                 <div class="item">
                     <div class="title">про компанію</div>
                     <ul>
-                        <li><a href="#">Про нас </a></li>
-                        <li><a href="#">Галерея</a></li>
-                        <li><a href="#">Таблиця розмірів</a></li>
-                        <li><a href="#">Новини</a></li>
-                        <li><a href="#">Відгуки</a></li>
-                        <li><a href="#">Контакти</a></li>
+                        <?php foreach ($informations as $information) {    ?>
+                        <li><a href="<?php echo $information['href'] ?>"> <?php echo $information['title'] ?></a></li>
+                        <?php } ?>
                     </ul>
                 </div>
                 <div class="item">
                     <div class="title">Магазин</div>
                     <ul>
-                        <li><a href="#">Жінкам</a></li>
-                        <li><a href="#">Чоловікам</a></li>
-                        <li><a href="#">Дитям</a></li>
-                        <li><a href="#">Sale</a></li>
-                        <li><a href="#">Підписка</a></li>
-                        <li><a href="#">Подарункові коробки</a></li>
+                        <?php foreach ($categories as $category) { ?>
+                        <li><a href="<?php echo $category['href']; ?>" class="women"><?php echo $category['name']; ?></a>
+                            <?php } ?>
                     </ul>
                 </div>
                 <div class="item">
@@ -101,9 +95,9 @@
                         </div>
                         <div class="social_link">
                             <a href="<?= $facebook;?>" class="facebook"></a>
-                            <a href="#" class="instagram"></a>
-                            <a href="#" class="twitter"></a>
-                            <a href="#" class="youtube"></a>
+                            <a href="<?= $instagram;?>" class="instagram"></a>
+                            <a href="<?= $twitter;?>" class="twitter"></a>
+                            <a href="<?= $youtube;?>" class="youtube"></a>
                         </div>
                     </div>
                 </div>

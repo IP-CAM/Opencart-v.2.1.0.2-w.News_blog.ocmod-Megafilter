@@ -45,12 +45,16 @@
 <?php } ?>
 </head>
 <body class="<?php echo $class; ?>">
-
 <div class="hiden_menu">
     <div class="hiden_menu_iner">
         <div class="close_btn"></div>
         <ul>
-            <li><a href="#">Про нас</a></li>
+
+            <?php foreach ($informations as $information) {    ?>
+            <li><a href="<?php echo $information['href'] ?>"> <?php echo $information['title'] ?></a></li>
+            <?php } ?>
+
+           <!-- <li><a href="#">Про нас</a></li>
             <li><a href="#">Галерея</a></li>
             <li><a href="#">Таблиця розмірів</a></li>
             <li><a href="javascript:void(0);" class="item">Клієнтам</a>
@@ -71,6 +75,7 @@
             <li><a href="#">Новини</a></li>
             <li><a href="#">відгуки</a></li>
             <li><a href="#">Контакти</a></li>
+            -->
         </ul>
     </div>
 </div>
@@ -96,54 +101,49 @@
             </div>
             <div class="top-right">
                 <ul class="icons">
-                    <li><div href="#" class="search"></div></li>
+                    <li><a href="javascript:void(0);" class="search"></a></li>
                     <li><a href="#" class="heart"><span>4</span></a></li>
                     <li><a href="#" class="bag"><span>4</span></a></li>
                     <li><a href="#" class="user"></a></li>
                 </ul>
                 <div class="select">
-                    <button class="currency">
-                        UAH
-                    </button>
-                    <ul class="currency_list">
-                        <li><a href="#">RUB</a></li>
-                        <li><a href="#">USD</a></li>
-                    </ul>
-                    <div class="language">
-                        <?php echo $language; ?>
+                    <div class="cur">
+                        <?php echo $currency;?>
+                </div>
+                    <div class="lang">
+                        <?php echo $language;?>
                     </div>
-
                 </div>
             </div>
+        </div>
+        <div class="search-box">
+            <?php echo $search; ?>
         </div>
         <nav>
             <div class="header_bottom">
                 <div class="header_bottom_menu_btn"><a href="javascript:void(0);"class="js_header_bottom_menu_btn">каталог продукції</a></div>
                 <ul class="hidden_menu_inner">
-                    <li><a href="#" class="women">ЖІНКАМ</a>
+                    <?php foreach ($categories as $category) { ?>
+                    <?php if ($category['children']) { ?>
+                    <li><a href="<?php echo $category['href']; ?>" class="women"><?php echo $category['name']; ?></a>
                         <div class="hidden_menu">
                             <div class="container">
-                                <a href="#" class="hidden_item">
-                                    <div class="hidden_icons"><img src="img/woman-1.svg" alt=""></div>
-                                    <div class="hidden_text">Довгі шкарпетки</div>
+                                <?php foreach ($category['children'] as $child) { ?>
+                                <a href="<?php echo $child['href']; ?>" class="hidden_item">
+                                    <div class="hidden_icons"><img src="<?php echo $child['image'] ?>" alt=""></div>
+                                    <div class="hidden_text"><?php echo $child['name']; ?></div>
                                 </a>
-                                <a href="#" class="hidden_item">
-                                    <div class="hidden_icons"><img src="img/woman-2.svg" alt=""></div>
-                                    <div class="hidden_text">Класичні шкарпетки</div>
-                                </a>
-                                <a href="#" class="hidden_item">
-                                    <div class="hidden_icons"><img src="img/woman-3.svg" alt=""></div>
-                                    <div class="hidden_text">Короткі шкарпетки</div>
-                                </a>
-                                <a href="#" class="hidden_item">
-                                    <div class="hidden_icons"><img src="img/woman-4.svg" alt=""></div>
-                                    <div class="hidden_text">слід, підслідок</div>
-                                </a>
+                                    <?php } ?>
                             </div>
                         </div>
-
                     </li>
-                    <li><a href="#" class="men">ЧОЛОВІКАМ</a>
+                    <?php } else { ?>
+                    <li><a href="<?php echo $category['href']; ?>" class="women"><?php echo $category['name']; ?></a>
+                            <?php } ?>
+
+                        <?php } ?>
+
+               <!--      <li><a href="#" class="men">ЧОЛОВІКАМ</a>
                         <div class="hidden_menu">
                             <div class="container">
                                 <a href="#" class="hidden_item">
@@ -188,16 +188,12 @@
                         </div>
                     </li>
                     <li><a href="#">SALE</a></li>
-                    <li><a href="#">ПІДПИСКА</a></li>
-                    <li><a href="#">ПОДАРУНКОВІ КОРОБКИ</a></li>
+                    -->
                 </ul>
             </div>
 
 
         </nav>
-    </div>
-    <div class="search-box">
-        <?php echo $search; ?>
     </div>
 </header>
 

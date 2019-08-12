@@ -47,8 +47,62 @@ class ControllerCommonFooter extends Controller {
         $data['telephone'] = $this->config->get('config_telephone');
         $data['email'] = $this->config->get('config_email');
         $data['facebook'] = $this->config->get('config_facebook');
+        $data['instagram'] = $this->config->get('config_instagram');
+        $data['twitter'] = $this->config->get('config_twitter');
+        $data['youtube'] = $this->config->get('config_youtube');
 		$data['powered'] = sprintf($this->language->get('text_powered'), $this->config->get('config_name'), date('Y', time()));
 
+// Menu
+        $this->load->model('catalog/category');
+
+        $this->load->model('catalog/product');
+
+        $data['categories'] = array();
+
+        $categories = $this->model_catalog_category->getCategories(0);
+
+        foreach ($categories as $category) {
+            if ($category['top']) {
+                // Level 2
+                $children_data = array();
+
+                $children = $this->model_catalog_category->getCategories($category['category_id']);
+
+                foreach ($children as $child) {
+                    $filter_data = array(
+                        'filter_category_id'  => $child['category_id'],
+                        'filter_sub_category' => true
+                    );
+
+                    $children_data[] = array(
+                        'name'  => $child['name'],
+                        'href'  => $this->url->link('product/category', 'path=' . $category['category_id'] . '_' . $child['category_id']),
+                        'image'  => $this->model_tool_image->resize($child['image'],100,100)
+                    );
+                }
+
+                // Level 1
+                $data['categories'][] = array(
+                    'name'     => $category['name'],
+                    'children' => $children_data,
+                    'column'   => $category['column'] ? $category['column'] : 1,
+                    'href'     => $this->url->link('product/category', 'path=' . $category['category_id'])
+                );
+            }
+        }
+        //information
+        $this->load->model('catalog/information');
+
+        $data['informations'] = array();
+
+        foreach ($this->model_catalog_information->getInformations() as $result) {
+            if ($result['bottom']) {
+                $data['informations'][] = array(
+                    'title' => $result['title'],
+                    'href'  => $this->url->link('information/information', 'information_id=' . $result['information_id'])
+                );
+            }
+        }
 		// Whos Online
 		if ($this->config->get('config_customer_online')) {
 			$this->load->model('tool/online');
