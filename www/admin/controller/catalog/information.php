@@ -176,6 +176,7 @@ class ControllerCatalogInformation extends Controller {
 				'information_id' => $result['information_id'],
 				'title'          => $result['title'],
 				'sort_order'     => $result['sort_order'],
+				'select_menu'     => $result['select_menu'],
 				'edit'           => $this->url->link('catalog/information/edit', 'token=' . $this->session->data['token'] . '&information_id=' . $result['information_id'] . $url, 'SSL')
 			);
 		}
@@ -276,6 +277,7 @@ class ControllerCatalogInformation extends Controller {
 		$data['entry_store'] = $this->language->get('entry_store');
 		$data['entry_bottom'] = $this->language->get('entry_bottom');
 		$data['entry_sort_order'] = $this->language->get('entry_sort_order');
+		$data['entry_select_menu'] = $this->language->get('entry_select_menu');
 		$data['entry_status'] = $this->language->get('entry_status');
 		$data['entry_layout'] = $this->language->get('entry_layout');
 
@@ -408,12 +410,20 @@ class ControllerCatalogInformation extends Controller {
 		}
 
 		if (isset($this->request->post['sort_order'])) {
-			$data['sort_order'] = $this->request->post['sort_order'];
-		} elseif (!empty($information_info)) {
-			$data['sort_order'] = $information_info['sort_order'];
-		} else {
-			$data['sort_order'] = '';
-		}
+            $data['sort_order'] = $this->request->post['sort_order'];
+        } elseif (!empty($information_info)) {
+            $data['sort_order'] = $information_info['sort_order'];
+        } else {
+            $data['sort_order'] = '';
+        }
+
+        if (isset($this->request->post['select_menu'])) {
+            $data['select_menu'] = $this->request->post['select_menu'];
+        } elseif (!empty($information_info)) {
+            $data['select_menu'] = $information_info['select_menu'];
+        } else {
+            $data['select_menu'] = '';
+        }
 
 		if (isset($this->request->post['information_layout'])) {
 			$data['information_layout'] = $this->request->post['information_layout'];

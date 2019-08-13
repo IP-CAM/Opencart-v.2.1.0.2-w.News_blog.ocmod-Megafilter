@@ -70,9 +70,9 @@
                 <div class="item">
                     <div class="title">Клієнтам</div>
                     <ul>
-                        <li><a href="#">Питання-відповідь</a></li>
-                        <li><a href="#">Доставка і оплата</a></li>
-                        <li><a href="#">Повернення товару</a></li>
+                        <?php foreach ($for_client as $client) {    ?>
+                        <li><a href="<?php echo $client['href'] ?>"> <?php echo $client['title'] ?></a></li>
+                        <?php } ?>
                         <a href="#" class="price-list"><span>Прайс-лист</span><i></i></a>
                     </ul>
 
@@ -80,10 +80,9 @@
                 <div class="item">
                     <div class="title">Партнерам</div>
                     <ul>
-                        <li><a href="#">Опт</a></li>
-                        <li><a href="#">Крупний опт</a></li>
-                        <li><a href="#">Дропшипінг</a></li>
-                        <li><a href="#">Корпоративні замовлення</a></li>
+                        <?php foreach ($for_partner as $partner) {    ?>
+                        <li><a href="<?php echo $partner['href'] ?>"> <?php echo $partner['title'] ?></a></li>
+                        <?php } ?>
                     </ul>
                 </div>
                 <div class="item contacts_box">
@@ -109,7 +108,7 @@
                     ©Сopyright 2018 - V&T SOCKS
                 </div>
                 <div class="bot-right">
-                    <img src="../img/group.svg" alt="wss-logo">
+                    <img src="img/group.svg" alt="wss-logo">
                 </div>
             </div>
         </div>

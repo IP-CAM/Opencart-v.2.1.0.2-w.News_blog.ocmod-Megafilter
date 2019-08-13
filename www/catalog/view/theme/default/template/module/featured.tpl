@@ -20,9 +20,9 @@
         <div class="prod-iner">
           <?php foreach ($products as $product) { ?>
           <div class="prod-item">
-            <div class="prod-img"><a href="#"><img src="<?php echo $product['thumb']; ?>" alt="<?php echo $product['name']; ?>"></a></div>
-            <div class="prod-title"><a href="#"><?php echo $product['name']; ?></a></div>
-            <div class="prod-price"><a href="#"><?php echo $product['price']; ?></a></div>
+            <div class="prod-img"><a href="<?php echo $product['href']; ?>"><img src="<?php echo $product['thumb']; ?>" alt="<?php echo $product['name']; ?>"></a></div>
+            <div class="prod-title"><a href="<?php echo $product['href']; ?>"><?php echo $product['name']; ?></a></div>
+            <div class="prod-price"><a href="<?php echo $product['href']; ?>"><?php echo $product['price']; ?></a></div>
           </div>
           <?php } ?>
         </div>

@@ -23,15 +23,36 @@ class ControllerCommonFooter extends Controller {
 		$this->load->model('catalog/information');
 
 		$data['informations'] = array();
+		$data['for_client'] = array();
+		$data['for_partner'] =array();
 
 		foreach ($this->model_catalog_information->getInformations() as $result) {
 			if ($result['bottom']) {
 				$data['informations'][] = array(
+
 					'title' => $result['title'],
 					'href'  => $this->url->link('information/information', 'information_id=' . $result['information_id'])
 				);
 			}
 		}
+        foreach ($this->model_catalog_information->getInformations() as $result) {
+            if ($result['select_menu'] == 3) {
+                $data['for_client'][] = array(
+
+                    'title' => $result['title'],
+                    'href'  => $this->url->link('information/information', 'information_id=' . $result['information_id'])
+                );
+            }
+            elseif($result['select_menu'] == 4 ){
+                {
+                    $data['for_partner'][] = array(
+
+                        'title' => $result['title'],
+                        'href'  => $this->url->link('information/information', 'information_id=' . $result['information_id'])
+                    );
+                }
+            }
+        }
 
 		$data['contact'] = $this->url->link('information/contact');
 		$data['return'] = $this->url->link('account/return/add', '', 'SSL');

@@ -25,6 +25,7 @@ $_['entry_keyword']          = 'SEO URL';
 $_['entry_bottom']           = 'Отображить снизу';
 $_['entry_status']           = 'Статус';
 $_['entry_sort_order']       = 'Порядок сортировки';
+$_['entry_select_menu']       = 'В какое меню вставить';
 $_['entry_layout']           = 'Выберите схему';
 
 // Help

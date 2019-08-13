@@ -158,6 +158,16 @@
                   <input type="text" name="sort_order" value="<?php echo $sort_order; ?>" placeholder="<?php echo $entry_sort_order; ?>" id="input-sort-order" class="form-control" />
                 </div>
               </div>
+
+
+              <div class="form-group">
+                <label class="col-sm-2 control-label" for="input-select-menu"><?php echo $entry_select_menu; ?></label>
+                <div class="col-sm-10">
+                  <input type="text" name="select_menu" value="<?php echo $select_menu; ?>" placeholder="<?php echo $entry_select_menu; ?>" id="input-select-menu" class="form-control" />
+                </div>
+              </div>
+
+
             </div>
             <div class="tab-pane" id="tab-design">
               <div class="table-responsive">

@@ -785,7 +785,7 @@ CREATE TABLE `oc_currency` (
 
 INSERT INTO `oc_currency` (`currency_id`, `title`, `code`, `symbol_left`, `symbol_right`, `decimal_place`, `value`, `status`, `date_modified`) VALUES
 (1,	'Pound Sterling',	'GBP',	'£',	'',	'2',	0.61250001,	1,	'2014-09-25 14:40:00'),
-(2,	'US Dollar',	'USD',	'$',	'',	'2',	1.00000000,	1,	'2019-08-07 14:17:08'),
+(2,	'US Dollar',	'USD',	'$',	'',	'2',	1.00000000,	1,	'2019-08-13 08:48:45'),
 (3,	'Euro',	'EUR',	'',	'€',	'2',	0.78460002,	1,	'2014-09-25 14:40:00');
 
 DROP TABLE IF EXISTS `oc_customer`;
@@ -1095,22 +1095,23 @@ CREATE TABLE `oc_information` (
   `information_id` int(11) NOT NULL AUTO_INCREMENT,
   `bottom` int(1) NOT NULL DEFAULT '0',
   `sort_order` int(3) NOT NULL DEFAULT '0',
+  `select_menu` int(3) NOT NULL,
   `status` tinyint(1) NOT NULL DEFAULT '1',
   PRIMARY KEY (`information_id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
-INSERT INTO `oc_information` (`information_id`, `bottom`, `sort_order`, `status`) VALUES
-(3,	0,	3,	1),
-(4,	1,	0,	1),
-(5,	0,	4,	1),
-(6,	0,	2,	1),
-(7,	1,	0,	1),
-(8,	1,	0,	1),
-(9,	0,	0,	1),
-(10,	1,	0,	1),
-(11,	1,	0,	1),
-(12,	1,	0,	1),
-(13,	1,	0,	1);
+INSERT INTO `oc_information` (`information_id`, `bottom`, `sort_order`, `select_menu`, `status`) VALUES
+(3,	0,	3,	4,	1),
+(4,	1,	0,	0,	1),
+(5,	0,	4,	4,	1),
+(6,	0,	2,	3,	1),
+(7,	1,	0,	0,	1),
+(8,	1,	0,	0,	1),
+(9,	0,	0,	0,	1),
+(10,	1,	0,	0,	1),
+(11,	1,	0,	0,	1),
+(12,	1,	0,	2,	1),
+(13,	1,	0,	0,	1);
 
 DROP TABLE IF EXISTS `oc_information_description`;
 CREATE TABLE `oc_information_description` (
@@ -1129,10 +1130,10 @@ INSERT INTO `oc_information_description` (`information_id`, `language_id`, `titl
 (5,	2,	'Terms &amp; Conditions',	'&lt;p&gt;\r\n	Terms &amp;amp; Conditions&lt;/p&gt;\r\n',	'Terms &amp; Conditions',	'',	''),
 (3,	2,	'Privacy Policy',	'&lt;p&gt;\r\n	Privacy Policy&lt;/p&gt;\r\n',	'Privacy Policy',	'',	''),
 (6,	2,	'Delivery Information',	'&lt;p&gt;\r\n	Delivery Information&lt;/p&gt;\r\n',	'Delivery Information',	'',	''),
-(5,	1,	'Terms &amp; Conditions',	'&lt;p&gt;\r\n	Terms &amp;amp; Conditions&lt;/p&gt;\r\n',	'Terms &amp; Conditions',	'',	''),
 (3,	1,	'Privacy Policy',	'&lt;p&gt;\r\n	Privacy Policy&lt;/p&gt;\r\n',	'Privacy Policy',	'',	''),
-(6,	1,	'Delivery Information',	'&lt;p&gt;\r\n	Delivery Information&lt;/p&gt;\r\n',	'Delivery Information',	'',	''),
 (4,	1,	'About Us',	'&lt;p&gt;\r\n	About Us&lt;/p&gt;\r\n',	'About Us',	'',	''),
+(6,	1,	'Delivery Information',	'&lt;p&gt;\r\n	Delivery Information&lt;/p&gt;\r\n',	'Delivery Information',	'',	''),
+(5,	1,	'Terms &amp; Conditions',	'&lt;p&gt;\r\n	Terms &amp;amp; Conditions&lt;/p&gt;\r\n',	'Terms &amp; Conditions',	'',	''),
 (7,	1,	'COMING SOON',	'&lt;p&gt;&lt;br&gt;&lt;/p&gt;',	'COMING SOON',	'',	''),
 (7,	2,	'СКОРО В ПРОДАЖЕ',	'&lt;p&gt;&lt;br&gt;&lt;/p&gt;',	'СКОРО В ПРОДАЖЕ',	'',	''),
 (8,	1,	'DIMENSION TABLE',	'&lt;p&gt;&lt;br&gt;&lt;/p&gt;',	'DIMENSION TABLE',	'',	''),
@@ -1143,8 +1144,8 @@ INSERT INTO `oc_information_description` (`information_id`, `language_id`, `titl
 (10,	2,	'ПАРТНЕРАМ',	'&lt;p&gt;&lt;br&gt;&lt;/p&gt;',	'ПАРТНЕРАМ',	'',	''),
 (11,	1,	'PARTNERS',	'&lt;p&gt;&lt;br&gt;&lt;/p&gt;',	'PARTNERS',	'',	''),
 (11,	2,	'ПАРТНЕРАМ',	'&lt;p&gt;&lt;br&gt;&lt;/p&gt;',	'ПАРТНЕРАМ',	'',	''),
-(12,	1,	'NEWS',	'&lt;p&gt;&lt;br&gt;&lt;/p&gt;',	'NEWS',	'',	''),
 (12,	2,	'НОВОСТИ',	'&lt;p&gt;&lt;br&gt;&lt;/p&gt;',	'НОВОСТИ',	'',	''),
+(12,	1,	'NEWS',	'&lt;p&gt;&lt;br&gt;&lt;/p&gt;',	'NEWS',	'',	''),
 (13,	1,	'REVIEWS',	'&lt;p&gt;&lt;br&gt;&lt;/p&gt;',	'REVIEWS',	'',	''),
 (13,	2,	'ОТЗЫВЫ',	'&lt;p&gt;&lt;br&gt;&lt;/p&gt;',	'ОТЗЫВЫ',	'',	'');
 
@@ -1794,13 +1795,13 @@ INSERT INTO `oc_product` (`product_id`, `model`, `sku`, `upc`, `ean`, `jan`, `is
 (40,	'product 11',	'',	'',	'',	'',	'',	'',	'',	970,	5,	'catalog/demo/iphone_1.jpg',	8,	1,	101.0000,	0,	9,	'2009-02-03',	10.00000000,	1,	0.00000000,	0.00000000,	0.00000000,	1,	1,	1,	0,	1,	0,	'2009-02-03 21:07:12',	'2011-09-30 01:06:53'),
 (41,	'Product 14',	'',	'',	'',	'',	'',	'',	'',	977,	5,	'catalog/demo/imac_1.jpg',	8,	1,	100.0000,	0,	9,	'2009-02-03',	5.00000000,	1,	0.00000000,	0.00000000,	0.00000000,	1,	1,	1,	0,	1,	0,	'2009-02-03 21:07:26',	'2011-09-30 01:06:44'),
 (42,	'Product 15',	'',	'',	'',	'',	'',	'',	'',	990,	5,	'catalog/demo/apple_cinema_30.jpg',	8,	1,	100.0000,	400,	9,	'2009-02-04',	12.50000000,	1,	1.00000000,	2.00000000,	3.00000000,	1,	1,	2,	0,	1,	0,	'2009-02-03 21:07:37',	'2011-09-30 00:46:19'),
-(43,	'Product 16',	'',	'',	'',	'',	'',	'',	'',	929,	5,	'catalog/demo/macbook_1.jpg',	8,	0,	500.0000,	0,	9,	'2009-02-03',	0.00000000,	1,	0.00000000,	0.00000000,	0.00000000,	2,	1,	1,	0,	1,	1,	'2009-02-03 21:07:49',	'2011-09-30 01:05:46'),
+(43,	'Product 16',	'',	'',	'',	'',	'',	'',	'',	929,	5,	'catalog/demo/macbook_1.jpg',	8,	0,	500.0000,	0,	9,	'2009-02-03',	0.00000000,	1,	0.00000000,	0.00000000,	0.00000000,	2,	1,	1,	0,	1,	2,	'2009-02-03 21:07:49',	'2011-09-30 01:05:46'),
 (44,	'Product 17',	'',	'',	'',	'',	'',	'',	'',	1000,	5,	'catalog/demo/macbook_air_1.jpg',	8,	1,	1000.0000,	0,	9,	'2009-02-03',	0.00000000,	1,	0.00000000,	0.00000000,	0.00000000,	2,	1,	1,	0,	1,	0,	'2009-02-03 21:08:00',	'2011-09-30 01:05:53'),
 (45,	'Product 18',	'',	'',	'',	'',	'',	'',	'',	998,	5,	'catalog/demo/macbook_pro_1.jpg',	8,	1,	2000.0000,	0,	100,	'2009-02-03',	0.00000000,	1,	0.00000000,	0.00000000,	0.00000000,	2,	1,	1,	0,	1,	0,	'2009-02-03 21:08:17',	'2011-09-15 22:22:01'),
 (46,	'Product 19',	'',	'',	'',	'',	'',	'',	'',	1000,	5,	'catalog/demo/sony_vaio_1.jpg',	10,	1,	1000.0000,	0,	9,	'2009-02-03',	0.00000000,	1,	0.00000000,	0.00000000,	0.00000000,	2,	1,	1,	0,	1,	0,	'2009-02-03 21:08:29',	'2011-09-30 01:06:39'),
 (47,	'Product 21',	'',	'',	'',	'',	'',	'',	'',	1000,	5,	'catalog/demo/hp_1.jpg',	7,	1,	100.0000,	400,	9,	'2009-02-03',	1.00000000,	1,	0.00000000,	0.00000000,	0.00000000,	1,	0,	1,	0,	1,	0,	'2009-02-03 21:08:40',	'2011-09-30 01:05:28'),
 (48,	'product 20',	'test 1',	'',	'',	'',	'',	'',	'test 2',	995,	5,	'catalog/demo/ipod_classic_1.jpg',	8,	1,	100.0000,	0,	9,	'2009-02-08',	1.00000000,	1,	0.00000000,	0.00000000,	0.00000000,	2,	1,	1,	0,	1,	0,	'2009-02-08 17:21:51',	'2011-09-30 01:07:06'),
-(49,	'SAM1',	'',	'',	'',	'',	'',	'',	'',	0,	8,	'catalog/demo/samsung_tab_1.jpg',	0,	1,	199.9900,	0,	9,	'2011-04-25',	0.00000000,	1,	0.00000000,	0.00000000,	0.00000000,	1,	1,	1,	1,	1,	3,	'2011-04-26 08:57:34',	'2011-09-30 01:06:23');
+(49,	'SAM1',	'',	'',	'',	'',	'',	'',	'',	0,	8,	'catalog/demo/samsung_tab_1.jpg',	0,	1,	199.9900,	0,	9,	'2011-04-25',	0.00000000,	1,	0.00000000,	0.00000000,	0.00000000,	1,	1,	1,	1,	1,	4,	'2011-04-26 08:57:34',	'2011-09-30 01:06:23');
 
 DROP TABLE IF EXISTS `oc_product_attribute`;
 CREATE TABLE `oc_product_attribute` (
@@ -2577,7 +2578,6 @@ INSERT INTO `oc_url_alias` (`url_alias_id`, `query`, `keyword`) VALUES
 (851,	'category_id=66',	''),
 (853,	'category_id=68',	''),
 (862,	'information_id=11',	''),
-(863,	'information_id=12',	''),
 (864,	'information_id=13',	''),
 (809,	'product_id=30',	'canon-eos-5d'),
 (840,	'product_id=47',	'hp-lp3065'),
@@ -2601,9 +2601,9 @@ INSERT INTO `oc_url_alias` (`url_alias_id`, `query`, `keyword`) VALUES
 (830,	'manufacturer_id=7',	'hewlett-packard'),
 (831,	'manufacturer_id=6',	'palm'),
 (832,	'manufacturer_id=10',	'sony'),
-(855,	'information_id=6',	'delivery'),
-(856,	'information_id=3',	'privacy'),
-(857,	'information_id=5',	'terms');
+(877,	'information_id=6',	'delivery'),
+(875,	'information_id=3',	'privacy'),
+(876,	'information_id=5',	'terms');
 
 DROP TABLE IF EXISTS `oc_user`;
 CREATE TABLE `oc_user` (
@@ -6967,4 +6967,4 @@ INSERT INTO `oc_zone_to_geo_zone` (`zone_to_geo_zone_id`, `country_id`, `zone_id
 (108,	222,	3955,	3,	'0000-00-00 00:00:00',	'0000-00-00 00:00:00'),
 (109,	222,	3972,	3,	'0000-00-00 00:00:00',	'0000-00-00 00:00:00');
 
--- 2019-08-07 17:09:00
+-- 2019-08-13 09:32:28
