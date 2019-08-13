@@ -1,0 +1,56 @@
+---------- Date: 2019-06-07 07:54:14 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /ua/
+MOD DETAILS:
+   modFile   : /var/www/medikateka.loc/vqmod/xml/mega_filter.xml
+   id        : Mega Filter PRO
+   version   : 1.5.x
+   vqmver    : 2.4.0
+   author    : marsilea15@gmail.com
+
+File Name    : catalog/view/theme/*/template/common/header.tpl(0)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): catalog/view/javascript/bootstrap/js/bootstrap.min.js
+----------------------------------------------------------------------
+
+
+---------- Date: 2019-06-07 11:41:28 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /en/
+MOD DETAILS:
+   modFile   : /var/www/medikateka.loc/vqmod/xml/mega_filter.xml
+   id        : Mega Filter PRO
+   version   : 1.5.x
+   vqmver    : 2.4.0
+   author    : marsilea15@gmail.com
+
+File Name    : catalog/view/theme/*/template/common/header.tpl(0)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): catalog/view/javascript/bootstrap/js/bootstrap.min.js
+----------------------------------------------------------------------
+
+
+---------- Date: 2019-06-07 12:11:15 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /en/
+MOD DETAILS:
+   modFile   : /var/www/medikateka.loc/vqmod/xml/mega_filter.xml
+   id        : Mega Filter PRO
+   version   : 1.5.x
+   vqmver    : 2.4.0
+   author    : marsilea15@gmail.com
+
+File Name    : catalog/view/theme/*/template/common/header.tpl(0)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): catalog/view/javascript/bootstrap/js/bootstrap.min.js
+----------------------------------------------------------------------
+
+
+---------- Date: 2019-06-07 12:36:25 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /en/desktops/
+MOD DETAILS:
+   modFile   : /var/www/medikateka.loc/vqmod/xml/mega_filter.xml
+   id        : Mega Filter PRO
+   version   : 1.5.x
+   vqmver    : 2.4.0
+   author    : marsilea15@gmail.com
+
+File Name    : catalog/view/theme/*/template/common/header.tpl(0)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): catalog/view/javascript/bootstrap/js/bootstrap.min.js
+----------------------------------------------------------------------
+
+

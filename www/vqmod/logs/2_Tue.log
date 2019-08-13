@@ -1,0 +1,20 @@
+---------- Date: 2019-08-13 14:53:58 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /
+MOD DETAILS:
+   modFile   : /var/www/opencart/www/vqmod/xml/gallery.xml
+   id        : Gallery
+   version   : 1
+   vqmver    : 1.0.0
+   author    : Sergo
+VQModObject::parseMods - Could not resolve path for [catalog/language/ukrainian/common/footer.php] (SKIPPED)
+
+MOD DETAILS:
+   modFile   : /var/www/opencart/www/vqmod/xml/mega_filter.xml
+   id        : Mega Filter PRO
+   version   : 1.5.x
+   vqmver    : 2.4.0
+   author    : marsilea15@gmail.com
+VQModObject::parseMods - Could not resolve path for [catalog/controller/module/mega_filter.php] (SKIPPED)
+----------------------------------------------------------------------
+
+

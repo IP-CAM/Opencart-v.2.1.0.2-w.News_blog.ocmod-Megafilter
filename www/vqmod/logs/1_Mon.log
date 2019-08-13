@@ -1,0 +1,14 @@
+---------- Date: 2019-07-22 08:40:50 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /store-60/?sort=p.price&order=ASC
+MOD DETAILS:
+   modFile   : /var/www/medikateka.loc/vqmod/xml/mega_filter.xml
+   id        : Mega Filter PRO
+   version   : 1.5.x
+   vqmver    : 2.4.0
+   author    : marsilea15@gmail.com
+
+File Name    : catalog/view/theme/*/template/product/category.tpl(1)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <?php echo $content_top; ?>
+----------------------------------------------------------------------
+
+

@@ -1,0 +1,245 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<html>
+<head>
+<title>News/Blog V4.2 - extension for Opencart 2.0</title>
+</head>
+<style type="text/css">
+body { font-family: arial !important; }
+.container { margin-left: 230px; }
+.column { float: left; position: fixed; width: 200px; margin-right: 8px; border-right: 1px solid #ddd; height: 100%; padding-top: 100px; padding-left: 15px;}
+.column a {
+ display: block;
+ font-size: 14px;
+ text-decoration: none;
+ font-weight: bold;
+ color: #555;
+ padding-top: 7px;
+ padding-bottom: 7px;
+ border-bottom: 1px solid #e7e7e7;
+ padding-left: 5px;
+}
+.column a:nth-child(even) { background: #eee; }
+.codeblock { display: block;
+padding: 10px;
+background: #eee;
+border: 1px solid #ddd;
+border-radius: 5px;
+box-shadow: inset 0px 0px 4px #999;
+}
+</style>
+<body bgcolor="#fff">
+<div class="column">
+<h2>Index</h2>
+<a href="#overview">Safety First</a>
+<a href="#install">Installation</a>
+<a href="#upgrade">Upgrade</a>
+<a href="#faq">FAQ</a>
+<a href="#settings">Settings</a>
+<a href="#articles">Articles</a>
+<a href="#categories">Categories</a>
+<a href="#comments">Comments</a>
+<a href="#authors">Authors</a>
+<a href="#modules">Modules</a>
+<a href="#custom">Customization</a>
+<a href="#support">Support</a>
+</div>
+<div class="container"style="padding: 20px; background: #fff;">
+<h1 align="center">News/Blog V4.2 - extension for Opencart 2.0</h1>
+<a name="overview"></a>
+<h2 align="center"><br><font color="#E95858">
+Safety First</font></h2>
+<p><font face="Tahoma"><span style="color: #f00; font-weight: bold;">Before installing or upgrading:</span> Before you upload the files or do anything you should backup your database first, and please read the install or upgrade instructions and follow them.If you encounter issues in the installation process , please contact me for support.(my email is <a href="#support">here in the support section</a>)</font></p>
+<a name="install"></a> 
+<div>
+<h2 align="center"><br><font color="#E95858">
+Installation</font></h2>
+<p><font face="Tahoma">This extension is made of 2 parts , the actual extension files located in shopencart-news-blog.ocmod.<i>zip</i> and an Ocmod of the extension called shopencart-news-blog.ocmod.<i>xml</i> used for implementing the blog in the store(to show the blog links in the admin menu, the newspanel on the amin dashboard and other.).Inside the downloaded archive you will find shopencart-news-blog.ocmod.<i>xml</i> and shopencart-news-blog.ocmod.<i>zip</i> , these are the files you will have to upload to your store. In opencart 2.0 in admin there is a brand new Extension installer</font></p>
+<p><img src="z-instruction-images/upload.jpg" alt="upload folders" /></p>
+<p><font face="Tahoma">In opencart 2.0 in admin there is a brand new Extension installer. I will include 2 installation methods: one trough the extension installer and one trough manual upload in ftp(just in case you have problems with the extension installer)</font></p>
+<p><font face="Tahoma"><strong>STEP 1: UPLOAD THE EXTENSION TO THE STORE:</strong></font></p>
+<p><font face="Tahoma"><strong>STEP 1 METHOD 1: With the extension installer:</strong> In your opencart admin go to Extensions > Extension Installer.On the extension installer click on the upload button and then select and upload the file shopencart-news-blog.ocmod.<i>zip</i>. After this file was uploaded you should get a success message. If all this went well then you are done with uploading the files and you can move to step 2. If you encountered issues with uploading the shopencart-news-blog.ocmod.<i>zip</i> file , see Step 1 Method 2.</font></p>
+<p><font face="Tahoma"><strong>STEP 1 METHOD 2: Upload the extension files with a ftp client</strong> First you connect to your store via ftp , then on your computer extract the shopencart-news-blog.ocmod.<i>zip</i> archive. Inside it you will find an upload folder and inside the upload folder you will find 2 folders: admin and catalog , these 2 are the folders that you will have to upload to your store's root via ftp. After youve done this you still need to upload the shopencart-news-blog.ocmod.<i>xml</i> file, but this beeing an ocmod, you will have to upload with the Extension Installer from admin, so go into admin at extension instaler and upload the shopencart-news-blog.ocmod.<i>xml</i> file (you shouldnt encounter any problems with installing this trough the extension installer). The Step 1 is done, move on to step 2.</font></p>
+<p><font face="Tahoma"><strong>STEP 2: Refresh the ocmod cache</strong> As of opencart 2.0 a brand new modification system is allredy integrated in opencart and is meant to replace the usage of 3rd party modification system like vqmod. This new system, OCmod, requires that after each time you add a new modification file, you rebuild the cache.</font></p>
+<p><font face="Tahoma">To do this in admin navigate to extension > Modifications. In the list of ocmods you should see "Shopencart News/Blog integration OCmod", if you do not see this then you skipped a part of step1 so go back to that. If the entry is there, on the top right side of the modifications page there is a refresh button and a clear button, you can see them in the screenshot bellow. First click the Clear buttons and then click on the refresh button.</font></p>
+<p><img src="z-instruction-images/ocmod.jpg" alt="ocmod refresh" /></p>
+<p><font face="Tahoma">After you have done this, in the left admin menu, the blog links should show up and in the admin homepage at the top you should see the newspanel like bellow</font></p>
+<p><img src="z-instruction-images/install.jpg" alt="install" /></p>
+<p><font face="Tahoma"><strong>Do not click the install button yet.</strong></font></p>
+<p><font face="Tahoma"><strong>STEP 3: Set permissions:</strong> So before you click install, go in admin to system > users > user groups , edit the user group your account is in (by default is top administrator) and set both access and modify permissions for the blog pages and modules ( catalog/news , catalog/ncategory , catalog/ncomments , catalog/nauthor , common/newspanel , module/news and module/ncategory).</font></p>
+<p><font face="Tahoma"><strong>STEP 4: Click install:</strong> Now that you have set the permissions, click the install button. The news/blog tables will be added to the database and you should receive a success message. If there is some error that appears contact me at the email from the support section.</font></p>
+<p><font face="Tahoma"><strong>Installation done. There are still things to set up for which you will find info bellow.</strong></font></p>
+
+<a name="upgrade"></a>
+<h2 align="center"><font color="#E95858">Upgrade Instructions</font></h2>
+<p>The steps of the upgrade are pretty similar to the install ones, but there are 2 scenarios for the upgrade:</p>
+<p><b>1.</b> You had the blog installed on opencart 1.5.x and now you upgraded your store to opencart 2.0 so you are also upgrading the blog extension</p>
+<p><b>2.</b> You allready had the blog installed or upgraded on opencart 2.0 and now you are upgrading it</p>
+<p>Bellow you have the instructions for each scenario</p>
+<p><b>1.You had the blog installed on opencart 1.5.x and now you upgraded your store to opencart 2.0 so you are also upgrading the blog extension</b></p>
+<p><b>Step 0:</b> If you upgraded to opencart 2.0 and you are stil using vqmod instead of ocmod, the first step in the upgrade of the blog is to delete the shopencart-news-blog.xml file from vqmod/xml/ because in  opencart 2.0 the blog integrates trough ocmod and if you also run vqmod you need to delete the mentioned file so that there wont be conflicts between the 2 blog integration files</p>
+<p><b>Step 1:</b> You need to upload the new blog files to overwrite the old ones. See the Step 1 from the install instructions as you will have to do the same thing. (if the extension installer asks you if you want to replace the old blog  files with the new ones, click on continue, do the same thing if you upload trough ftp and the ftp client asks you that)</p>
+<p><b>Step 2:</b> See step 2 from the Install Intructions above, you need to do the same thing. Unlike at installation, now on the admin dashboard , the newspanel should display an upgrade button instead of the install button</p>
+<p><b>Step 3:</b> On the admin dashboard , in the newspanel click the upgrade button, you should get a success message. If you get some permission errors, see the Step 3 from the installation instructions</p>
+<p><img src="z-instruction-images/upgrade.jpg" alt="upgrade" /></p>
+<p><b>Step 4:</b> Navigate in admin to extension > modules and uninstall both the Articles Menu Module and the Latest News module. Then after you clicked uninstall on both, install them back by clicking install (this is so you dont get errors when you try to edit them because some stuff has changed between 1.5.x and 2.0). After you installed them back, edit the Article Menu module and configure the blog settings as there are some new ones, youll find more info on this in the following chapters.</p>
+<p><b>Upgrade done!</b></p>
+<p><b>2. You allready had the blog installed or upgraded on opencart 2.0 and now you are upgrading it</b></p>
+<p><b>Step 0:</b> Before uploading the new files of the blog, in admin go to extension > modifications and delete the "Shopencart News/Blog integration OCmod" and then refresh the ocmod cache. After youve done this the newspanel should have disapeared from the admin dashboard and the blog links should no longer be in the menu</p>
+<p><b>Step 1:</b> You need to upload the new blog files to overwrite the old ones. See the Step 1 from the install instructions as you will have to do the same thing. (if the extension installer asks you if you want to replace the old blog  files with the new ones, click on continue, do the same thing if you upload trough ftp and the ftp client asks you that)</p>
+<p><b>Step 2:</b> Yee step 2 from the Install Intructions above, you need to do the same thing. If the upgrade you are making includes database changes, the newspanel should display an upgrade button. If no upgrade button is displayed and the newspanel shows up normally then the upgraed doesnt include any database changes and the upgrade is done. If the upgrade button does show up, press it and then you should get a succes message after the upgrade is done.</p>
+<p><img src="z-instruction-images/upgrade.jpg" alt="upgrade" /></p>
+<p><b>Step 3:(optional)</b> Go in admin at extension > modules and edit the Articles Menu module and the Latest News module and then click save to update the configuration if there are some new options added</p>
+<p><b>Upgrade done!</b></p>
+
+<a name="faq"></a>
+<h2 align="center" style="color: rgb(0, 0, 0); font-family: arial; line-height: normal;"><font color="#E95858">Frequently asked questions</font></h2>
+<ul>
+	<li><a href="#articles">How to add articles</a></li>
+	<li><a href="#categories">How to add article categories</a></li>
+	<li><a href="#authors">How to add authors</a></li>
+	<li><a href="#comments">How to moderate internal comments</a></li>
+	<li><a href="#comments2">Can I use disqus comments or facebook comments insted of the blog's internal comments?</a></li>
+	<li><a href="#hurl">How to change the blog hedlines url</a></li>
+	<li><a href="#hurl">How do I translate the News/Blog?</a></li>
+	<li><a href="#custom">How do I add the articles menu and latest news to the left column on the news/blog pages?</a></li>
+	<li><a href="#sm">Is there an xml sitemap for the blog?</a></li>
+	<li><a href="#youtube">How can I add youtube videos into articles?</a></li>
+	<li><a href="#gallery">How can I add an image gallery into an article?</a></li>
+	<li><b>What do I do if the blog pages look broken in my theme?</b> - If you have a theme that doesnt follow the opencart page structure , the blog pages might look broken or bad and not integrate well with the theme. If that is the case go to Extension > Articles Menu Module where are the blog settings and at the setting "Load custom tpl" set yes. Now the blog system will display its content using a tpl file from your custom theme and the news/blog page should integrate nicely now.</li>
+	<li><b>What do I do if seo urls for the blog arent working?</b> - First make sure that seo urls are working in the rest of your store (like products and categories), make sure that you added seo keywords to the blog articles or categories and that you installed the "Shopencart News/Blog integration OCmod" and it is enabled (check in admin at extensions > modifications).If all that is ok then perhaps the shopencart integration ocmod is conflicting with some other ocmod(probably one related to seo), then contact me for support. I will assist with conflicts but if you have some seo extension that changes the way seo urls work in opencart then you will have to contact the developer of that mod for support.</li>
+	<li><b>What do I do if an error shows up on my homepage right after installing the extension?</b> - If this happens then probably the "Shopencart News/Blog integration OCmod" is conflicting with some other ocmod and that leads to erros, if that is the case go to admin > extensions > modifications and disable the "Shopencart News/Blog integration OCmod" and then contact me.(when you disable the ocmod the newspanel and news/blog links from admin will disappear, hoever you can still add and edit articles and categories in the blog, to get to the article pages in admin , at extension > modules go to the Articles Menu Module or the latest news modules and on their pages you will find the newspanel.)</li>
+</ul>
+<a name="settings"></a>
+<h2 align="center" style="color: rgb(0, 0, 0); font-family: arial; line-height: normal;"><font color="#E95858">Blog Settings</font></h2>
+
+<p><font color="#333">The Settings for the news/blog can be found at the "Articles Menu Module" page, so navigate in admin to extension modules and click edit on the "News / Blog: Articles Menu module" (click install first if its not allready installed). On the Articles Menu Module Page, at the top you will see the general settings like in the screenshot below:</font></p>
+<p><img src="z-instruction-images/sets.jpg" alt="settings" /></p>
+<p><b>General</b></p>
+<p>The first one is about the sorting of the articles in the news/blog extension, and you can sort them by date added or sort order, it applies to all instances of article listing</p>
+<p>The second setting is about the articles listing style, on one column or 2 columns, it applies to all instances of article listings except for the category page (for the category page you have this setting separately when you create/edit a category.)</p>
+<p><b>Load custom tpl setting:</b> As mentioned in the extension description it was build to offer best compatibility with custom themes. If this setting is set to no, the extension will load the blog pages in frontend trough the news/blog extension layout.tpl. However if this option doesnt integrate well with your theme and the layout looks messed up, then you can change this option to yes and then the News/Blog pages will be loaded trough the information.tpl file from your custom theme, and you should not have layout issues. However if there are any errors when using the custom tpl, contact me for support.</p>
+<p>The rest of the settings: You can set what fields from an article will display in the article listing, simply check the ones you want to appear, and if they exist in an article they will apear in listing, uncheck the ones you dont want to show up.You can also set the default image size for the article's image in listing and on the article page, this applies to the default article image not to the featured image or images you might add to the article's body.You can also set how many articles are displayed per page in admin and catalog, set the seo keyword for the blog headlines page and set how long the auto short descriptions for articles in listing is.</p>
+
+<a name="comments2"></a>
+<br/>
+<p><b>Can I use disqus comments or facebook comments insted of the blog's internal comments?</b> - Yes , you can enable and configure disqus or facebook comments in the Articles menu module in the <a href="#disquscomments">Disqus</a> and <a href="#facebookcomments">Facebook Comments</a> tabs</p>
+<a name="disquscomments"></a>
+<p><b>Disqus Comments</b></p>
+<p><img src="z-instruction-images/disqus.jpg" alt="disqus  comments" /></p>
+<p>In this tab you can enable the usage of Disqus comments over the default comment system of the blog.</p>
+<p>The first setting is for enabling/disabling disqus comments, the second one is for disqus short name (you will create a diqus shortname is your disqus account)</p>
+<a name="facebookcomments"></a>
+<p><b>Facebook Comments</b></p>
+<p><img src="z-instruction-images/facebook.jpg" alt="facebook comments" /></p>
+<p>In this tab you can enable the usage of Facebook comments over the default comment system of the blog.</p>
+<p>The first setting is for enabling/disabling facebook comments widget, the second one is the facebook app id, if you dont know how to get a facebook app id, have a look at this tutorial: <a href="http://www.tipsviablogging.com/create-facebook-app-id-2014/" target="_blank">How to Create FaceBook App Id For Website</a></p>
+<p>Third and 4th settings are for the initial numer of comments that will show in page (before clicking see more) and the color scheme of the comments widget</p>
+<a name="facebooktags"></a>
+<p><b>Other settings</b></p>
+<p><img src="z-instruction-images/oset.jpg" alt="other settings" /></p>
+<p>In this tab you can enable or disable the facebook and twitter meta tags</p>
+<p>In order for the meta tags to work , you must have vqmod installed on your store.</p>
+
+<a name="articles"></a>
+<h2 align="center"><font color="#E95858">News/Blog Articles</font></h2>
+<p><img src="z-instruction-images/art.jpg" alt="articles" /></p>
+<p><font color="#333">To add and edit articles in the news/blog extension go to the articles page.</font></p>
+<p><font color="#333">I dont think I need to go over how to add and edit articles so I will only describe some of the specific features. When you click insert or edit on an article you are taken to the article form page which will have multiple tabs like in the screenshot below:</font></p>
+<p><img src="z-instruction-images/arts.jpg" alt="articles" /></p>
+<p>In the general tab, you have fields for adding title to the article, content (description), set a main article image, select the author and the status of the article. One custom feature here is you can add a short description to the article (by clicking the add short description button a new area similar to the description area will appear). What is this? By default in articles listing a short description is displayed, that short description is subtracted from the main description without the html tags. With the custom short description you can set exactly what will display as the article text/description in listings.</p>
+<p>In the Seo related tab, as the name suggest you can set the seo elements for the articles, like the seo url, meta description, meta keywords, a custom title tag for the article and add article tags.</p>
+<p>In the Customization tab you can change the date added and date modified of an article , add a featured image (image that will appear in the article listings as the article image, instead of the main article image).Here you also have 4 custom fields, that you might need at some point to display some information, these fields support html markup.</p>
+<p>In the Settings tab, you can set if you will allow people to comment on this article, select a category for the article, the store in which it will appear and set its sort order.</p>
+<p>In the Related tab you can add articles that are related to the current article and/or products that are related with the current article.</p>
+<p>In the last tab you can set a layout override for the current aricle.</p>
+<a name="youtube"></a>
+<p><b>Youtube Videos</b></p>
+<p><img src="z-instruction-images/yooutube.jpg" alt="Categories" /></p>
+<p>While you could have allredy inserted youtube iframes in the article's description this form will make it a lot easyer to add youtube videos to the article, plus the video frames will be responsive</p>
+<p>To insert a new video to the article click the add video button and a form will appear, in the first column you must write the youtube url of the video, just like it is in the url browser bar when viewing it on youtube, in the second column you can enter a title for the video that will appear above it (you dont have to if you dont want to), next you must enter the width and height of the youtube frame and lastly the sort order (to sort the videos within page if you will add more).</p>
+<a name="gallery"></a>
+<p><b>Gallery</b></p>
+<p><img src="z-instruction-images/gallery.jpg" alt="Categories" /></p>
+<p>In this tab you have the ability to add image gallery to article, the way you add images is pretty simple so I will only go over the settings above the image adding form.(The image text field will go into the alt atribute of the image tag and will display below the image in popup mode.)</p>
+<p>There are 2 types of galleries you can have, classic one (image side by side that enlarge into popup on click) and slideshow (a slideshow of the images added to the gallery)</p>
+</p>You can set size for images thumbs and popups, the thumb size will specifically matter for the classic gallery type , while the popup image size applies to both the classic and slideshow types</p>
+<p>If you select the slideshow type of gallery you will have to also input slideshow size(wdith and height). Note that the slideshow will allways be 100% wide, the width you select here is for scaling in properly on lower res devices, so the width of the slideshow should allways be the biggest width the article page content can have. The height of the slideshow must be equal to the height of the popup image + 100 (which is the thumb navigation below the images). So as an example is you wanted to have a 980 x 400 px slideshow, you would input those sizes for the slideshow and for the popup image you would enter 980 x 300.</p>
+<a name="categories"></a>
+<h2 align="center"><font color="#E95858">News/Blog Categories</font></h2>
+<p><img src="z-instruction-images/cats.jpg" alt="Categories" /></p>
+<p>Adding and editting blog categories is very similar to adding and editting the default product categories in opencart.</p>
+<p>On the Category edit page you have 3 tabs: General, Data and Design.On the General tab you have to add a name to the category and you can set a category description and meta tags. In the data tab you can select the parent category (if the category you are adding is a subcategory), set a status, seo url, image, stores in which it will display, the sort order and 2 new additions: you can set the number of articles displayed per page in that category and you can also set if to display the articles in 2 column (if you dont check the 2 column display, it will display normally on one column). The last tab, design, is for layout override (if you want the current category to display in a custom layout you created).</p>
+<a name="comments"></a>
+<h2 align="center"><font color="#E95858">News/Blog Comments</font></h2>
+<p><img src="z-instruction-images/coms.jpg" alt="Comments" /></p>
+<p>The comments page is where you moderate and enable comments added by users and where you can insert comments directly from admin.</p>
+<p>The article field from the comment insert/edit page works trough autocomplete, you begin typing the name of the article for which you want to add the comment, then a dropdown with the articles matching the word you type will appear and you select the target one from the dropdown to set it (you must type in atleast 3 letters for articles to apear).</p>
+<a name="authors"></a>
+<h2 align="center"><font color="#E95858">News/Blog Authors</font></h2>
+<p><img src="z-instruction-images/authors.jpg" alt="Authors" /></p>
+<p>In this section you can add and edit Authors for the blog.</p>
+<p>For each author you can enter a name, a seo url (for the page that lists all articles of an author), an avatar, a description (sort of about the author description > it will be displayed on the articles page and on the author page) and you can also add meta tags and custom title for the author page.</p>
+<p>As you can see there is also an admin id feature for the author. In that field you can input the username of the administrator the author will connect with, if there is only one admin or you dont wish to use the feature leave it to 0. How it works? If you connect the author to one administrator, only that administrator will be able to post with that author name and only when logged in as that administrator you will be able to edit or delete articles of that author.Please Note: This only applies to articles, and if the administrator has modify permission to the authors page or to the user groups he could change the admin id. This is for now an experimental feature, and I will apreciate your feedback on it.</p>
+<a name="modules"></a>
+<h2 align="center"><font color="#E95858">News/Blog Modules</font></h2>
+
+<p>The News/Blog extension comes packed with 2 modules which you can display on any page in the store you want.</p>
+<p><img src="z-instruction-images/modules.jpg" alt="Modules" /></p>
+
+<p>They also have shortcuts in the newspanel, but before the first use you must go in admin to extension > modules and click install on both modules from the above screenshot: Articles Menu Module and Latest News module.</p>
+<p><b>Articles Menu Module</b> - This module displays a menu containing the headlines link (main page of blog), the categories of the blog, and the search for articles.It can be added like any other module trough the add module button to the pages you want on the positions you want (best fit would be column left or right). On this module page at the top you will also find the blog general settings which were presented at the general settings chapter.To add this module to homepage, on its page you only have to set its status to enabled, and then at layouts, the module will appear in the modules list so you can add it.</p>
+<p><b>Latest News / Articles by category</b> - With this module you can display a configurable number of articles on any page in the store. You have the option to display articles from all categories or only from certain categories (per module).It also contains a link to the headlines page (or to the category page if you set it to display from a certain category).In order to add this module to pages you will need to edit it (after install) and on its page a form with the above mentioned settings will appear (and a module name field - this module name field is so that you will easily find this module you are creating in the modules list at layouts). After filling in the desired settings hit save. When saving a new module instance will be created, this module instance will appear in the module list below the main module (and you can edit it).Theese instances you create from the module, you will be able to add them to layouts. This is the new way modules work in opencart since 2.0.1.0, also see the 2 screenshots below, they will help understanding.</p>
+<p><img src="z-instruction-images/ln1.jpg" alt="Modules" /></p>
+<p><img src="z-instruction-images/ln2.jpg" alt="Modules" /></p>
+<p><b>Please note that unlike in opencart 1.5.x you dont add the modules to layouts from the module page , instead you go to system > design > layouts edit the layout on which you wish to add the module and add the module to the layout on the layout page. Make sure the status is enabled for both the articles menu module and the Latest news module, otherwise they will now show up. For the Latest news module, you first add modules on the Latest News module page, then on the layout page you can select which instance of the latest news module to display (they are numbered)</b></p>
+<a name="custom"></a>
+<h2 align="center"><font color="#E95858">News/Blog Customization</font></h2>
+<p>To be able to add the Articles Menu module and the Latest News module to the blog pages, you must first create a layout for the blog.</p>
+<p><b>Creating a layout for news pages.</b> In admin navigate to system > design > layouts , add a new layout and insert name 'News/Blog', and at the route field insert 'news/%'. Now , on the news/blog pages will only be displayed the modules added to the news/blog layout.
+
+You can aditionaly create different layouts for articles and article categories, for articles insert route 'news/article' and for article categories, insert route 'news/ncategory'.</p>
+<p>Bellow you can see the blog layout screenshot with the modules aded to it:</p>
+<p><img src="z-instruction-images/layout.jpg" alt="blog layout" /></p>
+<a name="hurl"></a>
+<br />
+<p><b>Headlines URL:</b> You can change the blog headlines url in the Articles Menu Module at general settings near the bottom</p>
+
+<p><b>Language files / Translation</b>. If you use another language than english or other languages besides english, you need the news/blog language files into your language pack.
+The language files are:<br/><br/>
+ admin/language/english/catalog/news.php <i>>> (for the articles pages in admin)</i><br/>
+ admin/language/english/catalog/ncomments.php <i>>> (for the comments pages in admin)</i><br/>
+ admin/language/english/catalog/ncategory.php <i>>> (for the categories pages in admin)</i><br/>
+ admin/language/english/catalog/nauthor.php <i>>> (for the authors pages in admin)</i><br/>
+ admin/language/english/common/newspanel <i>>> (for the newspanel in admin)</i><br/>
+ admin/language/english/module/news.php <i>>> (for the Latest News module in admin)</i><br/>
+ admin/language/english/module/ncategory.php <i>>> (for the Articles menu module in admin)</i><br/>
+ admin/language/english/feed/articles_google_sitemap.php <i>>> (for the Google sitemap in admin)</i><br/>
+ admin/language/english/feed/articles_google_base.php <i>>> (for the Rss feed in admin)</i><br/><br/>
+catalog/language/english/news/article.php <i>>> (for the articles pages in frontend)</i><br/>
+catalog/language/english/news/ncategory.php <i>>> (for the listing pages in frontend)</i><br/>
+catalog/language/english/news/search.php <i>>> (for the article search page in frontend)</i><br/>
+catalog/language/english/module/news.php <i>>> (for the latest news module in frontend)</i><br/>
+catalog/language/english/module/ncategory.php <i>>> (for the articles menu in frontend)</i><br/><br/>
+
+You need to edit those files and translate the expression inside into your language.
+Then upload those files, in the same path, except that instead of english, it has to be your language folder.
+Also dont forget to set the same encoding for the translated files as your other language files have.
+</p>
+<a name="sm"></a>
+<br />
+<p><b>Sitemap</b>. The news/blog extension also comes packed with its own xml sitemap that you can submit to google webmasters. To install it go in admin to extension > product feeds , click install on the news/blog google sitemap, then edit it , enable it and get the url to use it for submission. There is also a rss feed for the news/blog extension and you can find it in the same place as "News/Blog Google Base", if you need it you can install and enable it.</p>
+<p><b>Link to Blog</b>. There are several ways to add a link to the blog page on your opencart homepage or other pages.The official method would be to add the latest news module to the pages that you want to link to blog as it contains link to the blog headlines page, the articles menu module can also be added to any page and contains link to blog. However if you have vqmod installed, the news/blog xml will also atempt to add a link to the blog headlines page in the footer of the website under the extras column.(but it might fail in some custom themes). Some other themes offer you the option to add custom links to the default top menu so if you want a link in header you could add it trough that (or if you have my supermenu module you can add it trough that). However if none of the solution are good for you, contact me and Ill assist.</p>
+<a name="support"></a>
+<h2 align="center"><font 
+color=#E95858>Support</font></h2>
+<p><br><font face="Tahoma">That is about it, if I forgot something, or something 
+is wrong , contact me at </font><a href="mailto:flo@shopencart.com"><font 
+face=Tahoma>shopencart@gmail.com</font></a></p>
+<p><br><a href="http://shopencart.com"><font 
+face=Tahoma>http://shopencart.com</font></a></p>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+</div>
+</body>
+</html>

@@ -10770,7 +10770,14 @@ ul {
 
 li {
   list-style: none; }
+.row .prod-item{
+  margin: 0px 15px;
+}
 
+.row .prod-item:before {
+margin-left:15px;
+
+}
 .hiden_menu {
   width: 555px;
   overflow: auto;
@@ -11942,8 +11949,6 @@ button {
       font-family: Geometria-italic, sans-serif;
       font-style: italic; }
 
-.row {
-  margin: 0px; }
 
 .filters {
   background-color: orange; }

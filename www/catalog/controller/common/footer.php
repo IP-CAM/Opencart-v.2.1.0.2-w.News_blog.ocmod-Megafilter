@@ -111,6 +111,10 @@ class ControllerCommonFooter extends Controller {
                 );
             }
         }
+
+        $data['lt_newsletter'] = $this->load->controller('module/lt_newsletter');
+
+
         //information
         $this->load->model('catalog/information');
 

@@ -11479,7 +11479,9 @@ text-transform: uppercase;}
           transform: rotate(-90deg);
           color: #1a1a1a;
           font-size: 6px; }
-
+.footer{
+  padding-top: 60px;
+}
 .footer .footer_top {
   padding-bottom: 60px; }
 

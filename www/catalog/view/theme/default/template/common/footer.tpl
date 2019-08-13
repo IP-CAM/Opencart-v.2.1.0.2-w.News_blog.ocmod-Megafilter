@@ -48,6 +48,8 @@
 <?php } ?>
 
 <footer class="footer">
+
+    <?php echo $lt_newsletter;?>
     <div class="container">
         <div class="footer_top">
             <div class="items">
@@ -116,6 +118,5 @@
 
 </footer>
 
-<script src="catalog/view/html/js/lib.js" type="text/javascript"></script>
 <script src="catalog/view/html/js/common.js" type="text/javascript"></script>
 </body></html>

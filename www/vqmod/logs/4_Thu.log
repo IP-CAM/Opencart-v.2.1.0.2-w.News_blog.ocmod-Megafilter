@@ -1,0 +1,100 @@
+---------- Date: 2019-08-01 08:24:27 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /ua/
+MOD DETAILS:
+   modFile   : /var/www/medikateka.loc/vqmod/xml/mega_filter.xml
+   id        : Mega Filter PRO
+   version   : 1.5.x
+   vqmver    : 2.4.0
+   author    : marsilea15@gmail.com
+
+File Name    : catalog/view/theme/*/template/common/header.tpl(0)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): catalog/view/javascript/bootstrap/js/bootstrap.min.js
+----------------------------------------------------------------------
+
+
+---------- Date: 2019-08-01 08:24:30 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /ua/store-60/
+MOD DETAILS:
+   modFile   : /var/www/medikateka.loc/vqmod/xml/mega_filter.xml
+   id        : Mega Filter PRO
+   version   : 1.5.x
+   vqmver    : 2.4.0
+   author    : marsilea15@gmail.com
+
+File Name    : catalog/view/theme/*/template/product/category.tpl(1)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <?php echo $content_top; ?>
+----------------------------------------------------------------------
+
+
+---------- Date: 2019-08-01 08:25:50 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /ua/store-60/syivorotki-59/test/
+MOD DETAILS:
+   modFile   : /var/www/medikateka.loc/vqmod/xml/microdata_and_review_no_ajax.xml
+   id        : Микроданные Shema.org + "отзывы без аякса" + Яндекс остров
+   version   : 3.0
+   vqmver    : all
+   author    : zubovd
+
+File Name    : catalog/controller/product/product.php(2)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): 'special' 	 => $special,
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2019-08-01 10:19:23 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /ua/
+MOD DETAILS:
+   modFile   : /var/www/medikateka.loc/vqmod/xml/mega_filter.xml
+   id        : Mega Filter PRO
+   version   : 1.5.x
+   vqmver    : 2.4.0
+   author    : marsilea15@gmail.com
+
+File Name    : catalog/view/theme/*/template/common/header.tpl(0)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): catalog/view/javascript/bootstrap/js/bootstrap.min.js
+----------------------------------------------------------------------
+
+
+---------- Date: 2019-08-01 10:19:26 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /ua/store-60/
+MOD DETAILS:
+   modFile   : /var/www/medikateka.loc/vqmod/xml/mega_filter.xml
+   id        : Mega Filter PRO
+   version   : 1.5.x
+   vqmver    : 2.4.0
+   author    : marsilea15@gmail.com
+
+File Name    : catalog/view/theme/*/template/product/category.tpl(1)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <?php echo $content_top; ?>
+----------------------------------------------------------------------
+
+
+---------- Date: 2019-08-01 10:19:28 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /ua/store-60/syivorotki-59/timeless-egf-ampoule-by-ronas-54/
+MOD DETAILS:
+   modFile   : /var/www/medikateka.loc/vqmod/xml/microdata_and_review_no_ajax.xml
+   id        : Микроданные Shema.org + "отзывы без аякса" + Яндекс остров
+   version   : 3.0
+   vqmver    : all
+   author    : zubovd
+
+File Name    : catalog/controller/product/product.php(2)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): 'special' 	 => $special,
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2019-08-01 12:24:18 ~ IP : 127.0.0.1 ----------
+REQUEST URI : /ua/store-60/
+MOD DETAILS:
+   modFile   : /var/www/medikateka.loc/vqmod/xml/mega_filter.xml
+   id        : Mega Filter PRO
+   version   : 1.5.x
+   vqmver    : 2.4.0
+   author    : marsilea15@gmail.com
+
+File Name    : catalog/view/theme/*/template/common/header.tpl(0)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): catalog/view/javascript/bootstrap/js/bootstrap.min.js
+----------------------------------------------------------------------
+
+
