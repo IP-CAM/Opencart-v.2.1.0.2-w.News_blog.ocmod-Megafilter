@@ -11557,6 +11557,7 @@ button {
   display: block; }
 
 .kart_nav {
+  background-color: #f6f4f4;
   margin-bottom: 30px; }
   .kart_nav ul li {
     font-family: Geometria-Bold, sans-serif;
@@ -11624,8 +11625,11 @@ button {
     display: block;
     margin: 0px 5px;
     margin-top: 15px; }
-
-.kart-right_title {
+.kart-left_slider-inner img{
+  max-width:100%;
+}
+.kart-right_title h1{
+  display:block;
   font-size: 24px;
   letter-spacing: 3px;
   font-family: Geometria-Bold, sans-serif;

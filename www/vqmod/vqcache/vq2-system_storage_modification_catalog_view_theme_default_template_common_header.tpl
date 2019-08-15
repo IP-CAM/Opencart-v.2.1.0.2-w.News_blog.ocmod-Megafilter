@@ -35,6 +35,7 @@
     <!--<link href="catalog/view/theme/default/stylesheet/stylesheet.css" rel="stylesheet">-->
 
     <link href="catalog/view/html/css/lib.css" rel="stylesheet">
+    <link href="dist/css/main.css" rel="stylesheet">
     <link href="catalog/view/html/css/main.css" rel="stylesheet">
     <link href="catalog/view/html/css/media.css" rel="stylesheet">
 
