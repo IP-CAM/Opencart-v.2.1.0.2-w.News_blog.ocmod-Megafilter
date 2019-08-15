@@ -2,7 +2,8 @@
   <div class="panel-heading"><?php echo $heading_title; ?></div>
   <div class="list-group">
     <?php foreach ($filter_groups as $filter_group) { ?>
-    <a class="list-group-item"><?php echo $filter_group['name']; ?></a>
+    <a class="
+    list-group-item"><?php echo $filter_group['name']; ?></a>
     <div class="list-group-item">
       <div id="filter-group<?php echo $filter_group['filter_group_id']; ?>">
         <?php foreach ($filter_group['filter'] as $filter) { ?>

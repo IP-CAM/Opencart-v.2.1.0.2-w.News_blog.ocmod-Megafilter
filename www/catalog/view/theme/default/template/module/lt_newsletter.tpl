@@ -1,19 +1,18 @@
-<p class="subscribe__title"><?php echo $heading_title; ?></p>
 
 
-<form id="lt_newsletter_form">
-
-
-    <div class="subscribe__form">
-
-        <input type="email" placeholder="E-mail" name="lt_newsletter_email" id="lt_newsletter_email" class="input">
-
-        <button type="submit" class="btn btn_blue btn-newsletter"><?php echo $text_button; ?></button>
+<section class="email_letter">
+    <div class="container">
+        <div class="email_title">
+            <?php echo $heading_title; ?>
+        </div>
+        <form id="lt_newsletter_form" class="email_form">
+            <input type="email" name="lt_newsletter_email" id="lt_newsletter_email" placeholder="Введіть email для підписки" class="email_form_input">
+            <button type="submit" class="email_form_btn btn-newsletter"></button>
+        </form>
 
     </div>
+</section>
 
-
-</form>
 <script type="text/javascript"><!--
     $(document).ready(function($) {
         $('#lt_newsletter_form').submit(function(e){
@@ -35,12 +34,18 @@
 
                     if (json.error) {
                         //alert(json.error);
-                        $('#lt_newsletter_form .subscribe__form #lt_newsletter_email').after('<div class="alert alert-danger newsletter-msg">' + json.error + '</div>');
+                        $('.email_letter .container').after('<div class="alert alert-danger newsletter-msg">'+'<div class="container">' + json.error +'</div>'+'</div>');
+
                     } else {
                         //alert(json.success);
-                        $('#lt_newsletter_form .subscribe__form #lt_newsletter_email').after('<div class="alert alert-success newsletter-msg">' + json.success + '</div>');
-                        $('#lt_newsletter_email').val('');
+                        $('.email_letter .container').after('<div class="alert alert-success newsletter-msg">'+'<div class="container">' + json.success +'</div>'+ '</div>');
+
                     }
+                    setTimeout(function(){
+                        if ($('.newsletter-msg').length > 0) {
+                            $('.newsletter-msg').remove();
+                        }
+                    }, 5000)
                 }
 
             });

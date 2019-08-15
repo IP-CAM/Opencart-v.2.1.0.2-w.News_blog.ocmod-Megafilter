@@ -1,39 +1,30 @@
-<div class="wrapper-newsModule">
+
+<section class="news">
     <div class="container">
-        <div class="newsModule">
-            <div class="newsModule__title">
-                <?= $heading_title; ?>
-            </div>
-            <div class="newsModule__list">
-                <?php foreach ($article as $articles) { ?>
-                <div class="newsModule__list-item">
-                    <div class="artblock">
-                        <?php if ($articles['thumb']) { ?>
-                            <div class="image">
-                                <img src="<?= $articles['thumb']; ?>" title="<?= $articles['name']; ?>" alt="<?= $articles['name']; ?>" />
-                            </div>
-                        <?php } ?>
-                        <div class="box">
-                            <?php if ($articles['name']) { ?>
-                                <div class="name"><a href="<?= $articles['href']; ?>"><?= $articles['name']; ?></a></div>
-                            <?php } ?>
-                            <?php if ($articles['description']) { ?>
-                                <div class="description"><?= $articles['description']; ?></div>
-                            <?php } ?>
-                            <?php if ($articles['button']) { ?>
-                                <div class="blog-button"><a class="button" href="<?= $articles['href']; ?>"><?= $button_more; ?></a></div>
-                            <?php } ?>
-                        </div>
+        <div class="news_top_title">
+            <?= $heading_title; ?>
+        </div>
+
+        <div class="news_items">
+            <?php foreach ($article as $articles) { ?>
+                <div class="news_item">
+                    <a href="<?= $articles['href']; ?>" class="news_images">
+                        <img src="<?= $articles['thumb']; ?>" alt="<?= $articles['name']; ?>" class="img-respons">
+                    </a>
+                    <a href="<?= $articles['href']; ?>" class="news_title">
+                        <?= $articles['name']; ?>
+                    </a>
+                    <div class="news_text">
+                        <?= $articles['description']; ?>
                     </div>
                 </div>
+            <?php } ?>
 
-                <?php } ?>
-            </div>
         </div>
-        <a href="/nblog" class="newsModule__btn btn-normal"><?= $text_headlines; ?></a>
-    </div>
-</div>
-
+        <div class="default-btn black">
+            <a href="<?= $newslink; ?>">всі новини</a>
+        </div>
+</section>
 <?php if(0){?>
     <script type="text/javascript"><!--
         $(document).ready(function() {

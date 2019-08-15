@@ -298,3 +298,9 @@
 2019-08-13 14:59:04 - PHP Notice:  Error: Could not load model /var/www/opencart/www/catalog/model/module/seo_page.php! in /var/www/opencart/www/vqmod/vqcache/vq2-system_storage_modification_system_engine_loader.php on line 63
 2019-08-13 14:59:20 - PHP Notice:  Error: Could not load model /var/www/opencart/www/catalog/model/module/seo_page.php! in /var/www/opencart/www/vqmod/vqcache/vq2-system_storage_modification_system_engine_loader.php on line 63
 2019-08-13 15:00:15 - PHP Notice:  Error: Could not load model /var/www/opencart/www/catalog/model/module/seo_page.php! in /var/www/opencart/www/vqmod/vqcache/vq2-system_storage_modification_system_engine_loader.php on line 63
+2019-08-14 17:11:58 - PHP Notice:  Undefined index: href in /var/www/opencart/www/catalog/view/theme/default/template/module/news.tpl on line 23
+2019-08-14 17:11:59 - PHP Notice:  Undefined index: href in /var/www/opencart/www/catalog/view/theme/default/template/module/news.tpl on line 23
+2019-08-14 17:12:10 - PHP Notice:  Undefined index: href in /var/www/opencart/www/catalog/view/theme/default/template/module/news.tpl on line 23
+2019-08-14 17:12:10 - PHP Notice:  Undefined index: href in /var/www/opencart/www/catalog/view/theme/default/template/module/news.tpl on line 23
+2019-08-14 17:13:40 - PHP Notice:  Undefined index: href in /var/www/opencart/www/catalog/view/theme/default/template/module/news.tpl on line 23
+2019-08-14 17:15:08 - PHP Notice:  Undefined index: href in /var/www/opencart/www/catalog/view/theme/default/template/module/news.tpl on line 23
