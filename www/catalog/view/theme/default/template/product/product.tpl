@@ -58,9 +58,14 @@
                             <?php } ?>
 
                         </ul>
-                        <div class="kart-right_links_reviews_title">4 відгуки</div>
+                        <div class="kart-right_links_reviews_title"><?php echo $reviews; ?></div>
                     </div>
-                    <div class="kart-right_links_to-choise">в обрані</div>
+
+
+                    <button type="button" data-toggle="tooltip" class="kart-right_links_to-choise"
+                            title="<?php echo $button_wishlist; ?>"
+                            onclick="wishlist.add('<?php echo $product_id; ?>');">в обрані
+                    </button>
                     <div class="kart-right_links_share">поділитись</div>
                 </div>
 
@@ -76,339 +81,297 @@
 
                 </div>
                 <?php if ($options) { ?>
-                    <?php var_dump($options);?>
+
                     <?php foreach ($options as $option) { ?>
 
                         <?php if ($option['type'] == 'radio') { ?>
+
+
                             <div class="kart-right_color">
+
+                                <div class="kart-right_color_title">
+                                    <?php echo $option['name']; ?>
+                                </div>
                                 <div class="form-group<?php echo($option['required'] ? ' required' : ''); ?>">
-                                    <div class="kart-right_color_title">
-                                        <?php echo $option['name']; ?>
-                                    </div>
+                                    <ul id="input-option<?php echo $option['product_option_id']; ?>">
+                                        <?php foreach ($option['product_option_value'] as $option_value) { ?>
+                                            <?php $name_array = explode(':', $option_value['name']); ?>
+                                            <li class="radio"
+                                                style="background-color: <?php echo $name_array[1]; ?>;">
+                                                <?php $name_array = explode(':', $option_value['name']); ?>
 
-                                    <div id="input-option<?php echo $option['product_option_id']; ?>">
-                                        <ul>
-                                            <?php foreach ($option['product_option_value'] as $option_value) { ?>
-
-
-                                                        <?php $name_array = explode(':', $option_value['name']);?>
-
-                                                        <li style="background-color: <?php echo $name_array[1];?>;"></li>
-
-
-
-                                            <?php } ?>
-<!--                                            <li style="background-color: #ffffff;"></li>-->
-<!--                                            <li style="background-color: #cccccc;"></li>-->
-<!--                                            <li style="background-color: #000000;"></li>-->
-<!--                                            <li style="background-color: #81b9f9;"></li>-->
-<!--                                            <li style="background-color: #7c4dff;"></li>-->
-<!--                                            <li style="background-color: #ff84cb;"></li>-->
-<!--                                            <li style="background-color: #e83c4d;"></li>-->
-<!--                                            <li style="background-color: #448aff;"></li>-->
-                                        </ul>
-
-                                    </div>
+                                                    <input id="id_<?php echo $option_value['product_option_value_id']; ?>"
+                                                           type="radio"
+                                                           name="option[<?php echo $option['product_option_id']; ?>]"
+                                                           value="<?php echo $option_value['product_option_value_id']; ?>"/>
+                                                <label for="id_<?php echo $option_value['product_option_value_id']; ?>">
+                                                </label>
+                                            </li>
+                                        <?php } ?>
+                                    </ul>
                                 </div>
 
-
                             </div>
-
                         <?php } ?>
                     <?php } ?>
-
-
                 <?php } ?>
 
 
-                <div class="kart-right_sizes">
-                    <div class="kart-right_sizes_title">
-                        <div class="kart-right_sizes_title_iner-title">Розмір</div>
-                        <div class="kart-right_sizes_title_iner-text">таблиця розмірів</div>
-                    </div>
-                    <ul>
-                        <li class="active">36-40 см</li>
-                        <li>40-46 см</li>
-                    </ul>
-                </div>
+                <?php if ($options) { ?>
+                <?php foreach ($options
 
-                <div class="kart-right_price">
-                    <div class="kart-right_price_sale">70.00 UAH</div>
-                    <div class="kart-right_price-block">
-                        <div class="kart-right_price_opt_block">
-                            <div class="kart-right_price_opt_block_text">Оптова ціна (від 5 упаковок):</div>
-                            <div class="kart-right_price_opt_block_price">60.00 UAH</div>
-                        </div>
-                        <div class="kart-right_price-block_price">65.00 UAH</div>
-                    </div>
-                </div>
+                as $option) { ?>
 
-                <div class="kart-right_buy-btn">
-                    <div class="kart-right_buy-btn_select">
-                        <div class="kart-right_buy-btn_select_title">Кількість</div>
-                        <div class="kart-right_buy-btn_select_count">1</div>
-                    </div>
-                    <div class="default-btn buy-one-click"><a href="#">купити в 1 клік </a></div>
-                    <div class="default-btn to-choise"><a href="#">до кошика</a></div>
+                <?php if ($option['type'] == 'checkbox') { ?>
+                <div class="kart-right_sizes form-group<?php echo($option['required'] ? ' required' : ''); ?>"
+                ">
+                <div class="kart-right_sizes_title">
+                    <div class="kart-right_sizes_title_iner-title"><?php echo $option['name']; ?></div>
+                    <div class="kart-right_sizes_title_iner-text">таблиця розмірів</div>
                 </div>
+                <ul id="input-option<?php echo $option['product_option_id']; ?>">
+                    <?php foreach ($option['product_option_value'] as $option_value) { ?>
+                        <li>
+                            <input id="id_<?php echo $option_value['product_option_value_id']; ?>"
+                                   type="checkbox"
+                                   name="option[<?php echo $option['product_option_id']; ?>][]"
+                                   value="<?php echo $option_value['product_option_value_id']; ?>"/>
 
-                <div class="kart-right_details">
-                    <div class="kart-right_details_title">Деталі</div>
-                    <div class="kart-right_details_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                        nostrud exercitation ullamco laboris nisi…
-                    </div>
-                    <div class="kart-right_details_more">розгорнути</div>
-                </div>
+                            <label for="id_<?php echo $option_value['product_option_value_id']; ?>">
+                                <?php echo $option_value['name']; ?></label></li>
 
+                    <?php } ?>
+                </ul>
             </div>
+            <?php } ?>
+            <?php } ?>
+            <?php } ?>
+
+
+            <div class="kart-right_price">
+                <?php if ($special) { ?>
+                    <div class="kart-right_price_sale"><?= $price; ?></div>
+                <?php } ?>
+                <div class="kart-right_price-block">
+                    <div class="kart-right_price_opt_block">
+                        <?php foreach ($discounts as $discount) { ?>
+
+                            <div class="kart-right_price_opt_block_text"><?php echo $discount['quantity']; ?><?php echo $text_discount; ?>
+                                :
+                            </div>
+                            <div class="kart-right_price_opt_block_price"><?php echo $discount['price']; ?></div>
+                        <?php } ?>
+                    </div>
+                    <?php if ($special) { ?>
+                        <div class="kart-right_price-block_price"><?php echo $special; ?></div>
+                    <?php } else { ?>
+                        <div class="kart-right_price-block_price"><?php echo $price; ?></div>
+                    <?php } ?>
+
+                </div>
+            </div>
+
+
+            <div class="kart-right_buy-btn">
+                <div class="kart-right_buy-btn_select">
+                    <div class="kart-right_buy-btn_select_title"><label class="control-label" for="input-quantity"><?php echo $entry_qty; ?></label>
+                    </div>
+                    <div class="kart-right_buy-btn_select_count">
+                        <div class="js_select_count-del"></div>
+                        <input type="text" name="quantity"  value="<?php echo $minimum; ?>" size="2"  id="input-quantity"/>
+                        <input type="hidden" name="product_id" value="<?php echo $product_id; ?>"/>
+                        <div class="js_select_count-add "></div>
+                    </div>
+
+                </div>
+                <div class="default-btn to-choise"><a href="#">до кошика</a></div>
+                <button type="button" id="button-cart" data-loading-text="<?php echo $text_loading; ?>"
+                        class="default-btn buy-one-click"><?php echo $button_cart; ?></button>
+            </div>
+
+            <div class="kart-right_details">
+                <div class="kart-right_details_title">Деталі</div>
+                <div class="kart-right_details_text"><?php echo $tab_description; ?>
+                </div>
+                <div class="kart-right_details_more">розгорнути</div>
+            </div>
+
+        </div>
+    </div>
+
+
+
         </div>
 
-        <div class="kart-slider">
-            <div class="kart-title">схожі товари</div>
-            <div class="prod-slider">
-                <div class="prod-iner">
-                    <div class="prod-item">
-                        <div class="prod-img"><a href="#"><img src="img/bitmap-1.png" alt="" class=""></a></div>
-                        <div class="group">
-                            <div class="group_bag"></div>
-                            <div class="group_heart"></div>
-                        </div>
-                        <div class="prod-title"><a href="#">Шкарпетки короткі V&</a></div>
-                        <div class="prod-price"><a href="#">65.00 UAH</a></div>
+    <?php if ($products) { ?>
+    <div class="kart-slider">
+        <div class="kart-title"><?php echo $text_related; ?></div>
+        <div class="prod-slider">
+            <div class="prod-iner">
+                <?php foreach ($products as $product) { ?>
+                <div class="prod-item">
+                    <div class="prod-img"><a href="<?php echo $product['href']; ?>"><img src="<?php echo $product['thumb']; ?>"
+                                    alt="<?php echo $product['name']; ?>"
+                                    title="<?php echo $product['name']; ?>" class="img-responsive"/></a></div>
+                    <div class="group">
+                        <div class="group_bag"></div>
+                        <div class="group_heart"></div>
                     </div>
-                    <div class="prod-item">
-
-                        <div class="prod-img"><a href="#"><img src="img/bitmap-2.png" alt=""></a></div>
-                        <div class="group">
-                            <div class="group_bag"></div>
-                            <div class="group_heart"></div>
-                        </div>
-                        <div class="prod-title"><a href="#">Шкарпетки короткі V&</a></div>
-                        <div class="prod-price"><a href="#">65.00 UAH</a></div>
+                    <div class="prod-title"><a href="<?php echo $product['href']; ?>"><?php echo $product['name']; ?></a></div>
+                    <div class="prod-price"><a href="<?php echo $product['href']; ?>"><?php echo $product['price']; ?></a></div>
+                </div>
+                <?php } ?>
+            </div>
+        </div>
+    </div>
+    <?php } ?>
+    <div class="kart-review">
+        <div class="kart-title">
+            відгуки
+        </div>
+        <div class="kart-review_inner">
+            <div class="kart-review_item">
+                <div class="item_title-block">
+                    <div class="title-block_name">Олена</div>
+                    <div class="title-block_date">10/09/2018</div>
+                    <div class="title-block_review">
+                        <ul>
+                            <li class="active"></li>
+                            <li class="active"></li>
+                            <li class="active"></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
                     </div>
-                    <div class="prod-item">
-
-                        <div class="prod-img"><a href="#"><img src="img/bitmap-3.png" alt=""></a></div>
-                        <div class="group">
-                            <div class="group_bag"></div>
-                            <div class="group_heart"></div>
-                        </div>
-                        <div class="prod-title"><a href="#">Шкарпетки короткі V&</a></div>
-                        <div class="prod-price"><a href="#">65.00 UAH</a></div>
+                </div>
+                <div class="item_text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                    non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </div>
+            </div>
+            <div class="kart-review_item">
+                <div class="item_title-block">
+                    <div class="title-block_name">Олена</div>
+                    <div class="title-block_date">10/09/2018</div>
+                    <div class="title-block_review">
+                        <ul>
+                            <li class="active"></li>
+                            <li class="active"></li>
+                            <li class="active"></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
                     </div>
-                    <div class="prod-item">
-
-                        <div class="prod-img"><a href="#"><img src="img/bitmap-4.png" alt=""></a></div>
-                        <div class="group">
-                            <div class="group_bag"></div>
-                            <div class="group_heart"></div>
-                        </div>
-                        <div class="prod-title"><a href="#">Шкарпетки короткі V&</a></div>
-                        <div class="prod-price"><a href="#">65.00 UAH</a></div>
+                </div>
+                <div class="item_text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                    non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </div>
+            </div>
+            <div class="kart-review_item">
+                <div class="item_title-block">
+                    <div class="title-block_name">Олена</div>
+                    <div class="title-block_date">10/09/2018</div>
+                    <div class="title-block_review">
+                        <ul>
+                            <li class="active"></li>
+                            <li class="active"></li>
+                            <li class="active"></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
                     </div>
-                    <div class="prod-item">
-
-                        <div class="prod-img"><a href="#"><img src="img/bitmap-1.png" alt=""></a></div>
-                        <div class="group">
-                            <div class="group_bag"></div>
-                            <div class="group_heart"></div>
-                        </div>
-                        <div class="prod-title"><a href="#">Шкарпетки короткі V&</a></div>
-                        <div class="prod-price"><a href="#">65.00 UAH</a></div>
-                    </div>
-                    <div class="prod-item">
-
-                        <div class="prod-img"><a href="#"><img src="img/bitmap-2.png" alt=""></a></div>
-                        <div class="group">
-                            <div class="group_bag"></div>
-                            <div class="group_heart"></div>
-                        </div>
-                        <div class="prod-title"><a href="#">Шкарпетки короткі V&</a></div>
-                        <div class="prod-price"><a href="#">65.00 UAH</a></div>
-                    </div>
+                </div>
+                <div class="item_text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                    non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                 </div>
             </div>
         </div>
-
-        <div class="kart-review">
-            <div class="kart-title">
-                відгуки
-            </div>
-            <div class="kart-review_inner">
-                <div class="kart-review_item">
-                    <div class="item_title-block">
-                        <div class="title-block_name">Олена</div>
-                        <div class="title-block_date">10/09/2018</div>
-                        <div class="title-block_review">
-                            <ul>
-                                <li class="active"></li>
-                                <li class="active"></li>
-                                <li class="active"></li>
-                                <li></li>
-                                <li></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="item_text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </div>
-                </div>
-                <div class="kart-review_item">
-                    <div class="item_title-block">
-                        <div class="title-block_name">Олена</div>
-                        <div class="title-block_date">10/09/2018</div>
-                        <div class="title-block_review">
-                            <ul>
-                                <li class="active"></li>
-                                <li class="active"></li>
-                                <li class="active"></li>
-                                <li></li>
-                                <li></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="item_text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </div>
-                </div>
-                <div class="kart-review_item">
-                    <div class="item_title-block">
-                        <div class="title-block_name">Олена</div>
-                        <div class="title-block_date">10/09/2018</div>
-                        <div class="title-block_review">
-                            <ul>
-                                <li class="active"></li>
-                                <li class="active"></li>
-                                <li class="active"></li>
-                                <li></li>
-                                <li></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="item_text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </div>
-                </div>
-            </div>
-            <div class="default-btn black">
-                <a href="#">залишити відгук</a>
-            </div>
+        <div class="default-btn black">
+            <a href="#">залишити відгук</a>
         </div>
+    </div>
 
-        <div class="kart-slider">
-            <div class="kart-title">Переглянуті товари</div>
-            <div class="prod-slider">
-                <div class="prod-iner">
-                    <div class="prod-item">
-                        <div class="prod-img"><a href="#"><img src="img/bitmap-1.png" alt=""></a></div>
-                        <div class="group">
-                            <div class="group_bag"></div>
-                            <div class="group_heart"></div>
-                        </div>
-                        <div class="prod-title"><a href="#">Шкарпетки короткі V&</a></div>
-                        <div class="prod-price"><a href="#">65.00 UAH</a></div>
+    <div class="kart-slider">
+        <div class="kart-title">Переглянуті товари</div>
+        <div class="prod-slider">
+            <div class="prod-iner">
+                <div class="prod-item">
+                    <div class="prod-img"><a href="#"><img src="img/bitmap-1.png" alt=""></a></div>
+                    <div class="group">
+                        <div class="group_bag"></div>
+                        <div class="group_heart"></div>
                     </div>
-                    <div class="prod-item">
+                    <div class="prod-title"><a href="#">Шкарпетки короткі V&</a></div>
+                    <div class="prod-price"><a href="#">65.00 UAH</a></div>
+                </div>
+                <div class="prod-item">
 
-                        <div class="prod-img"><a href="#"><img src="img/bitmap-2.png" alt=""></a></div>
-                        <div class="group">
-                            <div class="group_bag"></div>
-                            <div class="group_heart"></div>
-                        </div>
-                        <div class="prod-title"><a href="#">Шкарпетки короткі V&</a></div>
-                        <div class="prod-price"><a href="#">65.00 UAH</a></div>
+                    <div class="prod-img"><a href="#"><img src="img/bitmap-2.png" alt=""></a></div>
+                    <div class="group">
+                        <div class="group_bag"></div>
+                        <div class="group_heart"></div>
                     </div>
-                    <div class="prod-item">
+                    <div class="prod-title"><a href="#">Шкарпетки короткі V&</a></div>
+                    <div class="prod-price"><a href="#">65.00 UAH</a></div>
+                </div>
+                <div class="prod-item">
 
-                        <div class="prod-img"><a href="#"><img src="img/bitmap-3.png" alt=""></a></div>
-                        <div class="group">
-                            <div class="group_bag"></div>
-                            <div class="group_heart"></div>
-                        </div>
-                        <div class="prod-title"><a href="#">Шкарпетки короткі V&</a></div>
-                        <div class="prod-price"><a href="#">65.00 UAH</a></div>
+                    <div class="prod-img"><a href="#"><img src="img/bitmap-3.png" alt=""></a></div>
+                    <div class="group">
+                        <div class="group_bag"></div>
+                        <div class="group_heart"></div>
                     </div>
-                    <div class="prod-item">
+                    <div class="prod-title"><a href="#">Шкарпетки короткі V&</a></div>
+                    <div class="prod-price"><a href="#">65.00 UAH</a></div>
+                </div>
+                <div class="prod-item">
 
-                        <div class="prod-img"><a href="#"><img src="img/bitmap-4.png" alt=""></a></div>
-                        <div class="group">
-                            <div class="group_bag"></div>
-                            <div class="group_heart"></div>
-                        </div>
-                        <div class="prod-title"><a href="#">Шкарпетки короткі V&</a></div>
-                        <div class="prod-price"><a href="#">65.00 UAH</a></div>
+                    <div class="prod-img"><a href="#"><img src="img/bitmap-4.png" alt=""></a></div>
+                    <div class="group">
+                        <div class="group_bag"></div>
+                        <div class="group_heart"></div>
                     </div>
-                    <div class="prod-item">
+                    <div class="prod-title"><a href="#">Шкарпетки короткі V&</a></div>
+                    <div class="prod-price"><a href="#">65.00 UAH</a></div>
+                </div>
+                <div class="prod-item">
 
-                        <div class="prod-img"><a href="#"><img src="img/bitmap-1.png" alt=""></a></div>
-                        <div class="group">
-                            <div class="group_bag"></div>
-                            <div class="group_heart"></div>
-                        </div>
-                        <div class="prod-title"><a href="#">Шкарпетки короткі V&</a></div>
-                        <div class="prod-price"><a href="#">65.00 UAH</a></div>
+                    <div class="prod-img"><a href="#"><img src="img/bitmap-1.png" alt=""></a></div>
+                    <div class="group">
+                        <div class="group_bag"></div>
+                        <div class="group_heart"></div>
                     </div>
-                    <div class="prod-item">
+                    <div class="prod-title"><a href="#">Шкарпетки короткі V&</a></div>
+                    <div class="prod-price"><a href="#">65.00 UAH</a></div>
+                </div>
+                <div class="prod-item">
 
-                        <div class="prod-img"><a href="#"><img src="img/bitmap-2.png" alt=""></a></div>
-                        <div class="group">
-                            <div class="group_bag"></div>
-                            <div class="group_heart"></div>
-                        </div>
-                        <div class="prod-title"><a href="#">Шкарпетки короткі V&</a></div>
-                        <div class="prod-price"><a href="#">65.00 UAH</a></div>
+                    <div class="prod-img"><a href="#"><img src="img/bitmap-2.png" alt=""></a></div>
+                    <div class="group">
+                        <div class="group_bag"></div>
+                        <div class="group_heart"></div>
                     </div>
+                    <div class="prod-title"><a href="#">Шкарпетки короткі V&</a></div>
+                    <div class="prod-price"><a href="#">65.00 UAH</a></div>
                 </div>
             </div>
         </div>
     </div>
 </div>
+</div>
 
-
-<?php if ($options) { ?>
-    <hr>
-    <h3><?php echo $text_option; ?></h3>
-    <?php foreach ($options as $option) { ?>
-
-        <?php if ($option['type'] == 'radio') { ?>
-            <div class="form-group<?php echo($option['required'] ? ' required' : ''); ?>">
-                <label class="control-label"><?php echo $option['name']; ?></label>
-                <div id="input-option<?php echo $option['product_option_id']; ?>">
-                    <?php foreach ($option['product_option_value'] as $option_value) { ?>
-                        <div class="radio">
-                            <label>
-                                <?php $name_array = explode(':', $option_value['name']);?>
-                                <input type="radio"
-                                       name="option[<?php echo $option['product_option_id']; ?>]"
-                                       value="<?php echo $option_value['product_option_value_id']; ?>"/>
-                                <?php echo $name_array[0];?>
-                                <?php if ($option_value['price']) { ?>
-                                    (<?php echo $option_value['price_prefix']; ?><?php echo $option_value['price']; ?>)
-                                <?php } ?>
-                            </label>
-                        </div>
-                    <?php } ?>
-                </div>
-            </div>
-        <?php } ?>
-    <?php } ?>
-<?php } ?>
-
-
-
+<?php if(0) {?>
 
 <div class="container">
     <div class="row"><?php echo $column_left; ?>
@@ -566,14 +529,15 @@
                     </ul>
                     <?php if ($price) { ?>
                         <ul class="list-unstyled">
+
                             <?php if (!$special) { ?>
                                 <li>
-                                    <h2><?php echo $price; ?></h2>
+                                    <h2><?php echo $price; ?>HUI</h2>
                                 </li>
                             <?php } else { ?>
-                                <li><span style="text-decoration: line-through;"><?php echo $price; ?></span></li>
+                                <li><span style="text-decoration: line-through;"><?php echo $price; ?>HUI</span></li>
                                 <li>
-                                    <h2><?php echo $special; ?></h2>
+                                    <h2><?php echo $special; ?>1231213</h2>
                                 </li>
                             <?php } ?>
                             <?php if ($tax) { ?>
@@ -587,7 +551,9 @@
                                     <hr>
                                 </li>
                                 <?php foreach ($discounts as $discount) { ?>
-                                    <li><?php echo $discount['quantity']; ?><?php echo $text_discount; ?><?php echo $discount['price']; ?></li>
+                                    <li><?php echo $discount['quantity']; ?><?php echo $text_discount; ?><?php echo $discount['price']; ?>
+                                        123123
+                                    </li>
                                 <?php } ?>
                             <?php } ?>
                         </ul>
@@ -788,7 +754,9 @@
                     <?php if ($review_status) { ?>
                         <div class="rating">
                             <p>
-                                <?php for ($i = 1; $i <= 5; $i++) { ?>
+                                <?php for ($i = 1;
+                                           $i <= 5;
+                                           $i++) { ?>
                                     <?php if ($rating < $i) { ?>
                                         <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i></span>
                                     <?php } else { ?>
@@ -839,7 +807,9 @@
                                     <p><?php echo $product['description']; ?></p>
                                     <?php if ($product['rating']) { ?>
                                         <div class="rating">
-                                            <?php for ($i = 1; $i <= 5; $i++) { ?>
+                                            <?php for ($i = 1;
+                                                       $i <= 5;
+                                                       $i++) { ?>
                                                 <?php if ($product['rating'] < $i) { ?>
                                                     <span class="fa fa-stack"><i
                                                                 class="fa fa-star-o fa-stack-1x"></i></span>
@@ -891,7 +861,9 @@
             <?php } ?>
             <?php if ($tags) { ?>
                 <p><?php echo $text_tags; ?>
-                    <?php for ($i = 0; $i < count($tags); $i++) { ?>
+                    <?php for ($i = 0;
+                               $i < count($tags);
+                               $i++) { ?>
                         <?php if ($i < (count($tags) - 1)) { ?>
                             <a href="<?php echo $tags[$i]['href']; ?>"><?php echo $tags[$i]['tag']; ?></a>,
                         <?php } else { ?>
@@ -903,6 +875,10 @@
             <?php echo $content_bottom; ?></div>
         <?php echo $column_right; ?></div>
 </div>
+
+
+<?php }?>
+
 
 <script type="text/javascript"><!--
     $('select[name=\'recurring_id\'], input[name="quantity"]').change(function () {
@@ -1097,4 +1073,7 @@
         });
     });
     //--></script>
+
+
+
 <?php echo $footer; ?>

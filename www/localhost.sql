@@ -334,7 +334,7 @@ CREATE TABLE `oc_category` (
 
 INSERT INTO `oc_category` (`category_id`, `image`, `parent_id`, `top`, `column`, `sort_order`, `status`, `date_added`, `date_modified`) VALUES
 (61,	'',	0,	1,	1,	0,	1,	'2019-08-07 17:28:44',	'2019-08-07 18:04:26'),
-(63,	'',	0,	1,	1,	4,	1,	'2019-08-07 17:30:35',	'2019-08-07 18:18:01'),
+(63,	'catalog/kid-2.svg',	0,	1,	1,	4,	1,	'2019-08-07 17:30:35',	'2019-08-17 19:55:17'),
 (60,	'',	0,	1,	1,	0,	1,	'2019-08-07 17:27:57',	'2019-08-07 18:04:40'),
 (64,	'catalog/woman-1.svg',	59,	0,	1,	0,	1,	'2019-08-07 17:44:01',	'2019-08-07 17:44:01'),
 (67,	'catalog/woman-4.svg',	59,	0,	1,	0,	1,	'2019-08-07 17:47:29',	'2019-08-07 17:47:29'),
@@ -342,7 +342,7 @@ INSERT INTO `oc_category` (`category_id`, `image`, `parent_id`, `top`, `column`,
 (68,	'catalog/woman-2.svg',	59,	0,	1,	0,	1,	'2019-08-07 17:49:26',	'2019-08-07 17:49:26'),
 (70,	'',	0,	1,	1,	6,	1,	'2019-08-07 19:02:00',	'2019-08-07 19:05:01'),
 (69,	'',	0,	1,	1,	5,	1,	'2019-08-07 19:01:36',	'2019-08-07 19:04:54'),
-(59,	'',	0,	1,	1,	0,	1,	'2019-08-07 17:25:25',	'2019-08-07 18:03:22');
+(59,	'catalog/bitmap-17.jpg',	0,	1,	1,	0,	1,	'2019-08-07 17:25:25',	'2019-08-17 20:00:09');
 
 DROP TABLE IF EXISTS `oc_category_description`;
 CREATE TABLE `oc_category_description` (
@@ -358,11 +358,10 @@ CREATE TABLE `oc_category_description` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 INSERT INTO `oc_category_description` (`category_id`, `language_id`, `name`, `description`, `meta_title`, `meta_description`, `meta_keyword`) VALUES
-(63,	1,	'Sale',	'&lt;p&gt;&lt;br&gt;&lt;/p&gt;',	'Sale',	'',	''),
 (63,	2,	'Sale',	'&lt;p&gt;&lt;br&gt;&lt;/p&gt;',	'Sale',	'',	''),
+(63,	1,	'Sale',	'&lt;p&gt;&lt;br&gt;&lt;/p&gt;',	'Sale',	'',	''),
 (64,	1,	'Long socks',	'&lt;p&gt;&lt;br&gt;&lt;/p&gt;',	'Long socks',	'',	''),
-(59,	2,	'Женские',	'&lt;p&gt;&lt;br&gt;&lt;/p&gt;',	'Женские',	'',	''),
-(59,	1,	'Women',	'&lt;p&gt;&lt;br&gt;&lt;/p&gt;',	'Women',	'',	''),
+(59,	2,	'Женские',	'&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor\r\n                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation\r\n                        ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit\r\n                        in\r\n                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat\r\n                        non\r\n                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\r\n                    &lt;/p&gt;\r\n\r\n                    &lt;p&gt;\r\n                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut\r\n                        labore\r\n                        et dolore magna aliqua.\r\n                    &lt;/p&gt;',	'Женские',	'',	''),
 (61,	2,	'Детям',	'&lt;p&gt;&lt;br&gt;&lt;/p&gt;',	'Детям',	'',	''),
 (61,	1,	'Children',	'&lt;p&gt;&lt;br&gt;&lt;/p&gt;',	'Children',	'',	''),
 (64,	2,	'Длинные носки',	'&lt;p&gt;&lt;br&gt;&lt;/p&gt;',	'Длинные носки',	'',	''),
@@ -377,7 +376,8 @@ INSERT INTO `oc_category_description` (`category_id`, `language_id`, `name`, `de
 (69,	1,	'Subscribe',	'&lt;p&gt;&lt;br&gt;&lt;/p&gt;',	'Subscribe',	'',	''),
 (69,	2,	'Подписки',	'&lt;p&gt;&lt;br&gt;&lt;/p&gt;',	'Подписки',	'',	''),
 (70,	1,	'GIFT BOXES',	'&lt;p&gt;&lt;br&gt;&lt;/p&gt;',	'GIFT BOXES',	'',	''),
-(70,	2,	'ПОДАРОЧНЫЕ КОРОБКИ',	'&lt;p&gt;&lt;br&gt;&lt;/p&gt;',	'ПОДАРОЧНЫЕ КОРОБКИ',	'',	'');
+(70,	2,	'ПОДАРОЧНЫЕ КОРОБКИ',	'&lt;p&gt;&lt;br&gt;&lt;/p&gt;',	'ПОДАРОЧНЫЕ КОРОБКИ',	'',	''),
+(59,	1,	'Women',	'&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor\r\n                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation\r\n                        ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit\r\n                        in\r\n                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat\r\n                        non\r\n                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\r\n                    &lt;/p&gt;\r\n\r\n                    &lt;p&gt;\r\n                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut\r\n                        labore\r\n                        et dolore magna aliqua.\r\n                    &lt;/p&gt;',	'Women',	'',	'');
 
 DROP TABLE IF EXISTS `oc_category_filter`;
 CREATE TABLE `oc_category_filter` (
@@ -786,7 +786,7 @@ CREATE TABLE `oc_currency` (
 
 INSERT INTO `oc_currency` (`currency_id`, `title`, `code`, `symbol_left`, `symbol_right`, `decimal_place`, `value`, `status`, `date_modified`) VALUES
 (1,	'Pound Sterling',	'GBP',	'£',	'',	'2',	0.61250001,	1,	'2014-09-25 14:40:00'),
-(2,	'US Dollar',	'USD',	'$',	'',	'2',	1.00000000,	1,	'2019-08-15 08:43:08'),
+(2,	'US Dollar',	'USD',	'$',	'',	'2',	1.00000000,	1,	'2019-08-19 15:00:27'),
 (3,	'Euro',	'EUR',	'',	'€',	'2',	0.78460002,	1,	'2014-09-25 14:40:00');
 
 DROP TABLE IF EXISTS `oc_customer`;
@@ -1342,7 +1342,8 @@ CREATE TABLE `oc_lt_newsletter` (
 
 INSERT INTO `oc_lt_newsletter` (`id`, `email`) VALUES
 (1,	'vovan@gmail.com'),
-(2,	'vovazabalotny@gmail.com');
+(2,	'vovazabalotny@gmail.com'),
+(3,	'vovaz@gmail.com');
 
 DROP TABLE IF EXISTS `oc_manufacturer`;
 CREATE TABLE `oc_manufacturer` (
@@ -1661,8 +1662,9 @@ INSERT INTO `oc_option` (`option_id`, `type`, `sort_order`) VALUES
 (8,	'date',	7),
 (9,	'time',	8),
 (10,	'datetime',	9),
-(11,	'select',	10),
-(12,	'date',	11);
+(11,	'checkbox',	2),
+(12,	'date',	11),
+(13,	'radio',	1);
 
 DROP TABLE IF EXISTS `oc_option_description`;
 CREATE TABLE `oc_option_description` (
@@ -1684,7 +1686,7 @@ INSERT INTO `oc_option_description` (`option_id`, `language_id`, `name`, `mf_too
 (9,	1,	'Time',	NULL),
 (10,	1,	'Date &amp; Time',	NULL),
 (12,	1,	'Delivery Date',	NULL),
-(11,	1,	'Size',	NULL),
+(11,	2,	'Размер',	NULL),
 (1,	2,	'Radio',	NULL),
 (2,	2,	'Checkbox',	NULL),
 (4,	2,	'Text',	NULL),
@@ -1695,7 +1697,9 @@ INSERT INTO `oc_option_description` (`option_id`, `language_id`, `name`, `mf_too
 (9,	2,	'Time',	NULL),
 (10,	2,	'Date &amp; Time',	NULL),
 (12,	2,	'Delivery Date',	NULL),
-(11,	2,	'Size',	NULL);
+(13,	2,	'Цвет',	NULL),
+(13,	1,	'Color',	NULL),
+(11,	1,	'Size',	NULL);
 
 DROP TABLE IF EXISTS `oc_option_value`;
 CREATE TABLE `oc_option_value` (
@@ -1718,9 +1722,12 @@ INSERT INTO `oc_option_value` (`option_value_id`, `option_id`, `image`, `sort_or
 (31,	1,	'',	2),
 (23,	2,	'',	1),
 (24,	2,	'',	2),
-(46,	11,	'',	1),
+(48,	11,	'',	3),
 (47,	11,	'',	2),
-(48,	11,	'',	3);
+(46,	11,	'',	1),
+(53,	13,	'',	0),
+(52,	13,	'',	0),
+(49,	13,	'',	0);
 
 DROP TABLE IF EXISTS `oc_option_value_description`;
 CREATE TABLE `oc_option_value_description` (
@@ -1743,9 +1750,7 @@ INSERT INTO `oc_option_value_description` (`option_value_id`, `language_id`, `op
 (40,	1,	5,	'Blue'),
 (23,	1,	2,	'Checkbox 1'),
 (24,	1,	2,	'Checkbox 2'),
-(48,	1,	11,	'Large'),
-(47,	1,	11,	'Medium'),
-(46,	1,	11,	'Small'),
+(47,	1,	11,	'36-40 sm'),
 (43,	2,	1,	'Large'),
 (32,	2,	1,	'Small'),
 (45,	2,	2,	'Checkbox 4'),
@@ -1757,9 +1762,17 @@ INSERT INTO `oc_option_value_description` (`option_value_id`, `language_id`, `op
 (40,	2,	5,	'Blue'),
 (23,	2,	2,	'Checkbox 1'),
 (24,	2,	2,	'Checkbox 2'),
-(48,	2,	11,	'Large'),
-(47,	2,	11,	'Medium'),
-(46,	2,	11,	'Small');
+(46,	2,	11,	'30-36 см'),
+(46,	1,	11,	'30-36 sm'),
+(53,	1,	13,	'pink:#ff84cb'),
+(52,	2,	13,	'black:black'),
+(52,	1,	13,	'black:black'),
+(49,	2,	13,	'red:#e83c4d'),
+(49,	1,	13,	'red:#e83c4d'),
+(53,	2,	13,	'pink:#ff84cb'),
+(47,	2,	11,	'36-40 см'),
+(48,	1,	11,	'40-46 sm'),
+(48,	2,	11,	'40-46 см');
 
 DROP TABLE IF EXISTS `oc_order`;
 CREATE TABLE `oc_order` (
@@ -2028,25 +2041,25 @@ CREATE TABLE `oc_product` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 INSERT INTO `oc_product` (`product_id`, `model`, `sku`, `upc`, `ean`, `jan`, `isbn`, `mpn`, `location`, `quantity`, `stock_status_id`, `image`, `manufacturer_id`, `shipping`, `price`, `points`, `tax_class_id`, `date_available`, `weight`, `weight_class_id`, `length`, `width`, `height`, `length_class_id`, `subtract`, `minimum`, `sort_order`, `status`, `viewed`, `date_added`, `date_modified`) VALUES
-(28,	'Product 1',	'',	'',	'',	'',	'',	'',	'',	939,	7,	'catalog/demo/htc_touch_hd_1.jpg',	5,	1,	100.0000,	200,	9,	'2009-02-03',	146.40000000,	2,	0.00000000,	0.00000000,	0.00000000,	1,	1,	1,	0,	1,	1,	'2009-02-03 16:06:50',	'2019-08-13 18:14:59'),
-(29,	'Product 2',	'',	'',	'',	'',	'',	'',	'',	999,	6,	'catalog/demo/palm_treo_pro_1.jpg',	6,	1,	279.9900,	0,	9,	'2009-02-03',	133.00000000,	2,	0.00000000,	0.00000000,	0.00000000,	3,	1,	1,	0,	1,	0,	'2009-02-03 16:42:17',	'2011-09-30 01:06:08'),
-(30,	'Product 3',	'',	'',	'',	'',	'',	'',	'',	7,	6,	'catalog/demo/canon_eos_5d_1.jpg',	9,	1,	100.0000,	0,	9,	'2009-02-03',	0.00000000,	1,	0.00000000,	0.00000000,	0.00000000,	1,	1,	1,	0,	1,	0,	'2009-02-03 16:59:00',	'2019-08-13 18:13:22'),
-(31,	'Product 4',	'',	'',	'',	'',	'',	'',	'',	1000,	6,	'catalog/demo/nikon_d300_1.jpg',	0,	1,	80.0000,	0,	9,	'2009-02-03',	0.00000000,	1,	0.00000000,	0.00000000,	0.00000000,	3,	1,	1,	0,	1,	0,	'2009-02-03 17:00:10',	'2011-09-30 01:06:00'),
+(28,	'Product 1',	'',	'',	'',	'',	'',	'',	'',	939,	7,	'catalog/demo/htc_touch_hd_1.jpg',	5,	1,	100.0000,	200,	9,	'2009-02-03',	146.40000000,	2,	0.00000000,	0.00000000,	0.00000000,	1,	1,	1,	0,	1,	3,	'2009-02-03 16:06:50',	'2019-08-13 18:14:59'),
+(29,	'Product 2',	'',	'',	'',	'',	'',	'',	'',	999,	6,	'catalog/demo/palm_treo_pro_1.jpg',	6,	1,	279.9900,	0,	9,	'2009-02-03',	133.00000000,	2,	0.00000000,	0.00000000,	0.00000000,	3,	1,	1,	0,	1,	1,	'2009-02-03 16:42:17',	'2019-08-17 20:33:36'),
+(30,	'Product 3',	'',	'',	'',	'',	'',	'',	'',	7,	6,	'catalog/demo/canon_eos_5d_1.jpg',	9,	1,	100.0000,	0,	9,	'2009-02-03',	0.00000000,	1,	0.00000000,	0.00000000,	0.00000000,	1,	1,	1,	0,	1,	11,	'2009-02-03 16:59:00',	'2019-08-19 15:41:55'),
+(31,	'Product 4',	'',	'',	'',	'',	'',	'',	'',	1000,	6,	'catalog/demo/nikon_d300_1.jpg',	0,	1,	80.0000,	0,	9,	'2009-02-03',	0.00000000,	1,	0.00000000,	0.00000000,	0.00000000,	3,	1,	1,	0,	1,	0,	'2009-02-03 17:00:10',	'2019-08-17 20:36:50'),
 (32,	'Product 5',	'',	'',	'',	'',	'',	'',	'',	999,	6,	'catalog/demo/ipod_touch_1.jpg',	8,	1,	100.0000,	0,	9,	'2009-02-03',	5.00000000,	1,	0.00000000,	0.00000000,	0.00000000,	1,	1,	1,	0,	1,	0,	'2009-02-03 17:07:26',	'2011-09-30 01:07:22'),
-(33,	'Product 6',	'',	'',	'',	'',	'',	'',	'',	1000,	6,	'catalog/demo/samsung_syncmaster_941bw.jpg',	0,	1,	200.0000,	0,	9,	'2009-02-03',	5.00000000,	1,	0.00000000,	0.00000000,	0.00000000,	2,	1,	1,	0,	1,	0,	'2009-02-03 17:08:31',	'2011-09-30 01:06:29'),
+(33,	'Product 6',	'',	'',	'',	'',	'',	'',	'',	1000,	6,	'catalog/demo/samsung_syncmaster_941bw.jpg',	0,	1,	200.0000,	0,	9,	'2009-02-03',	5.00000000,	1,	0.00000000,	0.00000000,	0.00000000,	2,	1,	1,	0,	1,	0,	'2009-02-03 17:08:31',	'2019-08-17 20:33:59'),
 (34,	'Product 7',	'',	'',	'',	'',	'',	'',	'',	1000,	6,	'catalog/demo/ipod_shuffle_1.jpg',	8,	1,	100.0000,	0,	9,	'2009-02-03',	5.00000000,	1,	0.00000000,	0.00000000,	0.00000000,	2,	1,	1,	0,	1,	0,	'2009-02-03 18:07:54',	'2011-09-30 01:07:17'),
-(35,	'Product 8',	'',	'',	'',	'',	'',	'',	'',	1000,	5,	'',	0,	0,	100.0000,	0,	9,	'2009-02-03',	5.00000000,	1,	0.00000000,	0.00000000,	0.00000000,	1,	1,	1,	0,	1,	0,	'2009-02-03 18:08:31',	'2011-09-30 01:06:17'),
-(36,	'Product 9',	'',	'',	'',	'',	'',	'',	'',	994,	6,	'catalog/demo/ipod_nano_1.jpg',	8,	0,	100.0000,	100,	9,	'2009-02-03',	5.00000000,	1,	0.00000000,	0.00000000,	0.00000000,	2,	1,	1,	0,	1,	0,	'2009-02-03 18:09:19',	'2019-08-14 19:49:11'),
-(40,	'product 11',	'',	'',	'',	'',	'',	'',	'',	970,	5,	'catalog/demo/iphone_1.jpg',	8,	1,	101.0000,	0,	9,	'2009-02-03',	10.00000000,	1,	0.00000000,	0.00000000,	0.00000000,	1,	1,	1,	0,	1,	1,	'2009-02-03 21:07:12',	'2011-09-30 01:06:53'),
-(41,	'Product 14',	'',	'',	'',	'',	'',	'',	'',	977,	5,	'catalog/demo/imac_1.jpg',	8,	1,	100.0000,	0,	9,	'2009-02-03',	5.00000000,	1,	0.00000000,	0.00000000,	0.00000000,	1,	1,	1,	0,	1,	0,	'2009-02-03 21:07:26',	'2011-09-30 01:06:44'),
-(42,	'Product 15',	'',	'',	'',	'',	'',	'',	'',	990,	5,	'catalog/demo/apple_cinema_30.jpg',	8,	1,	100.0000,	400,	9,	'2009-02-04',	12.50000000,	1,	1.00000000,	2.00000000,	3.00000000,	1,	1,	2,	0,	1,	4,	'2009-02-03 21:07:37',	'2019-08-14 19:57:55'),
-(43,	'Product 16',	'',	'',	'',	'',	'',	'',	'',	929,	5,	'catalog/demo/macbook_1.jpg',	8,	0,	500.0000,	0,	9,	'2009-02-03',	0.00000000,	1,	0.00000000,	0.00000000,	0.00000000,	2,	1,	1,	0,	1,	2,	'2009-02-03 21:07:49',	'2011-09-30 01:05:46'),
-(44,	'Product 17',	'',	'',	'',	'',	'',	'',	'',	1000,	5,	'catalog/demo/macbook_air_1.jpg',	8,	1,	1000.0000,	0,	9,	'2009-02-03',	0.00000000,	1,	0.00000000,	0.00000000,	0.00000000,	2,	1,	1,	0,	1,	0,	'2009-02-03 21:08:00',	'2011-09-30 01:05:53'),
-(45,	'Product 18',	'',	'',	'',	'',	'',	'',	'',	998,	5,	'catalog/demo/macbook_pro_1.jpg',	8,	1,	2000.0000,	0,	0,	'2009-02-03',	0.00000000,	1,	0.00000000,	0.00000000,	0.00000000,	2,	1,	1,	0,	1,	1,	'2009-02-03 21:08:17',	'2019-08-15 11:43:41'),
-(46,	'Product 19',	'',	'',	'',	'',	'',	'',	'',	1000,	5,	'catalog/demo/sony_vaio_1.jpg',	10,	1,	1000.0000,	0,	9,	'2009-02-03',	0.00000000,	1,	0.00000000,	0.00000000,	0.00000000,	2,	1,	1,	0,	1,	0,	'2009-02-03 21:08:29',	'2019-08-15 11:44:28'),
-(47,	'Product 21',	'',	'',	'',	'',	'',	'',	'',	1000,	5,	'catalog/demo/hp_1.jpg',	7,	1,	100.0000,	400,	9,	'2009-02-03',	1.00000000,	1,	0.00000000,	0.00000000,	0.00000000,	1,	0,	1,	0,	1,	0,	'2009-02-03 21:08:40',	'2019-08-14 19:32:05'),
-(48,	'product 20',	'test 1',	'',	'',	'',	'',	'',	'test 2',	995,	5,	'catalog/demo/ipod_classic_1.jpg',	8,	1,	100.0000,	0,	9,	'2009-02-08',	1.00000000,	1,	0.00000000,	0.00000000,	0.00000000,	2,	1,	1,	0,	1,	0,	'2009-02-08 17:21:51',	'2011-09-30 01:07:06'),
-(49,	'SAM1',	'',	'',	'',	'',	'',	'',	'',	0,	8,	'catalog/demo/samsung_tab_1.jpg',	0,	1,	199.9900,	0,	9,	'2011-04-25',	0.00000000,	1,	0.00000000,	0.00000000,	0.00000000,	1,	1,	1,	1,	1,	6,	'2011-04-26 08:57:34',	'2011-09-30 01:06:23');
+(35,	'Product 8',	'',	'',	'',	'',	'',	'',	'',	1000,	5,	'',	0,	0,	100.0000,	0,	9,	'2009-02-03',	5.00000000,	1,	0.00000000,	0.00000000,	0.00000000,	1,	1,	1,	0,	1,	0,	'2009-02-03 18:08:31',	'2019-08-17 20:36:26'),
+(36,	'Product 9',	'',	'',	'',	'',	'',	'',	'',	994,	6,	'catalog/demo/ipod_nano_1.jpg',	8,	0,	100.0000,	100,	9,	'2009-02-03',	5.00000000,	1,	0.00000000,	0.00000000,	0.00000000,	2,	1,	1,	0,	1,	2,	'2009-02-03 18:09:19',	'2019-08-14 19:49:11'),
+(40,	'product 11',	'',	'',	'',	'',	'',	'',	'',	970,	5,	'catalog/demo/iphone_1.jpg',	8,	1,	101.0000,	0,	9,	'2009-02-03',	10.00000000,	1,	0.00000000,	0.00000000,	0.00000000,	1,	1,	1,	0,	1,	9,	'2009-02-03 21:07:12',	'2019-08-17 20:34:58'),
+(41,	'Product 14',	'',	'',	'',	'',	'',	'',	'',	977,	5,	'catalog/demo/imac_1.jpg',	8,	1,	100.0000,	0,	9,	'2009-02-03',	5.00000000,	1,	0.00000000,	0.00000000,	0.00000000,	1,	1,	1,	0,	1,	1,	'2009-02-03 21:07:26',	'2019-08-17 20:34:40'),
+(42,	'Product 15',	'',	'',	'',	'',	'',	'',	'',	990,	5,	'catalog/demo/apple_cinema_30.jpg',	8,	1,	100.0000,	400,	9,	'2009-02-04',	12.50000000,	1,	1.00000000,	2.00000000,	3.00000000,	1,	1,	2,	0,	1,	197,	'2009-02-03 21:07:37',	'2019-08-19 16:14:09'),
+(43,	'Product 16',	'',	'',	'',	'',	'',	'',	'',	929,	5,	'catalog/demo/macbook_1.jpg',	8,	0,	500.0000,	0,	9,	'2009-02-03',	0.00000000,	1,	0.00000000,	0.00000000,	0.00000000,	2,	1,	1,	0,	1,	9,	'2009-02-03 21:07:49',	'2011-09-30 01:05:46'),
+(44,	'Product 17',	'',	'',	'',	'',	'',	'',	'',	1000,	5,	'catalog/demo/macbook_air_1.jpg',	8,	1,	1000.0000,	0,	9,	'2009-02-03',	0.00000000,	1,	0.00000000,	0.00000000,	0.00000000,	2,	1,	1,	0,	1,	0,	'2009-02-03 21:08:00',	'2019-08-17 20:37:14'),
+(45,	'Product 18',	'',	'',	'',	'',	'',	'',	'',	998,	5,	'catalog/demo/macbook_pro_1.jpg',	8,	1,	2000.0000,	0,	0,	'2009-02-03',	0.00000000,	1,	0.00000000,	0.00000000,	0.00000000,	2,	1,	1,	0,	1,	3,	'2009-02-03 21:08:17',	'2019-08-15 11:43:41'),
+(46,	'Product 19',	'',	'',	'',	'',	'',	'',	'',	1000,	5,	'catalog/demo/sony_vaio_1.jpg',	10,	1,	1000.0000,	0,	9,	'2009-02-03',	0.00000000,	1,	0.00000000,	0.00000000,	0.00000000,	2,	1,	1,	0,	1,	2,	'2009-02-03 21:08:29',	'2019-08-15 11:44:28'),
+(47,	'Product 21',	'',	'',	'',	'',	'',	'',	'',	1000,	5,	'catalog/demo/hp_1.jpg',	7,	1,	100.0000,	400,	9,	'2009-02-03',	1.00000000,	1,	0.00000000,	0.00000000,	0.00000000,	1,	0,	1,	0,	1,	2,	'2009-02-03 21:08:40',	'2019-08-14 19:32:05'),
+(48,	'product 20',	'test 1',	'',	'',	'',	'',	'',	'test 2',	995,	5,	'catalog/demo/ipod_classic_1.jpg',	8,	1,	100.0000,	0,	9,	'2009-02-08',	1.00000000,	1,	0.00000000,	0.00000000,	0.00000000,	2,	1,	1,	0,	1,	12,	'2009-02-08 17:21:51',	'2019-08-17 20:35:14'),
+(49,	'SAM1',	'',	'',	'',	'',	'',	'',	'',	0,	8,	'catalog/demo/samsung_tab_1.jpg',	0,	1,	199.9900,	0,	9,	'2011-04-25',	0.00000000,	1,	0.00000000,	0.00000000,	0.00000000,	1,	1,	1,	1,	1,	6,	'2011-04-26 08:57:34',	'2019-08-17 20:36:05');
 
 DROP TABLE IF EXISTS `oc_product_attribute`;
 CREATE TABLE `oc_product_attribute` (
@@ -2086,44 +2099,44 @@ CREATE TABLE `oc_product_description` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 INSERT INTO `oc_product_description` (`product_id`, `language_id`, `name`, `description`, `tag`, `meta_title`, `meta_description`, `meta_keyword`) VALUES
-(35,	1,	'Product 8',	'&lt;p&gt;\r\n	Product 8&lt;/p&gt;\r\n',	'',	'',	'',	''),
-(48,	1,	'iPod Classic',	'&lt;div class=&quot;cpt_product_description &quot;&gt;\r\n	&lt;div&gt;\r\n		&lt;p&gt;\r\n			&lt;strong&gt;More room to move.&lt;/strong&gt;&lt;/p&gt;\r\n		&lt;p&gt;\r\n			With 80GB or 160GB of storage and up to 40 hours of battery life, the new iPod classic lets you enjoy up to 40,000 songs or up to 200 hours of video or any combination wherever you go.&lt;/p&gt;\r\n		&lt;p&gt;\r\n			&lt;strong&gt;Cover Flow.&lt;/strong&gt;&lt;/p&gt;\r\n		&lt;p&gt;\r\n			Browse through your music collection by flipping through album art. Select an album to turn it over and see the track list.&lt;/p&gt;\r\n		&lt;p&gt;\r\n			&lt;strong&gt;Enhanced interface.&lt;/strong&gt;&lt;/p&gt;\r\n		&lt;p&gt;\r\n			Experience a whole new way to browse and view your music and video.&lt;/p&gt;\r\n		&lt;p&gt;\r\n			&lt;strong&gt;Sleeker design.&lt;/strong&gt;&lt;/p&gt;\r\n		&lt;p&gt;\r\n			Beautiful, durable, and sleeker than ever, iPod classic now features an anodized aluminum and polished stainless steel enclosure with rounded edges.&lt;/p&gt;\r\n	&lt;/div&gt;\r\n&lt;/div&gt;\r\n&lt;!-- cpt_container_end --&gt;',	'',	'',	'',	''),
-(40,	1,	'iPhone',	'&lt;p class=&quot;intro&quot;&gt;\r\n	iPhone is a revolutionary new mobile phone that allows you to make a call by simply tapping a name or number in your address book, a favorites list, or a call log. It also automatically syncs all your contacts from a PC, Mac, or Internet service. And it lets you select and listen to voicemail messages in whatever order you want just like email.&lt;/p&gt;\r\n',	'',	'',	'',	''),
+(48,	2,	'iPod Classic',	'&lt;div class=&quot;cpt_product_description &quot;&gt;\r\n	&lt;div&gt;\r\n		&lt;p&gt;\r\n			&lt;strong&gt;More room to move.&lt;/strong&gt;&lt;/p&gt;\r\n		&lt;p&gt;\r\n			With 80GB or 160GB of storage and up to 40 hours of battery life, the new iPod classic lets you enjoy up to 40,000 songs or up to 200 hours of video or any combination wherever you go.&lt;/p&gt;\r\n		&lt;p&gt;\r\n			&lt;strong&gt;Cover Flow.&lt;/strong&gt;&lt;/p&gt;\r\n		&lt;p&gt;\r\n			Browse through your music collection by flipping through album art. Select an album to turn it over and see the track list.&lt;/p&gt;\r\n		&lt;p&gt;\r\n			&lt;strong&gt;Enhanced interface.&lt;/strong&gt;&lt;/p&gt;\r\n		&lt;p&gt;\r\n			Experience a whole new way to browse and view your music and video.&lt;/p&gt;\r\n		&lt;p&gt;\r\n			&lt;strong&gt;Sleeker design.&lt;/strong&gt;&lt;/p&gt;\r\n		&lt;p&gt;\r\n			Beautiful, durable, and sleeker than ever, iPod classic now features an anodized aluminum and polished stainless steel enclosure with rounded edges.&lt;/p&gt;\r\n	&lt;/div&gt;\r\n&lt;/div&gt;\r\n&lt;!-- cpt_container_end --&gt;',	'',	'asds',	'',	''),
+(40,	2,	'iPhone',	'&lt;p class=&quot;intro&quot;&gt;\r\n	iPhone is a revolutionary new mobile phone that allows you to make a call by simply tapping a name or number in your address book, a favorites list, or a call log. It also automatically syncs all your contacts from a PC, Mac, or Internet service. And it lets you select and listen to voicemail messages in whatever order you want just like email.&lt;/p&gt;\r\n',	'',	'asddsa',	'',	''),
 (28,	1,	'HTC Touch HD',	'&lt;p&gt;\r\n	HTC Touch - in High Definition. Watch music videos and streaming content in awe-inspiring high definition clarity for a mobile experience you never thought possible. Seductively sleek, the HTC Touch HD provides the next generation of mobile functionality, all at a simple touch. Fully integrated with Windows Mobile Professional 6.1, ultrafast 3.5G, GPS, 5MP camera, plus lots more - all delivered on a breathtakingly crisp 3.8&quot; WVGA touchscreen - you can take control of your mobile world with the HTC Touch HD.&lt;/p&gt;\r\n&lt;p&gt;\r\n	&lt;strong&gt;Features&lt;/strong&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		Processor Qualcomm® MSM 7201A™ 528 MHz&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Windows Mobile® 6.1 Professional Operating System&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Memory: 512 MB ROM, 288 MB RAM&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Dimensions: 115 mm x 62.8 mm x 12 mm / 146.4 grams&lt;/li&gt;\r\n	&lt;li&gt;\r\n		3.8-inch TFT-LCD flat touch-sensitive screen with 480 x 800 WVGA resolution&lt;/li&gt;\r\n	&lt;li&gt;\r\n		HSDPA/WCDMA: Europe/Asia: 900/2100 MHz; Up to 2 Mbps up-link and 7.2 Mbps down-link speeds&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Quad-band GSM/GPRS/EDGE: Europe/Asia: 850/900/1800/1900 MHz (Band frequency, HSUPA availability, and data speed are operator dependent.)&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Device Control via HTC TouchFLO™ 3D &amp;amp; Touch-sensitive front panel buttons&lt;/li&gt;\r\n	&lt;li&gt;\r\n		GPS and A-GPS ready&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Bluetooth® 2.0 with Enhanced Data Rate and A2DP for wireless stereo headsets&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Wi-Fi®: IEEE 802.11 b/g&lt;/li&gt;\r\n	&lt;li&gt;\r\n		HTC ExtUSB™ (11-pin mini-USB 2.0)&lt;/li&gt;\r\n	&lt;li&gt;\r\n		5 megapixel color camera with auto focus&lt;/li&gt;\r\n	&lt;li&gt;\r\n		VGA CMOS color camera&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Built-in 3.5 mm audio jack, microphone, speaker, and FM radio&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Ring tone formats: AAC, AAC+, eAAC+, AMR-NB, AMR-WB, QCP, MP3, WMA, WAV&lt;/li&gt;\r\n	&lt;li&gt;\r\n		40 polyphonic and standard MIDI format 0 and 1 (SMF)/SP MIDI&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Rechargeable Lithium-ion or Lithium-ion polymer 1350 mAh battery&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Expansion Slot: microSD™ memory card (SD 2.0 compatible)&lt;/li&gt;\r\n	&lt;li&gt;\r\n		AC Adapter Voltage range/frequency: 100 ~ 240V AC, 50/60 Hz DC output: 5V and 1A&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Special Features: FM Radio, G-Sensor&lt;/li&gt;\r\n&lt;/ul&gt;\r\n',	'',	'sdaasd',	'',	''),
 (28,	2,	'HTC Touch HD',	'&lt;p&gt;\r\n	HTC Touch - in High Definition. Watch music videos and streaming content in awe-inspiring high definition clarity for a mobile experience you never thought possible. Seductively sleek, the HTC Touch HD provides the next generation of mobile functionality, all at a simple touch. Fully integrated with Windows Mobile Professional 6.1, ultrafast 3.5G, GPS, 5MP camera, plus lots more - all delivered on a breathtakingly crisp 3.8&quot; WVGA touchscreen - you can take control of your mobile world with the HTC Touch HD.&lt;/p&gt;\r\n&lt;p&gt;\r\n	&lt;strong&gt;Features&lt;/strong&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		Processor Qualcomm® MSM 7201A™ 528 MHz&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Windows Mobile® 6.1 Professional Operating System&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Memory: 512 MB ROM, 288 MB RAM&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Dimensions: 115 mm x 62.8 mm x 12 mm / 146.4 grams&lt;/li&gt;\r\n	&lt;li&gt;\r\n		3.8-inch TFT-LCD flat touch-sensitive screen with 480 x 800 WVGA resolution&lt;/li&gt;\r\n	&lt;li&gt;\r\n		HSDPA/WCDMA: Europe/Asia: 900/2100 MHz; Up to 2 Mbps up-link and 7.2 Mbps down-link speeds&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Quad-band GSM/GPRS/EDGE: Europe/Asia: 850/900/1800/1900 MHz (Band frequency, HSUPA availability, and data speed are operator dependent.)&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Device Control via HTC TouchFLO™ 3D &amp;amp; Touch-sensitive front panel buttons&lt;/li&gt;\r\n	&lt;li&gt;\r\n		GPS and A-GPS ready&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Bluetooth® 2.0 with Enhanced Data Rate and A2DP for wireless stereo headsets&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Wi-Fi®: IEEE 802.11 b/g&lt;/li&gt;\r\n	&lt;li&gt;\r\n		HTC ExtUSB™ (11-pin mini-USB 2.0)&lt;/li&gt;\r\n	&lt;li&gt;\r\n		5 megapixel color camera with auto focus&lt;/li&gt;\r\n	&lt;li&gt;\r\n		VGA CMOS color camera&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Built-in 3.5 mm audio jack, microphone, speaker, and FM radio&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Ring tone formats: AAC, AAC+, eAAC+, AMR-NB, AMR-WB, QCP, MP3, WMA, WAV&lt;/li&gt;\r\n	&lt;li&gt;\r\n		40 polyphonic and standard MIDI format 0 and 1 (SMF)/SP MIDI&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Rechargeable Lithium-ion or Lithium-ion polymer 1350 mAh battery&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Expansion Slot: microSD™ memory card (SD 2.0 compatible)&lt;/li&gt;\r\n	&lt;li&gt;\r\n		AC Adapter Voltage range/frequency: 100 ~ 240V AC, 50/60 Hz DC output: 5V and 1A&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Special Features: FM Radio, G-Sensor&lt;/li&gt;\r\n&lt;/ul&gt;\r\n',	'',	'asdasd',	'',	''),
-(44,	1,	'MacBook Air',	'&lt;div&gt;\r\n	MacBook Air is ultrathin, ultraportable, and ultra unlike anything else. But you don&amp;rsquo;t lose inches and pounds overnight. It&amp;rsquo;s the result of rethinking conventions. Of multiple wireless innovations. And of breakthrough design. With MacBook Air, mobile computing suddenly has a new standard.&lt;/div&gt;\r\n',	'',	'',	'',	''),
+(44,	2,	'MacBook Air',	'&lt;div&gt;\r\n	MacBook Air is ultrathin, ultraportable, and ultra unlike anything else. But you don’t lose inches and pounds overnight. It’s the result of rethinking conventions. Of multiple wireless innovations. And of breakthrough design. With MacBook Air, mobile computing suddenly has a new standard.&lt;/div&gt;\r\n',	'',	'assad',	'',	''),
 (45,	2,	'MacBook Pro',	'&lt;div class=&quot;cpt_product_description &quot;&gt;\r\n	&lt;div&gt;\r\n		&lt;p&gt;\r\n			&lt;b&gt;Latest Intel mobile architecture&lt;/b&gt;&lt;/p&gt;\r\n		&lt;p&gt;\r\n			Powered by the most advanced mobile processors from Intel, the new Core 2 Duo MacBook Pro is over 50% faster than the original Core Duo MacBook Pro and now supports up to 4GB of RAM.&lt;/p&gt;\r\n		&lt;p&gt;\r\n			&lt;b&gt;Leading-edge graphics&lt;/b&gt;&lt;/p&gt;\r\n		&lt;p&gt;\r\n			The NVIDIA GeForce 8600M GT delivers exceptional graphics processing power. For the ultimate creative canvas, you can even configure the 17-inch model with a 1920-by-1200 resolution display.&lt;/p&gt;\r\n		&lt;p&gt;\r\n			&lt;b&gt;Designed for life on the road&lt;/b&gt;&lt;/p&gt;\r\n		&lt;p&gt;\r\n			Innovations such as a magnetic power connection and an illuminated keyboard with ambient light sensor put the MacBook Pro in a class by itself.&lt;/p&gt;\r\n		&lt;p&gt;\r\n			&lt;b&gt;Connect. Create. Communicate.&lt;/b&gt;&lt;/p&gt;\r\n		&lt;p&gt;\r\n			Quickly set up a video conference with the built-in iSight camera. Control presentations and media from up to 30 feet away with the included Apple Remote. Connect to high-bandwidth peripherals with FireWire 800 and DVI.&lt;/p&gt;\r\n		&lt;p&gt;\r\n			&lt;b&gt;Next-generation wireless&lt;/b&gt;&lt;/p&gt;\r\n		&lt;p&gt;\r\n			Featuring 802.11n wireless technology, the MacBook Pro delivers up to five times the performance and up to twice the range of previous-generation technologies.&lt;/p&gt;\r\n	&lt;/div&gt;\r\n&lt;/div&gt;\r\n&lt;!-- cpt_container_end --&gt;',	'',	'sdas',	'',	''),
-(29,	1,	'Palm Treo Pro',	'&lt;p&gt;\r\n	Redefine your workday with the Palm Treo Pro smartphone. Perfectly balanced, you can respond to business and personal email, stay on top of appointments and contacts, and use Wi-Fi or GPS when you&amp;rsquo;re out and about. Then watch a video on YouTube, catch up with news and sports on the web, or listen to a few songs. Balance your work and play the way you like it, with the Palm Treo Pro.&lt;/p&gt;\r\n&lt;p&gt;\r\n	&lt;strong&gt;Features&lt;/strong&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		Windows Mobile&amp;reg; 6.1 Professional Edition&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Qualcomm&amp;reg; MSM7201 400MHz Processor&lt;/li&gt;\r\n	&lt;li&gt;\r\n		320x320 transflective colour TFT touchscreen&lt;/li&gt;\r\n	&lt;li&gt;\r\n		HSDPA/UMTS/EDGE/GPRS/GSM radio&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Tri-band UMTS &amp;mdash; 850MHz, 1900MHz, 2100MHz&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Quad-band GSM &amp;mdash; 850/900/1800/1900&lt;/li&gt;\r\n	&lt;li&gt;\r\n		802.11b/g with WPA, WPA2, and 801.1x authentication&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Built-in GPS&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Bluetooth Version: 2.0 + Enhanced Data Rate&lt;/li&gt;\r\n	&lt;li&gt;\r\n		256MB storage (100MB user available), 128MB RAM&lt;/li&gt;\r\n	&lt;li&gt;\r\n		2.0 megapixel camera, up to 8x digital zoom and video capture&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Removable, rechargeable 1500mAh lithium-ion battery&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Up to 5.0 hours talk time and up to 250 hours standby&lt;/li&gt;\r\n	&lt;li&gt;\r\n		MicroSDHC card expansion (up to 32GB supported)&lt;/li&gt;\r\n	&lt;li&gt;\r\n		MicroUSB 2.0 for synchronization and charging&lt;/li&gt;\r\n	&lt;li&gt;\r\n		3.5mm stereo headset jack&lt;/li&gt;\r\n	&lt;li&gt;\r\n		60mm (W) x 114mm (L) x 13.5mm (D) / 133g&lt;/li&gt;\r\n&lt;/ul&gt;\r\n',	'',	'',	'',	''),
+(29,	2,	'Palm Treo Pro',	'&lt;p&gt;\r\n	Redefine your workday with the Palm Treo Pro smartphone. Perfectly balanced, you can respond to business and personal email, stay on top of appointments and contacts, and use Wi-Fi or GPS when you’re out and about. Then watch a video on YouTube, catch up with news and sports on the web, or listen to a few songs. Balance your work and play the way you like it, with the Palm Treo Pro.&lt;/p&gt;\r\n&lt;p&gt;\r\n	&lt;strong&gt;Features&lt;/strong&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		Windows Mobile® 6.1 Professional Edition&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Qualcomm® MSM7201 400MHz Processor&lt;/li&gt;\r\n	&lt;li&gt;\r\n		320x320 transflective colour TFT touchscreen&lt;/li&gt;\r\n	&lt;li&gt;\r\n		HSDPA/UMTS/EDGE/GPRS/GSM radio&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Tri-band UMTS — 850MHz, 1900MHz, 2100MHz&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Quad-band GSM — 850/900/1800/1900&lt;/li&gt;\r\n	&lt;li&gt;\r\n		802.11b/g with WPA, WPA2, and 801.1x authentication&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Built-in GPS&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Bluetooth Version: 2.0 + Enhanced Data Rate&lt;/li&gt;\r\n	&lt;li&gt;\r\n		256MB storage (100MB user available), 128MB RAM&lt;/li&gt;\r\n	&lt;li&gt;\r\n		2.0 megapixel camera, up to 8x digital zoom and video capture&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Removable, rechargeable 1500mAh lithium-ion battery&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Up to 5.0 hours talk time and up to 250 hours standby&lt;/li&gt;\r\n	&lt;li&gt;\r\n		MicroSDHC card expansion (up to 32GB supported)&lt;/li&gt;\r\n	&lt;li&gt;\r\n		MicroUSB 2.0 for synchronization and charging&lt;/li&gt;\r\n	&lt;li&gt;\r\n		3.5mm stereo headset jack&lt;/li&gt;\r\n	&lt;li&gt;\r\n		60mm (W) x 114mm (L) x 13.5mm (D) / 133g&lt;/li&gt;\r\n&lt;/ul&gt;\r\n',	'',	'asdsad',	'',	''),
 (36,	2,	'iPod Nano',	'&lt;div&gt;\r\n	&lt;p&gt;\r\n		&lt;strong&gt;Video in your pocket.&lt;/strong&gt;&lt;/p&gt;\r\n	&lt;p&gt;\r\n		Its the small iPod with one very big idea: video. The worlds most popular music player now lets you enjoy movies, TV shows, and more on a two-inch display thats 65% brighter than before.&lt;/p&gt;\r\n	&lt;p&gt;\r\n		&lt;strong&gt;Cover Flow.&lt;/strong&gt;&lt;/p&gt;\r\n	&lt;p&gt;\r\n		Browse through your music collection by flipping through album art. Select an album to turn it over and see the track list.&lt;strong&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;\r\n	&lt;p&gt;\r\n		&lt;strong&gt;Enhanced interface.&lt;/strong&gt;&lt;/p&gt;\r\n	&lt;p&gt;\r\n		Experience a whole new way to browse and view your music and video.&lt;/p&gt;\r\n	&lt;p&gt;\r\n		&lt;strong&gt;Sleek and colorful.&lt;/strong&gt;&lt;/p&gt;\r\n	&lt;p&gt;\r\n		With an anodized aluminum and polished stainless steel enclosure and a choice of five colors, iPod nano is dressed to impress.&lt;/p&gt;\r\n	&lt;p&gt;\r\n		&lt;strong&gt;iTunes.&lt;/strong&gt;&lt;/p&gt;\r\n	&lt;p&gt;\r\n		Available as a free download, iTunes makes it easy to browse and buy millions of songs, movies, TV shows, audiobooks, and games and download free podcasts all at the iTunes Store. And you can import your own music, manage your whole media library, and sync your iPod or iPhone with ease.&lt;/p&gt;\r\n&lt;/div&gt;\r\n',	'',	'sadsad',	'',	''),
 (46,	2,	'Sony VAIO',	'&lt;div&gt;\r\n	Unprecedented power. The next generation of processing technology has arrived. Built into the newest VAIO notebooks lies Intel\'s latest, most powerful innovation yet: Intel® Centrino® 2 processor technology. Boasting incredible speed, expanded wireless connectivity, enhanced multimedia support and greater energy efficiency, all the high-performance essentials are seamlessly combined into a single chip.&lt;/div&gt;\r\n',	'',	'sdsd',	'',	''),
 (47,	2,	'HP LP3065',	'&lt;p&gt;\r\n	Stop your co-workers in their tracks with the stunning new 30-inch diagonal HP LP3065 Flat Panel Monitor. This flagship monitor features best-in-class performance and presentation features on a huge wide-aspect screen while letting you work as comfortably as possible - you might even forget you\'re at the office&lt;/p&gt;\r\n',	'',	'asddas',	'',	''),
 (32,	1,	'iPod Touch',	'&lt;p&gt;\r\n	&lt;strong&gt;Revolutionary multi-touch interface.&lt;/strong&gt;&lt;br /&gt;\r\n	iPod touch features the same multi-touch screen technology as iPhone. Pinch to zoom in on a photo. Scroll through your songs and videos with a flick. Flip through your library by album artwork with Cover Flow.&lt;/p&gt;\r\n&lt;p&gt;\r\n	&lt;strong&gt;Gorgeous 3.5-inch widescreen display.&lt;/strong&gt;&lt;br /&gt;\r\n	Watch your movies, TV shows, and photos come alive with bright, vivid color on the 320-by-480-pixel display.&lt;/p&gt;\r\n&lt;p&gt;\r\n	&lt;strong&gt;Music downloads straight from iTunes.&lt;/strong&gt;&lt;br /&gt;\r\n	Shop the iTunes Wi-Fi Music Store from anywhere with Wi-Fi.1 Browse or search to find the music youre looking for, preview it, and buy it with just a tap.&lt;/p&gt;\r\n&lt;p&gt;\r\n	&lt;strong&gt;Surf the web with Wi-Fi.&lt;/strong&gt;&lt;br /&gt;\r\n	Browse the web using Safari and watch YouTube videos on the first iPod with Wi-Fi built in&lt;br /&gt;\r\n	&amp;nbsp;&lt;/p&gt;\r\n',	'',	'',	'',	''),
-(41,	1,	'iMac',	'&lt;div&gt;\r\n	Just when you thought iMac had everything, now there&acute;s even more. More powerful Intel Core 2 Duo processors. And more memory standard. Combine this with Mac OS X Leopard and iLife &acute;08, and it&acute;s more all-in-one than ever. iMac packs amazing performance into a stunningly slim space.&lt;/div&gt;\r\n',	'',	'',	'',	''),
-(33,	1,	'Samsung SyncMaster 941BW',	'&lt;div&gt;\r\n	Imagine the advantages of going big without slowing down. The big 19&amp;quot; 941BW monitor combines wide aspect ratio with fast pixel response time, for bigger images, more room to work and crisp motion. In addition, the exclusive MagicBright 2, MagicColor and MagicTune technologies help deliver the ideal image in every situation, while sleek, narrow bezels and adjustable stands deliver style just the way you want it. With the Samsung 941BW widescreen analog/digital LCD monitor, it&amp;#39;s not hard to imagine.&lt;/div&gt;\r\n',	'',	'',	'',	''),
+(41,	2,	'iMac',	'&lt;div&gt;\r\n	Just when you thought iMac had everything, now there´s even more. More powerful Intel Core 2 Duo processors. And more memory standard. Combine this with Mac OS X Leopard and iLife ´08, and it´s more all-in-one than ever. iMac packs amazing performance into a stunningly slim space.&lt;/div&gt;\r\n',	'',	'sds',	'',	''),
+(33,	2,	'Samsung SyncMaster 941BW',	'&lt;div&gt;\r\n	Imagine the advantages of going big without slowing down. The big 19&quot; 941BW monitor combines wide aspect ratio with fast pixel response time, for bigger images, more room to work and crisp motion. In addition, the exclusive MagicBright 2, MagicColor and MagicTune technologies help deliver the ideal image in every situation, while sleek, narrow bezels and adjustable stands deliver style just the way you want it. With the Samsung 941BW widescreen analog/digital LCD monitor, it\'s not hard to imagine.&lt;/div&gt;\r\n',	'',	'sadads',	'',	''),
 (34,	1,	'iPod Shuffle',	'&lt;div&gt;\r\n	&lt;strong&gt;Born to be worn.&lt;/strong&gt;\r\n	&lt;p&gt;\r\n		Clip on the worlds most wearable music player and take up to 240 songs with you anywhere. Choose from five colors including four new hues to make your musical fashion statement.&lt;/p&gt;\r\n	&lt;p&gt;\r\n		&lt;strong&gt;Random meets rhythm.&lt;/strong&gt;&lt;/p&gt;\r\n	&lt;p&gt;\r\n		With iTunes autofill, iPod shuffle can deliver a new musical experience every time you sync. For more randomness, you can shuffle songs during playback with the slide of a switch.&lt;/p&gt;\r\n	&lt;strong&gt;Everything is easy.&lt;/strong&gt;\r\n	&lt;p&gt;\r\n		Charge and sync with the included USB dock. Operate the iPod shuffle controls with one hand. Enjoy up to 12 hours straight of skip-free music playback.&lt;/p&gt;\r\n&lt;/div&gt;\r\n',	'',	'',	'',	''),
 (43,	1,	'MacBook',	'&lt;div&gt;\r\n	&lt;p&gt;\r\n		&lt;b&gt;Intel Core 2 Duo processor&lt;/b&gt;&lt;/p&gt;\r\n	&lt;p&gt;\r\n		Powered by an Intel Core 2 Duo processor at speeds up to 2.16GHz, the new MacBook is the fastest ever.&lt;/p&gt;\r\n	&lt;p&gt;\r\n		&lt;b&gt;1GB memory, larger hard drives&lt;/b&gt;&lt;/p&gt;\r\n	&lt;p&gt;\r\n		The new MacBook now comes with 1GB of memory standard and larger hard drives for the entire line perfect for running more of your favorite applications and storing growing media collections.&lt;/p&gt;\r\n	&lt;p&gt;\r\n		&lt;b&gt;Sleek, 1.08-inch-thin design&lt;/b&gt;&lt;/p&gt;\r\n	&lt;p&gt;\r\n		MacBook makes it easy to hit the road thanks to its tough polycarbonate case, built-in wireless technologies, and innovative MagSafe Power Adapter that releases automatically if someone accidentally trips on the cord.&lt;/p&gt;\r\n	&lt;p&gt;\r\n		&lt;b&gt;Built-in iSight camera&lt;/b&gt;&lt;/p&gt;\r\n	&lt;p&gt;\r\n		Right out of the box, you can have a video chat with friends or family,2 record a video at your desk, or take fun pictures with Photo Booth&lt;/p&gt;\r\n&lt;/div&gt;\r\n',	'',	'',	'',	''),
-(31,	1,	'Nikon D300',	'&lt;div class=&quot;cpt_product_description &quot;&gt;\r\n	&lt;div&gt;\r\n		Engineered with pro-level features and performance, the 12.3-effective-megapixel D300 combines brand new technologies with advanced features inherited from Nikon&amp;#39;s newly announced D3 professional digital SLR camera to offer serious photographers remarkable performance combined with agility.&lt;br /&gt;\r\n		&lt;br /&gt;\r\n		Similar to the D3, the D300 features Nikon&amp;#39;s exclusive EXPEED Image Processing System that is central to driving the speed and processing power needed for many of the camera&amp;#39;s new features. The D300 features a new 51-point autofocus system with Nikon&amp;#39;s 3D Focus Tracking feature and two new LiveView shooting modes that allow users to frame a photograph using the camera&amp;#39;s high-resolution LCD monitor. The D300 shares a similar Scene Recognition System as is found in the D3; it promises to greatly enhance the accuracy of autofocus, autoexposure, and auto white balance by recognizing the subject or scene being photographed and applying this information to the calculations for the three functions.&lt;br /&gt;\r\n		&lt;br /&gt;\r\n		The D300 reacts with lightning speed, powering up in a mere 0.13 seconds and shooting with an imperceptible 45-millisecond shutter release lag time. The D300 is capable of shooting at a rapid six frames per second and can go as fast as eight frames per second when using the optional MB-D10 multi-power battery pack. In continuous bursts, the D300 can shoot up to 100 shots at full 12.3-megapixel resolution. (NORMAL-LARGE image setting, using a SanDisk Extreme IV 1GB CompactFlash card.)&lt;br /&gt;\r\n		&lt;br /&gt;\r\n		The D300 incorporates a range of innovative technologies and features that will significantly improve the accuracy, control, and performance photographers can get from their equipment. Its new Scene Recognition System advances the use of Nikon&amp;#39;s acclaimed 1,005-segment sensor to recognize colors and light patterns that help the camera determine the subject and the type of scene being photographed before a picture is taken. This information is used to improve the accuracy of autofocus, autoexposure, and auto white balance functions in the D300. For example, the camera can track moving subjects better and by identifying them, it can also automatically select focus points faster and with greater accuracy. It can also analyze highlights and more accurately determine exposure, as well as infer light sources to deliver more accurate white balance detection.&lt;/div&gt;\r\n&lt;/div&gt;\r\n&lt;!-- cpt_container_end --&gt;',	'',	'',	'',	''),
-(49,	1,	'Samsung Galaxy Tab 10.1',	'&lt;p&gt;\r\n	Samsung Galaxy Tab 10.1, is the world&amp;rsquo;s thinnest tablet, measuring 8.6 mm thickness, running with Android 3.0 Honeycomb OS on a 1GHz dual-core Tegra 2 processor, similar to its younger brother Samsung Galaxy Tab 8.9.&lt;/p&gt;\r\n&lt;p&gt;\r\n	Samsung Galaxy Tab 10.1 gives pure Android 3.0 experience, adding its new TouchWiz UX or TouchWiz 4.0 &amp;ndash; includes a live panel, which lets you to customize with different content, such as your pictures, bookmarks, and social feeds, sporting a 10.1 inches WXGA capacitive touch screen with 1280 x 800 pixels of resolution, equipped with 3 megapixel rear camera with LED flash and a 2 megapixel front camera, HSPA+ connectivity up to 21Mbps, 720p HD video recording capability, 1080p HD playback, DLNA support, Bluetooth 2.1, USB 2.0, gyroscope, Wi-Fi 802.11 a/b/g/n, micro-SD slot, 3.5mm headphone jack, and SIM slot, including the Samsung Stick &amp;ndash; a Bluetooth microphone that can be carried in a pocket like a pen and sound dock with powered subwoofer.&lt;/p&gt;\r\n&lt;p&gt;\r\n	Samsung Galaxy Tab 10.1 will come in 16GB / 32GB / 64GB verities and pre-loaded with Social Hub, Reader&amp;rsquo;s Hub, Music Hub and Samsung Mini Apps Tray &amp;ndash; which gives you access to more commonly used apps to help ease multitasking and it is capable of Adobe Flash Player 10.2, powered by 6860mAh battery that gives you 10hours of video-playback time.&amp;nbsp;&amp;auml;&amp;ouml;&lt;/p&gt;\r\n',	'',	'',	'',	''),
+(35,	2,	'Product 8',	'&lt;p&gt;\r\n	Product 8&lt;/p&gt;\r\n',	'',	'asds',	'',	''),
 (42,	1,	'Apple Cinema 30&quot;',	'&lt;p&gt;\r\n	&lt;font face=&quot;helvetica,geneva,arial&quot; size=&quot;2&quot;&gt;&lt;font face=&quot;Helvetica&quot; size=&quot;2&quot;&gt;The 30-inch Apple Cinema HD Display delivers an amazing 2560 x 1600 pixel resolution. Designed specifically for the creative professional, this display provides more space for easier access to all the tools and palettes needed to edit, format and composite your work. Combine this display with a Mac Pro, MacBook Pro, or PowerMac G5 and there\'s no limit to what you can achieve. &lt;br&gt;\r\n	&lt;br&gt;\r\n	&lt;/font&gt;&lt;font face=&quot;Helvetica&quot; size=&quot;2&quot;&gt;The Cinema HD features an active-matrix liquid crystal display that produces flicker-free images that deliver twice the brightness, twice the sharpness and twice the contrast ratio of a typical CRT display. Unlike other flat panels, it\'s designed with a pure digital interface to deliver distortion-free images that never need adjusting. With over 4 million digital pixels, the display is uniquely suited for scientific and technical applications such as visualizing molecular structures or analyzing geological data. &lt;br&gt;\r\n	&lt;br&gt;\r\n	&lt;/font&gt;&lt;font face=&quot;Helvetica&quot; size=&quot;2&quot;&gt;Offering accurate, brilliant color performance, the Cinema HD delivers up to 16.7 million colors across a wide gamut allowing you to see subtle nuances between colors from soft pastels to rich jewel tones. A wide viewing angle ensures uniform color from edge to edge. Apple\'s ColorSync technology allows you to create custom profiles to maintain consistent color onscreen and in print. The result: You can confidently use this display in all your color-critical applications. &lt;br&gt;\r\n	&lt;br&gt;\r\n	&lt;/font&gt;&lt;font face=&quot;Helvetica&quot; size=&quot;2&quot;&gt;Housed in a new aluminum design, the display has a very thin bezel that enhances visual accuracy. Each display features two FireWire 400 ports and two USB 2.0 ports, making attachment of desktop peripherals, such as iSight, iPod, digital and still cameras, hard drives, printers and scanners, even more accessible and convenient. Taking advantage of the much thinner and lighter footprint of an LCD, the new displays support the VESA (Video Electronics Standards Association) mounting interface standard. Customers with the optional Cinema Display VESA Mount Adapter kit gain the flexibility to mount their display in locations most appropriate for their work environment. &lt;br&gt;\r\n	&lt;br&gt;\r\n	&lt;/font&gt;&lt;font face=&quot;Helvetica&quot; size=&quot;2&quot;&gt;The Cinema HD features a single cable design with elegant breakout for the USB 2.0, FireWire 400 and a pure digital connection using the industry standard Digital Video Interface (DVI) interface. The DVI connection allows for a direct pure-digital connection.&lt;br&gt;\r\n	&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;\r\n&lt;h3&gt;\r\n	Features:&lt;/h3&gt;\r\n&lt;p&gt;\r\n	Unrivaled display performance&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		30-inch (viewable) active-matrix liquid crystal display provides breathtaking image quality and vivid, richly saturated color.&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Support for 2560-by-1600 pixel resolution for display of high definition still and video imagery.&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Wide-format design for simultaneous display of two full pages of text and graphics.&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Industry standard DVI connector for direct attachment to Mac- and Windows-based desktops and notebooks&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Incredibly wide (170 degree) horizontal and vertical viewing angle for maximum visibility and color performance.&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Lightning-fast pixel response for full-motion digital video playback.&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Support for 16.7 million saturated colors, for use in all graphics-intensive applications.&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	Simple setup and operation&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		Single cable with elegant breakout for connection to DVI, USB and FireWire ports&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Built-in two-port USB 2.0 hub for easy connection of desktop peripheral devices.&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Two FireWire 400 ports to support iSight and other desktop peripherals&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	Sleek, elegant design&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		Huge virtual workspace, very small footprint.&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Narrow Bezel design to minimize visual impact of using dual displays&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Unique hinge design for effortless adjustment&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Support for VESA mounting solutions (Apple Cinema Display VESA Mount Adapter sold separately)&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;h3&gt;\r\n	Technical specifications&lt;/h3&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Screen size (diagonal viewable image size)&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		Apple Cinema HD Display: 30 inches (29.7-inch viewable)&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Screen type&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		Thin film transistor (TFT) active-matrix liquid crystal display (AMLCD)&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Resolutions&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		2560 x 1600 pixels (optimum resolution)&lt;/li&gt;\r\n	&lt;li&gt;\r\n		2048 x 1280&lt;/li&gt;\r\n	&lt;li&gt;\r\n		1920 x 1200&lt;/li&gt;\r\n	&lt;li&gt;\r\n		1280 x 800&lt;/li&gt;\r\n	&lt;li&gt;\r\n		1024 x 640&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Display colors (maximum)&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		16.7 million&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Viewing angle (typical)&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		170° horizontal; 170° vertical&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Brightness (typical)&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		30-inch Cinema HD Display: 400 cd/m2&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Contrast ratio (typical)&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		700:1&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Response time (typical)&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		16 ms&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Pixel pitch&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		30-inch Cinema HD Display: 0.250 mm&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Screen treatment&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		Antiglare hardcoat&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;User controls (hardware and software)&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		Display Power,&lt;/li&gt;\r\n	&lt;li&gt;\r\n		System sleep, wake&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Brightness&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Monitor tilt&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Connectors and cables&lt;/b&gt;&lt;br&gt;\r\n	Cable&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		DVI (Digital Visual Interface)&lt;/li&gt;\r\n	&lt;li&gt;\r\n		FireWire 400&lt;/li&gt;\r\n	&lt;li&gt;\r\n		USB 2.0&lt;/li&gt;\r\n	&lt;li&gt;\r\n		DC power (24 V)&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	Connectors&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		Two-port, self-powered USB 2.0 hub&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Two FireWire 400 ports&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Kensington security port&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;VESA mount adapter&lt;/b&gt;&lt;br&gt;\r\n	Requires optional Cinema Display VESA Mount Adapter (M9649G/A)&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		Compatible with VESA FDMI (MIS-D, 100, C) compliant mounting solutions&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Electrical requirements&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		Input voltage: 100-240 VAC 50-60Hz&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Maximum power when operating: 150W&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Energy saver mode: 3W or less&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Environmental requirements&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		Operating temperature: 50° to 95° F (10° to 35° C)&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Storage temperature: -40° to 116° F (-40° to 47° C)&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Operating humidity: 20% to 80% noncondensing&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Maximum operating altitude: 10,000 feet&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Agency approvals&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		FCC Part 15 Class B&lt;/li&gt;\r\n	&lt;li&gt;\r\n		EN55022 Class B&lt;/li&gt;\r\n	&lt;li&gt;\r\n		EN55024&lt;/li&gt;\r\n	&lt;li&gt;\r\n		VCCI Class B&lt;/li&gt;\r\n	&lt;li&gt;\r\n		AS/NZS 3548 Class B&lt;/li&gt;\r\n	&lt;li&gt;\r\n		CNS 13438 Class B&lt;/li&gt;\r\n	&lt;li&gt;\r\n		ICES-003 Class B&lt;/li&gt;\r\n	&lt;li&gt;\r\n		ISO 13406 part 2&lt;/li&gt;\r\n	&lt;li&gt;\r\n		MPR II&lt;/li&gt;\r\n	&lt;li&gt;\r\n		IEC 60950&lt;/li&gt;\r\n	&lt;li&gt;\r\n		UL 60950&lt;/li&gt;\r\n	&lt;li&gt;\r\n		CSA 60950&lt;/li&gt;\r\n	&lt;li&gt;\r\n		EN60950&lt;/li&gt;\r\n	&lt;li&gt;\r\n		ENERGY STAR&lt;/li&gt;\r\n	&lt;li&gt;\r\n		TCO \'03&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Size and weight&lt;/b&gt;&lt;br&gt;\r\n	30-inch Apple Cinema HD Display&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		Height: 21.3 inches (54.3 cm)&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Width: 27.2 inches (68.8 cm)&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Depth: 8.46 inches (21.5 cm)&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Weight: 27.5 pounds (12.5 kg)&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;System Requirements&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		Mac Pro, all graphic options&lt;/li&gt;\r\n	&lt;li&gt;\r\n		MacBook Pro&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Power Mac G5 (PCI-X) with ATI Radeon 9650 or better or NVIDIA GeForce 6800 GT DDL or better&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Power Mac G5 (PCI Express), all graphics options&lt;/li&gt;\r\n	&lt;li&gt;\r\n		PowerBook G4 with dual-link DVI support&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Windows PC and graphics card that supports DVI ports with dual-link digital bandwidth and VESA DDC standard for plug-and-play setup&lt;/li&gt;\r\n&lt;/ul&gt;\r\n',	'',	'sdaasd',	'',	''),
 (42,	2,	'Apple Cinema 30&quot;',	'&lt;p&gt;\r\n	&lt;font face=&quot;helvetica,geneva,arial&quot; size=&quot;2&quot;&gt;&lt;font face=&quot;Helvetica&quot; size=&quot;2&quot;&gt;The 30-inch Apple Cinema HD Display delivers an amazing 2560 x 1600 pixel resolution. Designed specifically for the creative professional, this display provides more space for easier access to all the tools and palettes needed to edit, format and composite your work. Combine this display with a Mac Pro, MacBook Pro, or PowerMac G5 and there\'s no limit to what you can achieve. &lt;br&gt;\r\n	&lt;br&gt;\r\n	&lt;/font&gt;&lt;font face=&quot;Helvetica&quot; size=&quot;2&quot;&gt;The Cinema HD features an active-matrix liquid crystal display that produces flicker-free images that deliver twice the brightness, twice the sharpness and twice the contrast ratio of a typical CRT display. Unlike other flat panels, it\'s designed with a pure digital interface to deliver distortion-free images that never need adjusting. With over 4 million digital pixels, the display is uniquely suited for scientific and technical applications such as visualizing molecular structures or analyzing geological data. &lt;br&gt;\r\n	&lt;br&gt;\r\n	&lt;/font&gt;&lt;font face=&quot;Helvetica&quot; size=&quot;2&quot;&gt;Offering accurate, brilliant color performance, the Cinema HD delivers up to 16.7 million colors across a wide gamut allowing you to see subtle nuances between colors from soft pastels to rich jewel tones. A wide viewing angle ensures uniform color from edge to edge. Apple\'s ColorSync technology allows you to create custom profiles to maintain consistent color onscreen and in print. The result: You can confidently use this display in all your color-critical applications. &lt;br&gt;\r\n	&lt;br&gt;\r\n	&lt;/font&gt;&lt;font face=&quot;Helvetica&quot; size=&quot;2&quot;&gt;Housed in a new aluminum design, the display has a very thin bezel that enhances visual accuracy. Each display features two FireWire 400 ports and two USB 2.0 ports, making attachment of desktop peripherals, such as iSight, iPod, digital and still cameras, hard drives, printers and scanners, even more accessible and convenient. Taking advantage of the much thinner and lighter footprint of an LCD, the new displays support the VESA (Video Electronics Standards Association) mounting interface standard. Customers with the optional Cinema Display VESA Mount Adapter kit gain the flexibility to mount their display in locations most appropriate for their work environment. &lt;br&gt;\r\n	&lt;br&gt;\r\n	&lt;/font&gt;&lt;font face=&quot;Helvetica&quot; size=&quot;2&quot;&gt;The Cinema HD features a single cable design with elegant breakout for the USB 2.0, FireWire 400 and a pure digital connection using the industry standard Digital Video Interface (DVI) interface. The DVI connection allows for a direct pure-digital connection.&lt;br&gt;\r\n	&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;\r\n&lt;h3&gt;\r\n	Features:&lt;/h3&gt;\r\n&lt;p&gt;\r\n	Unrivaled display performance&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		30-inch (viewable) active-matrix liquid crystal display provides breathtaking image quality and vivid, richly saturated color.&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Support for 2560-by-1600 pixel resolution for display of high definition still and video imagery.&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Wide-format design for simultaneous display of two full pages of text and graphics.&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Industry standard DVI connector for direct attachment to Mac- and Windows-based desktops and notebooks&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Incredibly wide (170 degree) horizontal and vertical viewing angle for maximum visibility and color performance.&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Lightning-fast pixel response for full-motion digital video playback.&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Support for 16.7 million saturated colors, for use in all graphics-intensive applications.&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	Simple setup and operation&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		Single cable with elegant breakout for connection to DVI, USB and FireWire ports&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Built-in two-port USB 2.0 hub for easy connection of desktop peripheral devices.&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Two FireWire 400 ports to support iSight and other desktop peripherals&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	Sleek, elegant design&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		Huge virtual workspace, very small footprint.&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Narrow Bezel design to minimize visual impact of using dual displays&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Unique hinge design for effortless adjustment&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Support for VESA mounting solutions (Apple Cinema Display VESA Mount Adapter sold separately)&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;h3&gt;\r\n	Technical specifications&lt;/h3&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Screen size (diagonal viewable image size)&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		Apple Cinema HD Display: 30 inches (29.7-inch viewable)&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Screen type&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		Thin film transistor (TFT) active-matrix liquid crystal display (AMLCD)&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Resolutions&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		2560 x 1600 pixels (optimum resolution)&lt;/li&gt;\r\n	&lt;li&gt;\r\n		2048 x 1280&lt;/li&gt;\r\n	&lt;li&gt;\r\n		1920 x 1200&lt;/li&gt;\r\n	&lt;li&gt;\r\n		1280 x 800&lt;/li&gt;\r\n	&lt;li&gt;\r\n		1024 x 640&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Display colors (maximum)&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		16.7 million&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Viewing angle (typical)&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		170° horizontal; 170° vertical&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Brightness (typical)&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		30-inch Cinema HD Display: 400 cd/m2&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Contrast ratio (typical)&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		700:1&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Response time (typical)&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		16 ms&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Pixel pitch&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		30-inch Cinema HD Display: 0.250 mm&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Screen treatment&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		Antiglare hardcoat&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;User controls (hardware and software)&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		Display Power,&lt;/li&gt;\r\n	&lt;li&gt;\r\n		System sleep, wake&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Brightness&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Monitor tilt&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Connectors and cables&lt;/b&gt;&lt;br&gt;\r\n	Cable&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		DVI (Digital Visual Interface)&lt;/li&gt;\r\n	&lt;li&gt;\r\n		FireWire 400&lt;/li&gt;\r\n	&lt;li&gt;\r\n		USB 2.0&lt;/li&gt;\r\n	&lt;li&gt;\r\n		DC power (24 V)&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	Connectors&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		Two-port, self-powered USB 2.0 hub&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Two FireWire 400 ports&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Kensington security port&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;VESA mount adapter&lt;/b&gt;&lt;br&gt;\r\n	Requires optional Cinema Display VESA Mount Adapter (M9649G/A)&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		Compatible with VESA FDMI (MIS-D, 100, C) compliant mounting solutions&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Electrical requirements&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		Input voltage: 100-240 VAC 50-60Hz&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Maximum power when operating: 150W&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Energy saver mode: 3W or less&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Environmental requirements&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		Operating temperature: 50° to 95° F (10° to 35° C)&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Storage temperature: -40° to 116° F (-40° to 47° C)&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Operating humidity: 20% to 80% noncondensing&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Maximum operating altitude: 10,000 feet&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Agency approvals&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		FCC Part 15 Class B&lt;/li&gt;\r\n	&lt;li&gt;\r\n		EN55022 Class B&lt;/li&gt;\r\n	&lt;li&gt;\r\n		EN55024&lt;/li&gt;\r\n	&lt;li&gt;\r\n		VCCI Class B&lt;/li&gt;\r\n	&lt;li&gt;\r\n		AS/NZS 3548 Class B&lt;/li&gt;\r\n	&lt;li&gt;\r\n		CNS 13438 Class B&lt;/li&gt;\r\n	&lt;li&gt;\r\n		ICES-003 Class B&lt;/li&gt;\r\n	&lt;li&gt;\r\n		ISO 13406 part 2&lt;/li&gt;\r\n	&lt;li&gt;\r\n		MPR II&lt;/li&gt;\r\n	&lt;li&gt;\r\n		IEC 60950&lt;/li&gt;\r\n	&lt;li&gt;\r\n		UL 60950&lt;/li&gt;\r\n	&lt;li&gt;\r\n		CSA 60950&lt;/li&gt;\r\n	&lt;li&gt;\r\n		EN60950&lt;/li&gt;\r\n	&lt;li&gt;\r\n		ENERGY STAR&lt;/li&gt;\r\n	&lt;li&gt;\r\n		TCO \'03&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;Size and weight&lt;/b&gt;&lt;br&gt;\r\n	30-inch Apple Cinema HD Display&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		Height: 21.3 inches (54.3 cm)&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Width: 27.2 inches (68.8 cm)&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Depth: 8.46 inches (21.5 cm)&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Weight: 27.5 pounds (12.5 kg)&lt;/li&gt;\r\n&lt;/ul&gt;\r\n&lt;p&gt;\r\n	&lt;b&gt;System Requirements&lt;/b&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		Mac Pro, all graphic options&lt;/li&gt;\r\n	&lt;li&gt;\r\n		MacBook Pro&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Power Mac G5 (PCI-X) with ATI Radeon 9650 or better or NVIDIA GeForce 6800 GT DDL or better&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Power Mac G5 (PCI Express), all graphics options&lt;/li&gt;\r\n	&lt;li&gt;\r\n		PowerBook G4 with dual-link DVI support&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Windows PC and graphics card that supports DVI ports with dual-link digital bandwidth and VESA DDC standard for plug-and-play setup&lt;/li&gt;\r\n&lt;/ul&gt;\r\n',	'',	'sdaasd',	'',	''),
-(30,	2,	'Canon EOS 5D',	'&lt;p&gt;\r\n	Canon\'s press material for the EOS 5D states that it \'defines (a) new D-SLR category\', while we\'re not typically too concerned with marketing talk this particular statement is clearly pretty accurate. The EOS 5D is unlike any previous digital SLR in that it combines a full-frame (35 mm sized) high resolution sensor (12.8 megapixels) with a relatively compact body (slightly larger than the EOS 20D, although in your hand it feels noticeably \'chunkier\'). The EOS 5D is aimed to slot in between the EOS 20D and the EOS-1D professional digital SLR\'s, an important difference when compared to the latter is that the EOS 5D doesn\'t have any environmental seals. While Canon don\'t specifically refer to the EOS 5D as a \'professional\' digital SLR it will have obvious appeal to professionals who want a high quality digital SLR in a body lighter than the EOS-1D. It will also no doubt appeal to current EOS 20D owners (although lets hope they\'ve not bought too many EF-S lenses...) äë&lt;/p&gt;\r\n',	'',	'asddas',	'',	''),
-(35,	2,	'Product 8',	'&lt;p&gt;\r\n	Product 8&lt;/p&gt;\r\n',	'',	'',	'',	''),
-(48,	2,	'iPod Classic',	'&lt;div class=&quot;cpt_product_description &quot;&gt;\r\n	&lt;div&gt;\r\n		&lt;p&gt;\r\n			&lt;strong&gt;More room to move.&lt;/strong&gt;&lt;/p&gt;\r\n		&lt;p&gt;\r\n			With 80GB or 160GB of storage and up to 40 hours of battery life, the new iPod classic lets you enjoy up to 40,000 songs or up to 200 hours of video or any combination wherever you go.&lt;/p&gt;\r\n		&lt;p&gt;\r\n			&lt;strong&gt;Cover Flow.&lt;/strong&gt;&lt;/p&gt;\r\n		&lt;p&gt;\r\n			Browse through your music collection by flipping through album art. Select an album to turn it over and see the track list.&lt;/p&gt;\r\n		&lt;p&gt;\r\n			&lt;strong&gt;Enhanced interface.&lt;/strong&gt;&lt;/p&gt;\r\n		&lt;p&gt;\r\n			Experience a whole new way to browse and view your music and video.&lt;/p&gt;\r\n		&lt;p&gt;\r\n			&lt;strong&gt;Sleeker design.&lt;/strong&gt;&lt;/p&gt;\r\n		&lt;p&gt;\r\n			Beautiful, durable, and sleeker than ever, iPod classic now features an anodized aluminum and polished stainless steel enclosure with rounded edges.&lt;/p&gt;\r\n	&lt;/div&gt;\r\n&lt;/div&gt;\r\n&lt;!-- cpt_container_end --&gt;',	'',	'',	'',	''),
-(40,	2,	'iPhone',	'&lt;p class=&quot;intro&quot;&gt;\r\n	iPhone is a revolutionary new mobile phone that allows you to make a call by simply tapping a name or number in your address book, a favorites list, or a call log. It also automatically syncs all your contacts from a PC, Mac, or Internet service. And it lets you select and listen to voicemail messages in whatever order you want just like email.&lt;/p&gt;\r\n',	'',	'',	'',	''),
-(44,	2,	'MacBook Air',	'&lt;div&gt;\r\n	MacBook Air is ultrathin, ultraportable, and ultra unlike anything else. But you don&amp;rsquo;t lose inches and pounds overnight. It&amp;rsquo;s the result of rethinking conventions. Of multiple wireless innovations. And of breakthrough design. With MacBook Air, mobile computing suddenly has a new standard.&lt;/div&gt;\r\n',	'',	'',	'',	''),
+(30,	1,	'Canon EOS 5D',	'&lt;p&gt;\r\n	Canon\'s press material for the EOS 5D states that it \'defines (a) new D-SLR category\', while we\'re not typically too concerned with marketing talk this particular statement is clearly pretty accurate. The EOS 5D is unlike any previous digital SLR in that it combines a full-frame (35 mm sized) high resolution sensor (12.8 megapixels) with a relatively compact body (slightly larger than the EOS 20D, although in your hand it feels noticeably \'chunkier\'). The EOS 5D is aimed to slot in between the EOS 20D and the EOS-1D professional digital SLR\'s, an important difference when compared to the latter is that the EOS 5D doesn\'t have any environmental seals. While Canon don\'t specifically refer to the EOS 5D as a \'professional\' digital SLR it will have obvious appeal to professionals who want a high quality digital SLR in a body lighter than the EOS-1D. It will also no doubt appeal to current EOS 20D owners (although lets hope they\'ve not bought too many EF-S lenses...) äë&lt;/p&gt;\r\n',	'',	'sdasd',	'',	''),
+(35,	1,	'Product 8',	'&lt;p&gt;\r\n	Product 8&lt;/p&gt;\r\n',	'',	'sdsasd',	'',	''),
+(48,	1,	'iPod Classic',	'&lt;div class=&quot;cpt_product_description &quot;&gt;\r\n	&lt;div&gt;\r\n		&lt;p&gt;\r\n			&lt;strong&gt;More room to move.&lt;/strong&gt;&lt;/p&gt;\r\n		&lt;p&gt;\r\n			With 80GB or 160GB of storage and up to 40 hours of battery life, the new iPod classic lets you enjoy up to 40,000 songs or up to 200 hours of video or any combination wherever you go.&lt;/p&gt;\r\n		&lt;p&gt;\r\n			&lt;strong&gt;Cover Flow.&lt;/strong&gt;&lt;/p&gt;\r\n		&lt;p&gt;\r\n			Browse through your music collection by flipping through album art. Select an album to turn it over and see the track list.&lt;/p&gt;\r\n		&lt;p&gt;\r\n			&lt;strong&gt;Enhanced interface.&lt;/strong&gt;&lt;/p&gt;\r\n		&lt;p&gt;\r\n			Experience a whole new way to browse and view your music and video.&lt;/p&gt;\r\n		&lt;p&gt;\r\n			&lt;strong&gt;Sleeker design.&lt;/strong&gt;&lt;/p&gt;\r\n		&lt;p&gt;\r\n			Beautiful, durable, and sleeker than ever, iPod classic now features an anodized aluminum and polished stainless steel enclosure with rounded edges.&lt;/p&gt;\r\n	&lt;/div&gt;\r\n&lt;/div&gt;\r\n&lt;!-- cpt_container_end --&gt;',	'',	'sdsa',	'',	''),
+(40,	1,	'iPhone',	'&lt;p class=&quot;intro&quot;&gt;\r\n	iPhone is a revolutionary new mobile phone that allows you to make a call by simply tapping a name or number in your address book, a favorites list, or a call log. It also automatically syncs all your contacts from a PC, Mac, or Internet service. And it lets you select and listen to voicemail messages in whatever order you want just like email.&lt;/p&gt;\r\n',	'',	'saddsa',	'',	''),
+(44,	1,	'MacBook Air',	'&lt;div&gt;\r\n	MacBook Air is ultrathin, ultraportable, and ultra unlike anything else. But you don’t lose inches and pounds overnight. It’s the result of rethinking conventions. Of multiple wireless innovations. And of breakthrough design. With MacBook Air, mobile computing suddenly has a new standard.&lt;/div&gt;\r\n',	'',	'assdsa',	'',	''),
 (45,	1,	'MacBook Pro',	'&lt;div class=&quot;cpt_product_description &quot;&gt;\r\n	&lt;div&gt;\r\n		&lt;p&gt;\r\n			&lt;b&gt;Latest Intel mobile architecture&lt;/b&gt;&lt;/p&gt;\r\n		&lt;p&gt;\r\n			Powered by the most advanced mobile processors from Intel, the new Core 2 Duo MacBook Pro is over 50% faster than the original Core Duo MacBook Pro and now supports up to 4GB of RAM.&lt;/p&gt;\r\n		&lt;p&gt;\r\n			&lt;b&gt;Leading-edge graphics&lt;/b&gt;&lt;/p&gt;\r\n		&lt;p&gt;\r\n			The NVIDIA GeForce 8600M GT delivers exceptional graphics processing power. For the ultimate creative canvas, you can even configure the 17-inch model with a 1920-by-1200 resolution display.&lt;/p&gt;\r\n		&lt;p&gt;\r\n			&lt;b&gt;Designed for life on the road&lt;/b&gt;&lt;/p&gt;\r\n		&lt;p&gt;\r\n			Innovations such as a magnetic power connection and an illuminated keyboard with ambient light sensor put the MacBook Pro in a class by itself.&lt;/p&gt;\r\n		&lt;p&gt;\r\n			&lt;b&gt;Connect. Create. Communicate.&lt;/b&gt;&lt;/p&gt;\r\n		&lt;p&gt;\r\n			Quickly set up a video conference with the built-in iSight camera. Control presentations and media from up to 30 feet away with the included Apple Remote. Connect to high-bandwidth peripherals with FireWire 800 and DVI.&lt;/p&gt;\r\n		&lt;p&gt;\r\n			&lt;b&gt;Next-generation wireless&lt;/b&gt;&lt;/p&gt;\r\n		&lt;p&gt;\r\n			Featuring 802.11n wireless technology, the MacBook Pro delivers up to five times the performance and up to twice the range of previous-generation technologies.&lt;/p&gt;\r\n	&lt;/div&gt;\r\n&lt;/div&gt;\r\n&lt;!-- cpt_container_end --&gt;',	'',	'sad',	'',	''),
-(29,	2,	'Palm Treo Pro',	'&lt;p&gt;\r\n	Redefine your workday with the Palm Treo Pro smartphone. Perfectly balanced, you can respond to business and personal email, stay on top of appointments and contacts, and use Wi-Fi or GPS when you&amp;rsquo;re out and about. Then watch a video on YouTube, catch up with news and sports on the web, or listen to a few songs. Balance your work and play the way you like it, with the Palm Treo Pro.&lt;/p&gt;\r\n&lt;p&gt;\r\n	&lt;strong&gt;Features&lt;/strong&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		Windows Mobile&amp;reg; 6.1 Professional Edition&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Qualcomm&amp;reg; MSM7201 400MHz Processor&lt;/li&gt;\r\n	&lt;li&gt;\r\n		320x320 transflective colour TFT touchscreen&lt;/li&gt;\r\n	&lt;li&gt;\r\n		HSDPA/UMTS/EDGE/GPRS/GSM radio&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Tri-band UMTS &amp;mdash; 850MHz, 1900MHz, 2100MHz&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Quad-band GSM &amp;mdash; 850/900/1800/1900&lt;/li&gt;\r\n	&lt;li&gt;\r\n		802.11b/g with WPA, WPA2, and 801.1x authentication&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Built-in GPS&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Bluetooth Version: 2.0 + Enhanced Data Rate&lt;/li&gt;\r\n	&lt;li&gt;\r\n		256MB storage (100MB user available), 128MB RAM&lt;/li&gt;\r\n	&lt;li&gt;\r\n		2.0 megapixel camera, up to 8x digital zoom and video capture&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Removable, rechargeable 1500mAh lithium-ion battery&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Up to 5.0 hours talk time and up to 250 hours standby&lt;/li&gt;\r\n	&lt;li&gt;\r\n		MicroSDHC card expansion (up to 32GB supported)&lt;/li&gt;\r\n	&lt;li&gt;\r\n		MicroUSB 2.0 for synchronization and charging&lt;/li&gt;\r\n	&lt;li&gt;\r\n		3.5mm stereo headset jack&lt;/li&gt;\r\n	&lt;li&gt;\r\n		60mm (W) x 114mm (L) x 13.5mm (D) / 133g&lt;/li&gt;\r\n&lt;/ul&gt;\r\n',	'',	'',	'',	''),
+(29,	1,	'Palm Treo Pro',	'&lt;p&gt;\r\n	Redefine your workday with the Palm Treo Pro smartphone. Perfectly balanced, you can respond to business and personal email, stay on top of appointments and contacts, and use Wi-Fi or GPS when you’re out and about. Then watch a video on YouTube, catch up with news and sports on the web, or listen to a few songs. Balance your work and play the way you like it, with the Palm Treo Pro.&lt;/p&gt;\r\n&lt;p&gt;\r\n	&lt;strong&gt;Features&lt;/strong&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		Windows Mobile® 6.1 Professional Edition&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Qualcomm® MSM7201 400MHz Processor&lt;/li&gt;\r\n	&lt;li&gt;\r\n		320x320 transflective colour TFT touchscreen&lt;/li&gt;\r\n	&lt;li&gt;\r\n		HSDPA/UMTS/EDGE/GPRS/GSM radio&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Tri-band UMTS — 850MHz, 1900MHz, 2100MHz&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Quad-band GSM — 850/900/1800/1900&lt;/li&gt;\r\n	&lt;li&gt;\r\n		802.11b/g with WPA, WPA2, and 801.1x authentication&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Built-in GPS&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Bluetooth Version: 2.0 + Enhanced Data Rate&lt;/li&gt;\r\n	&lt;li&gt;\r\n		256MB storage (100MB user available), 128MB RAM&lt;/li&gt;\r\n	&lt;li&gt;\r\n		2.0 megapixel camera, up to 8x digital zoom and video capture&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Removable, rechargeable 1500mAh lithium-ion battery&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Up to 5.0 hours talk time and up to 250 hours standby&lt;/li&gt;\r\n	&lt;li&gt;\r\n		MicroSDHC card expansion (up to 32GB supported)&lt;/li&gt;\r\n	&lt;li&gt;\r\n		MicroUSB 2.0 for synchronization and charging&lt;/li&gt;\r\n	&lt;li&gt;\r\n		3.5mm stereo headset jack&lt;/li&gt;\r\n	&lt;li&gt;\r\n		60mm (W) x 114mm (L) x 13.5mm (D) / 133g&lt;/li&gt;\r\n&lt;/ul&gt;\r\n',	'',	'sds',	'',	''),
 (36,	1,	'iPod Nano',	'&lt;div&gt;\r\n	&lt;p&gt;\r\n		&lt;strong&gt;Video in your pocket.&lt;/strong&gt;&lt;/p&gt;\r\n	&lt;p&gt;\r\n		Its the small iPod with one very big idea: video. The worlds most popular music player now lets you enjoy movies, TV shows, and more on a two-inch display thats 65% brighter than before.&lt;/p&gt;\r\n	&lt;p&gt;\r\n		&lt;strong&gt;Cover Flow.&lt;/strong&gt;&lt;/p&gt;\r\n	&lt;p&gt;\r\n		Browse through your music collection by flipping through album art. Select an album to turn it over and see the track list.&lt;strong&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;\r\n	&lt;p&gt;\r\n		&lt;strong&gt;Enhanced interface.&lt;/strong&gt;&lt;/p&gt;\r\n	&lt;p&gt;\r\n		Experience a whole new way to browse and view your music and video.&lt;/p&gt;\r\n	&lt;p&gt;\r\n		&lt;strong&gt;Sleek and colorful.&lt;/strong&gt;&lt;/p&gt;\r\n	&lt;p&gt;\r\n		With an anodized aluminum and polished stainless steel enclosure and a choice of five colors, iPod nano is dressed to impress.&lt;/p&gt;\r\n	&lt;p&gt;\r\n		&lt;strong&gt;iTunes.&lt;/strong&gt;&lt;/p&gt;\r\n	&lt;p&gt;\r\n		Available as a free download, iTunes makes it easy to browse and buy millions of songs, movies, TV shows, audiobooks, and games and download free podcasts all at the iTunes Store. And you can import your own music, manage your whole media library, and sync your iPod or iPhone with ease.&lt;/p&gt;\r\n&lt;/div&gt;\r\n',	'',	'sasa',	'',	''),
 (46,	1,	'Sony VAIO',	'&lt;div&gt;\r\n	Unprecedented power. The next generation of processing technology has arrived. Built into the newest VAIO notebooks lies Intel\'s latest, most powerful innovation yet: Intel® Centrino® 2 processor technology. Boasting incredible speed, expanded wireless connectivity, enhanced multimedia support and greater energy efficiency, all the high-performance essentials are seamlessly combined into a single chip.&lt;/div&gt;\r\n',	'',	'dassadsad',	'',	''),
 (47,	1,	'HP LP3065',	'&lt;p&gt;\r\n	Stop your co-workers in their tracks with the stunning new 30-inch diagonal HP LP3065 Flat Panel Monitor. This flagship monitor features best-in-class performance and presentation features on a huge wide-aspect screen while letting you work as comfortably as possible - you might even forget you\'re at the office&lt;/p&gt;\r\n',	'',	'sdaas',	'',	''),
 (32,	2,	'iPod Touch',	'&lt;p&gt;\r\n	&lt;strong&gt;Revolutionary multi-touch interface.&lt;/strong&gt;&lt;br /&gt;\r\n	iPod touch features the same multi-touch screen technology as iPhone. Pinch to zoom in on a photo. Scroll through your songs and videos with a flick. Flip through your library by album artwork with Cover Flow.&lt;/p&gt;\r\n&lt;p&gt;\r\n	&lt;strong&gt;Gorgeous 3.5-inch widescreen display.&lt;/strong&gt;&lt;br /&gt;\r\n	Watch your movies, TV shows, and photos come alive with bright, vivid color on the 320-by-480-pixel display.&lt;/p&gt;\r\n&lt;p&gt;\r\n	&lt;strong&gt;Music downloads straight from iTunes.&lt;/strong&gt;&lt;br /&gt;\r\n	Shop the iTunes Wi-Fi Music Store from anywhere with Wi-Fi.1 Browse or search to find the music youre looking for, preview it, and buy it with just a tap.&lt;/p&gt;\r\n&lt;p&gt;\r\n	&lt;strong&gt;Surf the web with Wi-Fi.&lt;/strong&gt;&lt;br /&gt;\r\n	Browse the web using Safari and watch YouTube videos on the first iPod with Wi-Fi built in&lt;br /&gt;\r\n	&amp;nbsp;&lt;/p&gt;\r\n',	'',	'',	'',	''),
-(41,	2,	'iMac',	'&lt;div&gt;\r\n	Just when you thought iMac had everything, now there&acute;s even more. More powerful Intel Core 2 Duo processors. And more memory standard. Combine this with Mac OS X Leopard and iLife &acute;08, and it&acute;s more all-in-one than ever. iMac packs amazing performance into a stunningly slim space.&lt;/div&gt;\r\n',	'',	'',	'',	''),
-(33,	2,	'Samsung SyncMaster 941BW',	'&lt;div&gt;\r\n	Imagine the advantages of going big without slowing down. The big 19&amp;quot; 941BW monitor combines wide aspect ratio with fast pixel response time, for bigger images, more room to work and crisp motion. In addition, the exclusive MagicBright 2, MagicColor and MagicTune technologies help deliver the ideal image in every situation, while sleek, narrow bezels and adjustable stands deliver style just the way you want it. With the Samsung 941BW widescreen analog/digital LCD monitor, it&amp;#39;s not hard to imagine.&lt;/div&gt;\r\n',	'',	'',	'',	''),
+(41,	1,	'iMac',	'&lt;div&gt;\r\n	Just when you thought iMac had everything, now there´s even more. More powerful Intel Core 2 Duo processors. And more memory standard. Combine this with Mac OS X Leopard and iLife ´08, and it´s more all-in-one than ever. iMac packs amazing performance into a stunningly slim space.&lt;/div&gt;\r\n',	'',	'saddas',	'',	''),
+(33,	1,	'Samsung SyncMaster 941BW',	'&lt;div&gt;\r\n	Imagine the advantages of going big without slowing down. The big 19&quot; 941BW monitor combines wide aspect ratio with fast pixel response time, for bigger images, more room to work and crisp motion. In addition, the exclusive MagicBright 2, MagicColor and MagicTune technologies help deliver the ideal image in every situation, while sleek, narrow bezels and adjustable stands deliver style just the way you want it. With the Samsung 941BW widescreen analog/digital LCD monitor, it\'s not hard to imagine.&lt;/div&gt;\r\n',	'',	'sdsa',	'',	''),
 (34,	2,	'iPod Shuffle',	'&lt;div&gt;\r\n	&lt;strong&gt;Born to be worn.&lt;/strong&gt;\r\n	&lt;p&gt;\r\n		Clip on the worlds most wearable music player and take up to 240 songs with you anywhere. Choose from five colors including four new hues to make your musical fashion statement.&lt;/p&gt;\r\n	&lt;p&gt;\r\n		&lt;strong&gt;Random meets rhythm.&lt;/strong&gt;&lt;/p&gt;\r\n	&lt;p&gt;\r\n		With iTunes autofill, iPod shuffle can deliver a new musical experience every time you sync. For more randomness, you can shuffle songs during playback with the slide of a switch.&lt;/p&gt;\r\n	&lt;strong&gt;Everything is easy.&lt;/strong&gt;\r\n	&lt;p&gt;\r\n		Charge and sync with the included USB dock. Operate the iPod shuffle controls with one hand. Enjoy up to 12 hours straight of skip-free music playback.&lt;/p&gt;\r\n&lt;/div&gt;\r\n',	'',	'',	'',	''),
 (43,	2,	'MacBook',	'&lt;div&gt;\r\n	&lt;p&gt;\r\n		&lt;b&gt;Intel Core 2 Duo processor&lt;/b&gt;&lt;/p&gt;\r\n	&lt;p&gt;\r\n		Powered by an Intel Core 2 Duo processor at speeds up to 2.16GHz, the new MacBook is the fastest ever.&lt;/p&gt;\r\n	&lt;p&gt;\r\n		&lt;b&gt;1GB memory, larger hard drives&lt;/b&gt;&lt;/p&gt;\r\n	&lt;p&gt;\r\n		The new MacBook now comes with 1GB of memory standard and larger hard drives for the entire line perfect for running more of your favorite applications and storing growing media collections.&lt;/p&gt;\r\n	&lt;p&gt;\r\n		&lt;b&gt;Sleek, 1.08-inch-thin design&lt;/b&gt;&lt;/p&gt;\r\n	&lt;p&gt;\r\n		MacBook makes it easy to hit the road thanks to its tough polycarbonate case, built-in wireless technologies, and innovative MagSafe Power Adapter that releases automatically if someone accidentally trips on the cord.&lt;/p&gt;\r\n	&lt;p&gt;\r\n		&lt;b&gt;Built-in iSight camera&lt;/b&gt;&lt;/p&gt;\r\n	&lt;p&gt;\r\n		Right out of the box, you can have a video chat with friends or family,2 record a video at your desk, or take fun pictures with Photo Booth&lt;/p&gt;\r\n&lt;/div&gt;\r\n',	'',	'',	'',	''),
-(31,	2,	'Nikon D300',	'&lt;div class=&quot;cpt_product_description &quot;&gt;\r\n	&lt;div&gt;\r\n		Engineered with pro-level features and performance, the 12.3-effective-megapixel D300 combines brand new technologies with advanced features inherited from Nikon&amp;#39;s newly announced D3 professional digital SLR camera to offer serious photographers remarkable performance combined with agility.&lt;br /&gt;\r\n		&lt;br /&gt;\r\n		Similar to the D3, the D300 features Nikon&amp;#39;s exclusive EXPEED Image Processing System that is central to driving the speed and processing power needed for many of the camera&amp;#39;s new features. The D300 features a new 51-point autofocus system with Nikon&amp;#39;s 3D Focus Tracking feature and two new LiveView shooting modes that allow users to frame a photograph using the camera&amp;#39;s high-resolution LCD monitor. The D300 shares a similar Scene Recognition System as is found in the D3; it promises to greatly enhance the accuracy of autofocus, autoexposure, and auto white balance by recognizing the subject or scene being photographed and applying this information to the calculations for the three functions.&lt;br /&gt;\r\n		&lt;br /&gt;\r\n		The D300 reacts with lightning speed, powering up in a mere 0.13 seconds and shooting with an imperceptible 45-millisecond shutter release lag time. The D300 is capable of shooting at a rapid six frames per second and can go as fast as eight frames per second when using the optional MB-D10 multi-power battery pack. In continuous bursts, the D300 can shoot up to 100 shots at full 12.3-megapixel resolution. (NORMAL-LARGE image setting, using a SanDisk Extreme IV 1GB CompactFlash card.)&lt;br /&gt;\r\n		&lt;br /&gt;\r\n		The D300 incorporates a range of innovative technologies and features that will significantly improve the accuracy, control, and performance photographers can get from their equipment. Its new Scene Recognition System advances the use of Nikon&amp;#39;s acclaimed 1,005-segment sensor to recognize colors and light patterns that help the camera determine the subject and the type of scene being photographed before a picture is taken. This information is used to improve the accuracy of autofocus, autoexposure, and auto white balance functions in the D300. For example, the camera can track moving subjects better and by identifying them, it can also automatically select focus points faster and with greater accuracy. It can also analyze highlights and more accurately determine exposure, as well as infer light sources to deliver more accurate white balance detection.&lt;/div&gt;\r\n&lt;/div&gt;\r\n&lt;!-- cpt_container_end --&gt;',	'',	'',	'',	''),
-(49,	2,	'Samsung Galaxy Tab 10.1',	'&lt;p&gt;\r\n	Samsung Galaxy Tab 10.1, is the world&amp;rsquo;s thinnest tablet, measuring 8.6 mm thickness, running with Android 3.0 Honeycomb OS on a 1GHz dual-core Tegra 2 processor, similar to its younger brother Samsung Galaxy Tab 8.9.&lt;/p&gt;\r\n&lt;p&gt;\r\n	Samsung Galaxy Tab 10.1 gives pure Android 3.0 experience, adding its new TouchWiz UX or TouchWiz 4.0 &amp;ndash; includes a live panel, which lets you to customize with different content, such as your pictures, bookmarks, and social feeds, sporting a 10.1 inches WXGA capacitive touch screen with 1280 x 800 pixels of resolution, equipped with 3 megapixel rear camera with LED flash and a 2 megapixel front camera, HSPA+ connectivity up to 21Mbps, 720p HD video recording capability, 1080p HD playback, DLNA support, Bluetooth 2.1, USB 2.0, gyroscope, Wi-Fi 802.11 a/b/g/n, micro-SD slot, 3.5mm headphone jack, and SIM slot, including the Samsung Stick &amp;ndash; a Bluetooth microphone that can be carried in a pocket like a pen and sound dock with powered subwoofer.&lt;/p&gt;\r\n&lt;p&gt;\r\n	Samsung Galaxy Tab 10.1 will come in 16GB / 32GB / 64GB verities and pre-loaded with Social Hub, Reader&amp;rsquo;s Hub, Music Hub and Samsung Mini Apps Tray &amp;ndash; which gives you access to more commonly used apps to help ease multitasking and it is capable of Adobe Flash Player 10.2, powered by 6860mAh battery that gives you 10hours of video-playback time.&amp;nbsp;&amp;auml;&amp;ouml;&lt;/p&gt;\r\n',	'',	'',	'',	''),
-(30,	1,	'Canon EOS 5D',	'&lt;p&gt;\r\n	Canon\'s press material for the EOS 5D states that it \'defines (a) new D-SLR category\', while we\'re not typically too concerned with marketing talk this particular statement is clearly pretty accurate. The EOS 5D is unlike any previous digital SLR in that it combines a full-frame (35 mm sized) high resolution sensor (12.8 megapixels) with a relatively compact body (slightly larger than the EOS 20D, although in your hand it feels noticeably \'chunkier\'). The EOS 5D is aimed to slot in between the EOS 20D and the EOS-1D professional digital SLR\'s, an important difference when compared to the latter is that the EOS 5D doesn\'t have any environmental seals. While Canon don\'t specifically refer to the EOS 5D as a \'professional\' digital SLR it will have obvious appeal to professionals who want a high quality digital SLR in a body lighter than the EOS-1D. It will also no doubt appeal to current EOS 20D owners (although lets hope they\'ve not bought too many EF-S lenses...) äë&lt;/p&gt;\r\n',	'',	'sdasd',	'',	'');
+(31,	1,	'Nikon D300',	'&lt;div class=&quot;cpt_product_description &quot;&gt;\r\n	&lt;div&gt;\r\n		Engineered with pro-level features and performance, the 12.3-effective-megapixel D300 combines brand new technologies with advanced features inherited from Nikon\'s newly announced D3 professional digital SLR camera to offer serious photographers remarkable performance combined with agility.&lt;br&gt;\r\n		&lt;br&gt;\r\n		Similar to the D3, the D300 features Nikon\'s exclusive EXPEED Image Processing System that is central to driving the speed and processing power needed for many of the camera\'s new features. The D300 features a new 51-point autofocus system with Nikon\'s 3D Focus Tracking feature and two new LiveView shooting modes that allow users to frame a photograph using the camera\'s high-resolution LCD monitor. The D300 shares a similar Scene Recognition System as is found in the D3; it promises to greatly enhance the accuracy of autofocus, autoexposure, and auto white balance by recognizing the subject or scene being photographed and applying this information to the calculations for the three functions.&lt;br&gt;\r\n		&lt;br&gt;\r\n		The D300 reacts with lightning speed, powering up in a mere 0.13 seconds and shooting with an imperceptible 45-millisecond shutter release lag time. The D300 is capable of shooting at a rapid six frames per second and can go as fast as eight frames per second when using the optional MB-D10 multi-power battery pack. In continuous bursts, the D300 can shoot up to 100 shots at full 12.3-megapixel resolution. (NORMAL-LARGE image setting, using a SanDisk Extreme IV 1GB CompactFlash card.)&lt;br&gt;\r\n		&lt;br&gt;\r\n		The D300 incorporates a range of innovative technologies and features that will significantly improve the accuracy, control, and performance photographers can get from their equipment. Its new Scene Recognition System advances the use of Nikon\'s acclaimed 1,005-segment sensor to recognize colors and light patterns that help the camera determine the subject and the type of scene being photographed before a picture is taken. This information is used to improve the accuracy of autofocus, autoexposure, and auto white balance functions in the D300. For example, the camera can track moving subjects better and by identifying them, it can also automatically select focus points faster and with greater accuracy. It can also analyze highlights and more accurately determine exposure, as well as infer light sources to deliver more accurate white balance detection.&lt;/div&gt;\r\n&lt;/div&gt;\r\n&lt;!-- cpt_container_end --&gt;',	'',	'sdsad',	'',	''),
+(31,	2,	'Nikon D300',	'&lt;div class=&quot;cpt_product_description &quot;&gt;\r\n	&lt;div&gt;\r\n		Engineered with pro-level features and performance, the 12.3-effective-megapixel D300 combines brand new technologies with advanced features inherited from Nikon\'s newly announced D3 professional digital SLR camera to offer serious photographers remarkable performance combined with agility.&lt;br&gt;\r\n		&lt;br&gt;\r\n		Similar to the D3, the D300 features Nikon\'s exclusive EXPEED Image Processing System that is central to driving the speed and processing power needed for many of the camera\'s new features. The D300 features a new 51-point autofocus system with Nikon\'s 3D Focus Tracking feature and two new LiveView shooting modes that allow users to frame a photograph using the camera\'s high-resolution LCD monitor. The D300 shares a similar Scene Recognition System as is found in the D3; it promises to greatly enhance the accuracy of autofocus, autoexposure, and auto white balance by recognizing the subject or scene being photographed and applying this information to the calculations for the three functions.&lt;br&gt;\r\n		&lt;br&gt;\r\n		The D300 reacts with lightning speed, powering up in a mere 0.13 seconds and shooting with an imperceptible 45-millisecond shutter release lag time. The D300 is capable of shooting at a rapid six frames per second and can go as fast as eight frames per second when using the optional MB-D10 multi-power battery pack. In continuous bursts, the D300 can shoot up to 100 shots at full 12.3-megapixel resolution. (NORMAL-LARGE image setting, using a SanDisk Extreme IV 1GB CompactFlash card.)&lt;br&gt;\r\n		&lt;br&gt;\r\n		The D300 incorporates a range of innovative technologies and features that will significantly improve the accuracy, control, and performance photographers can get from their equipment. Its new Scene Recognition System advances the use of Nikon\'s acclaimed 1,005-segment sensor to recognize colors and light patterns that help the camera determine the subject and the type of scene being photographed before a picture is taken. This information is used to improve the accuracy of autofocus, autoexposure, and auto white balance functions in the D300. For example, the camera can track moving subjects better and by identifying them, it can also automatically select focus points faster and with greater accuracy. It can also analyze highlights and more accurately determine exposure, as well as infer light sources to deliver more accurate white balance detection.&lt;/div&gt;\r\n&lt;/div&gt;\r\n&lt;!-- cpt_container_end --&gt;',	'',	'asddas',	'',	''),
+(49,	1,	'Samsung Galaxy Tab 10.1',	'&lt;p&gt;\r\n	Samsung Galaxy Tab 10.1, is the world’s thinnest tablet, measuring 8.6 mm thickness, running with Android 3.0 Honeycomb OS on a 1GHz dual-core Tegra 2 processor, similar to its younger brother Samsung Galaxy Tab 8.9.&lt;/p&gt;\r\n&lt;p&gt;\r\n	Samsung Galaxy Tab 10.1 gives pure Android 3.0 experience, adding its new TouchWiz UX or TouchWiz 4.0 – includes a live panel, which lets you to customize with different content, such as your pictures, bookmarks, and social feeds, sporting a 10.1 inches WXGA capacitive touch screen with 1280 x 800 pixels of resolution, equipped with 3 megapixel rear camera with LED flash and a 2 megapixel front camera, HSPA+ connectivity up to 21Mbps, 720p HD video recording capability, 1080p HD playback, DLNA support, Bluetooth 2.1, USB 2.0, gyroscope, Wi-Fi 802.11 a/b/g/n, micro-SD slot, 3.5mm headphone jack, and SIM slot, including the Samsung Stick – a Bluetooth microphone that can be carried in a pocket like a pen and sound dock with powered subwoofer.&lt;/p&gt;\r\n&lt;p&gt;\r\n	Samsung Galaxy Tab 10.1 will come in 16GB / 32GB / 64GB verities and pre-loaded with Social Hub, Reader’s Hub, Music Hub and Samsung Mini Apps Tray – which gives you access to more commonly used apps to help ease multitasking and it is capable of Adobe Flash Player 10.2, powered by 6860mAh battery that gives you 10hours of video-playback time.&amp;nbsp;äö&lt;/p&gt;\r\n',	'',	'asddas',	'',	''),
+(49,	2,	'Samsung Galaxy Tab 10.1',	'&lt;p&gt;\r\n	Samsung Galaxy Tab 10.1, is the world’s thinnest tablet, measuring 8.6 mm thickness, running with Android 3.0 Honeycomb OS on a 1GHz dual-core Tegra 2 processor, similar to its younger brother Samsung Galaxy Tab 8.9.&lt;/p&gt;\r\n&lt;p&gt;\r\n	Samsung Galaxy Tab 10.1 gives pure Android 3.0 experience, adding its new TouchWiz UX or TouchWiz 4.0 – includes a live panel, which lets you to customize with different content, such as your pictures, bookmarks, and social feeds, sporting a 10.1 inches WXGA capacitive touch screen with 1280 x 800 pixels of resolution, equipped with 3 megapixel rear camera with LED flash and a 2 megapixel front camera, HSPA+ connectivity up to 21Mbps, 720p HD video recording capability, 1080p HD playback, DLNA support, Bluetooth 2.1, USB 2.0, gyroscope, Wi-Fi 802.11 a/b/g/n, micro-SD slot, 3.5mm headphone jack, and SIM slot, including the Samsung Stick – a Bluetooth microphone that can be carried in a pocket like a pen and sound dock with powered subwoofer.&lt;/p&gt;\r\n&lt;p&gt;\r\n	Samsung Galaxy Tab 10.1 will come in 16GB / 32GB / 64GB verities and pre-loaded with Social Hub, Reader’s Hub, Music Hub and Samsung Mini Apps Tray – which gives you access to more commonly used apps to help ease multitasking and it is capable of Adobe Flash Player 10.2, powered by 6860mAh battery that gives you 10hours of video-playback time.&amp;nbsp;äö&lt;/p&gt;\r\n',	'',	'asdsad',	'',	''),
+(30,	2,	'Canon EOS 5D',	'&lt;p&gt;\r\n	Canon\'s press material for the EOS 5D states that it \'defines (a) new D-SLR category\', while we\'re not typically too concerned with marketing talk this particular statement is clearly pretty accurate. The EOS 5D is unlike any previous digital SLR in that it combines a full-frame (35 mm sized) high resolution sensor (12.8 megapixels) with a relatively compact body (slightly larger than the EOS 20D, although in your hand it feels noticeably \'chunkier\'). The EOS 5D is aimed to slot in between the EOS 20D and the EOS-1D professional digital SLR\'s, an important difference when compared to the latter is that the EOS 5D doesn\'t have any environmental seals. While Canon don\'t specifically refer to the EOS 5D as a \'professional\' digital SLR it will have obvious appeal to professionals who want a high quality digital SLR in a body lighter than the EOS-1D. It will also no doubt appeal to current EOS 20D owners (although lets hope they\'ve not bought too many EF-S lenses...) äë&lt;/p&gt;\r\n',	'',	'asddas',	'',	'');
 
 DROP TABLE IF EXISTS `oc_product_discount`;
 CREATE TABLE `oc_product_discount` (
@@ -2140,9 +2153,7 @@ CREATE TABLE `oc_product_discount` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 INSERT INTO `oc_product_discount` (`product_discount_id`, `product_id`, `customer_group_id`, `quantity`, `priority`, `price`, `date_start`, `date_end`) VALUES
-(452,	42,	1,	30,	1,	66.0000,	'0000-00-00',	'0000-00-00'),
-(451,	42,	1,	20,	1,	77.0000,	'0000-00-00',	'0000-00-00'),
-(450,	42,	1,	10,	1,	88.0000,	'0000-00-00',	'0000-00-00');
+(468,	42,	1,	10,	1,	88.0000,	'0000-00-00',	'0000-00-00');
 
 DROP TABLE IF EXISTS `oc_product_filter`;
 CREATE TABLE `oc_product_filter` (
@@ -2163,11 +2174,11 @@ CREATE TABLE `oc_product_image` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 INSERT INTO `oc_product_image` (`product_image_id`, `product_id`, `image`, `sort_order`) VALUES
-(2365,	30,	'catalog/demo/canon_eos_5d_3.jpg',	0),
+(2456,	30,	'catalog/demo/canon_eos_5d_2.jpg',	0),
 (2375,	47,	'catalog/demo/hp_3.jpg',	0),
 (2373,	28,	'catalog/demo/htc_touch_hd_3.jpg',	0),
-(2351,	41,	'catalog/demo/imac_3.jpg',	0),
-(1982,	40,	'catalog/demo/iphone_6.jpg',	0),
+(2428,	41,	'catalog/demo/imac_2.jpg',	0),
+(2433,	40,	'catalog/demo/iphone_4.jpg',	0),
 (2379,	36,	'catalog/demo/ipod_nano_3.jpg',	0),
 (2378,	36,	'catalog/demo/ipod_nano_2.jpg',	0),
 (2005,	34,	'catalog/demo/ipod_shuffle_5.jpg',	0),
@@ -2177,26 +2188,26 @@ INSERT INTO `oc_product_image` (`product_image_id`, `product_id`, `image`, `sort
 (2009,	32,	'catalog/demo/ipod_touch_5.jpg',	0),
 (1971,	43,	'catalog/demo/macbook_5.jpg',	0),
 (1970,	43,	'catalog/demo/macbook_4.jpg',	0),
-(1974,	44,	'catalog/demo/macbook_air_4.jpg',	0),
-(1973,	44,	'catalog/demo/macbook_air_2.jpg',	0),
+(2449,	44,	'catalog/demo/macbook_air_3.jpg',	0),
+(2448,	44,	'catalog/demo/macbook_air_2.jpg',	0),
 (2392,	45,	'catalog/demo/macbook_pro_4.jpg',	0),
 (2391,	45,	'catalog/demo/macbook_pro_3.jpg',	0),
-(1986,	31,	'catalog/demo/nikon_d300_3.jpg',	0),
-(1985,	31,	'catalog/demo/nikon_d300_2.jpg',	0),
-(1988,	29,	'catalog/demo/palm_treo_pro_3.jpg',	0),
+(2446,	31,	'catalog/demo/nikon_d300_5.jpg',	0),
+(2445,	31,	'catalog/demo/nikon_d300_4.jpg',	0),
+(2426,	29,	'catalog/demo/palm_treo_pro_2.jpg',	0),
 (2396,	46,	'catalog/demo/sony_vaio_3.jpg',	0),
 (2395,	46,	'catalog/demo/sony_vaio_2.jpg',	0),
-(1991,	48,	'catalog/demo/ipod_classic_4.jpg',	0),
-(1990,	48,	'catalog/demo/ipod_classic_3.jpg',	0),
-(1981,	40,	'catalog/demo/iphone_2.jpg',	0),
-(1980,	40,	'catalog/demo/iphone_5.jpg',	0),
-(2364,	30,	'catalog/demo/canon_eos_5d_2.jpg',	0),
+(2436,	48,	'catalog/demo/ipod_classic_2.jpg',	0),
+(2435,	48,	'catalog/demo/ipod_classic_3.jpg',	0),
+(2432,	40,	'catalog/demo/iphone_3.jpg',	0),
+(2431,	40,	'catalog/demo/iphone_5.jpg',	0),
+(2455,	30,	'catalog/demo/canon_eos_5d_3.jpg',	0),
 (2374,	47,	'catalog/demo/hp_2.jpg',	0),
 (2372,	28,	'catalog/demo/htc_touch_hd_2.jpg',	0),
-(2350,	41,	'catalog/demo/imac_2.jpg',	0),
-(1979,	40,	'catalog/demo/iphone_3.jpg',	0),
-(1978,	40,	'catalog/demo/iphone_4.jpg',	0),
-(1989,	48,	'catalog/demo/ipod_classic_2.jpg',	0),
+(2427,	41,	'catalog/demo/imac_3.jpg',	0),
+(2430,	40,	'catalog/demo/iphone_2.jpg',	0),
+(2429,	40,	'catalog/demo/iphone_6.jpg',	0),
+(2434,	48,	'catalog/demo/ipod_classic_4.jpg',	0),
 (2377,	36,	'catalog/demo/ipod_nano_4.jpg',	0),
 (2376,	36,	'catalog/demo/ipod_nano_5.jpg',	0),
 (2003,	34,	'catalog/demo/ipod_shuffle_2.jpg',	0),
@@ -2206,24 +2217,24 @@ INSERT INTO `oc_product_image` (`product_image_id`, `product_id`, `image`, `sort
 (2006,	32,	'catalog/demo/ipod_touch_4.jpg',	0),
 (1969,	43,	'catalog/demo/macbook_2.jpg',	0),
 (1968,	43,	'catalog/demo/macbook_3.jpg',	0),
-(1972,	44,	'catalog/demo/macbook_air_3.jpg',	0),
+(2447,	44,	'catalog/demo/macbook_air_4.jpg',	0),
 (2390,	45,	'catalog/demo/macbook_pro_2.jpg',	0),
-(1984,	31,	'catalog/demo/nikon_d300_4.jpg',	0),
-(1983,	31,	'catalog/demo/nikon_d300_5.jpg',	0),
-(1987,	29,	'catalog/demo/palm_treo_pro_2.jpg',	0),
+(2444,	31,	'catalog/demo/nikon_d300_2.jpg',	0),
+(2443,	31,	'catalog/demo/nikon_d300_3.jpg',	0),
+(2425,	29,	'catalog/demo/palm_treo_pro_3.jpg',	0),
 (2394,	46,	'catalog/demo/sony_vaio_4.jpg',	0),
 (2393,	46,	'catalog/demo/sony_vaio_5.jpg',	0),
-(2327,	49,	'catalog/demo/samsung_tab_7.jpg',	0),
-(2326,	49,	'catalog/demo/samsung_tab_6.jpg',	0),
-(2325,	49,	'catalog/demo/samsung_tab_5.jpg',	0),
-(2324,	49,	'catalog/demo/samsung_tab_4.jpg',	0),
-(2323,	49,	'catalog/demo/samsung_tab_3.jpg',	0),
-(2322,	49,	'catalog/demo/samsung_tab_2.jpg',	0),
-(2389,	42,	'catalog/demo/canon_logo.jpg',	0),
-(2388,	42,	'catalog/demo/hp_1.jpg',	0),
-(2387,	42,	'catalog/demo/compaq_presario.jpg',	0),
-(2386,	42,	'catalog/demo/canon_eos_5d_1.jpg',	0),
-(2385,	42,	'catalog/demo/canon_eos_5d_2.jpg',	0);
+(2442,	49,	'catalog/demo/samsung_tab_2.jpg',	0),
+(2441,	49,	'catalog/demo/samsung_tab_3.jpg',	0),
+(2440,	49,	'catalog/demo/samsung_tab_4.jpg',	0),
+(2439,	49,	'catalog/demo/samsung_tab_5.jpg',	0),
+(2438,	49,	'catalog/demo/samsung_tab_6.jpg',	0),
+(2437,	49,	'catalog/demo/samsung_tab_7.jpg',	0),
+(2461,	42,	'catalog/demo/canon_eos_5d_2.jpg',	0),
+(2460,	42,	'catalog/demo/canon_logo.jpg',	0),
+(2459,	42,	'catalog/demo/hp_1.jpg',	0),
+(2458,	42,	'catalog/demo/compaq_presario.jpg',	0),
+(2457,	42,	'catalog/demo/canon_eos_5d_1.jpg',	0);
 
 DROP TABLE IF EXISTS `oc_product_option`;
 CREATE TABLE `oc_product_option` (
@@ -2238,16 +2249,9 @@ CREATE TABLE `oc_product_option` (
 INSERT INTO `oc_product_option` (`product_option_id`, `product_id`, `option_id`, `value`, `required`) VALUES
 (224,	35,	11,	'',	1),
 (225,	47,	12,	'2011-04-22',	1),
-(220,	42,	10,	'2011-02-20 22:25',	1),
-(221,	42,	9,	'22:25',	1),
-(223,	42,	2,	'',	1),
-(217,	42,	5,	'',	1),
-(218,	42,	1,	'',	1),
-(226,	30,	5,	'',	1),
-(209,	42,	6,	'',	1),
-(208,	42,	4,	'test',	1),
-(219,	42,	8,	'2011-02-20',	1),
-(222,	42,	7,	'',	1);
+(230,	30,	13,	'',	1),
+(231,	42,	11,	'',	1),
+(228,	42,	13,	'',	1);
 
 DROP TABLE IF EXISTS `oc_product_option_value`;
 CREATE TABLE `oc_product_option_value` (
@@ -2268,22 +2272,17 @@ CREATE TABLE `oc_product_option_value` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 INSERT INTO `oc_product_option_value` (`product_option_value_id`, `product_option_id`, `product_id`, `option_id`, `option_value_id`, `quantity`, `subtract`, `price`, `price_prefix`, `points`, `points_prefix`, `weight`, `weight_prefix`) VALUES
-(8,	223,	42,	2,	23,	48,	1,	10.0000,	'+',	0,	'+',	10.00000000,	'+'),
-(10,	223,	42,	2,	44,	2696,	1,	30.0000,	'+',	0,	'+',	30.00000000,	'+'),
-(9,	223,	42,	2,	24,	194,	1,	20.0000,	'+',	0,	'+',	20.00000000,	'+'),
-(11,	223,	42,	2,	45,	3998,	1,	40.0000,	'+',	0,	'+',	40.00000000,	'+'),
-(1,	217,	42,	5,	41,	100,	0,	1.0000,	'+',	0,	'+',	1.00000000,	'+'),
-(4,	217,	42,	5,	39,	92,	1,	4.0000,	'+',	0,	'+',	4.00000000,	'+'),
-(2,	217,	42,	5,	42,	200,	1,	2.0000,	'+',	0,	'+',	2.00000000,	'+'),
-(5,	218,	42,	1,	32,	96,	1,	10.0000,	'+',	1,	'+',	10.00000000,	'+'),
-(3,	217,	42,	5,	40,	300,	0,	3.0000,	'+',	0,	'+',	3.00000000,	'+'),
-(12,	224,	35,	11,	46,	0,	1,	5.0000,	'+',	0,	'+',	0.00000000,	'+'),
-(13,	224,	35,	11,	47,	10,	1,	10.0000,	'+',	0,	'+',	0.00000000,	'+'),
 (14,	224,	35,	11,	48,	15,	1,	15.0000,	'+',	0,	'+',	0.00000000,	'+'),
-(15,	226,	30,	5,	39,	2,	1,	0.0000,	'+',	0,	'+',	0.00000000,	'+'),
-(16,	226,	30,	5,	40,	5,	1,	0.0000,	'+',	0,	'+',	0.00000000,	'+'),
-(6,	218,	42,	1,	31,	146,	1,	20.0000,	'+',	2,	'-',	20.00000000,	'+'),
-(7,	218,	42,	1,	43,	300,	1,	30.0000,	'+',	3,	'+',	30.00000000,	'+');
+(13,	224,	35,	11,	47,	10,	1,	10.0000,	'+',	0,	'+',	0.00000000,	'+'),
+(12,	224,	35,	11,	46,	0,	1,	5.0000,	'+',	0,	'+',	0.00000000,	'+'),
+(25,	230,	30,	13,	52,	100,	1,	0.0000,	'+',	0,	'+',	0.00000000,	'+'),
+(26,	230,	30,	13,	53,	100,	1,	0.0000,	'+',	0,	'+',	0.00000000,	'+'),
+(28,	231,	42,	11,	47,	100,	1,	0.0000,	'+',	0,	'+',	0.00000000,	'+'),
+(27,	231,	42,	11,	46,	100,	1,	0.0000,	'+',	0,	'+',	0.00000000,	'+'),
+(29,	231,	42,	11,	48,	100,	1,	0.0000,	'+',	0,	'+',	0.00000000,	'+'),
+(22,	228,	42,	13,	49,	0,	1,	0.0000,	'+',	0,	'+',	0.00000000,	'+'),
+(21,	228,	42,	13,	52,	100,	1,	0.0000,	'+',	0,	'+',	0.00000000,	'+'),
+(18,	228,	42,	13,	53,	100,	1,	65.0000,	'+',	0,	'+',	0.00000000,	'+');
 
 DROP TABLE IF EXISTS `oc_product_recurring`;
 CREATE TABLE `oc_product_recurring` (
@@ -2317,23 +2316,16 @@ CREATE TABLE `oc_product_reward` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 INSERT INTO `oc_product_reward` (`product_reward_id`, `product_id`, `customer_group_id`, `points`) VALUES
-(556,	42,	1,	100),
+(570,	42,	1,	100),
 (554,	47,	1,	300),
 (553,	28,	1,	400),
 (329,	43,	1,	600),
-(339,	29,	1,	0),
-(343,	48,	1,	0),
-(335,	40,	1,	0),
-(549,	30,	1,	200),
-(331,	44,	1,	700),
+(569,	30,	1,	200),
+(567,	44,	1,	700),
 (557,	45,	1,	800),
-(337,	31,	1,	0),
-(425,	35,	1,	0),
-(345,	33,	1,	0),
-(545,	41,	1,	0),
 (353,	34,	1,	0),
 (355,	32,	1,	0),
-(521,	49,	1,	1000);
+(566,	49,	1,	1000);
 
 DROP TABLE IF EXISTS `oc_product_special`;
 CREATE TABLE `oc_product_special` (
@@ -2349,9 +2341,9 @@ CREATE TABLE `oc_product_special` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 INSERT INTO `oc_product_special` (`product_special_id`, `product_id`, `customer_group_id`, `priority`, `price`, `date_start`, `date_end`) VALUES
-(447,	42,	1,	1,	90.0000,	'0000-00-00',	'0000-00-00'),
-(445,	30,	1,	2,	90.0000,	'0000-00-00',	'0000-00-00'),
-(444,	30,	1,	1,	80.0000,	'0000-00-00',	'0000-00-00');
+(463,	42,	1,	1,	90.0000,	'0000-00-00',	'0000-00-00'),
+(462,	30,	1,	2,	90.0000,	'0000-00-00',	'0000-00-00'),
+(461,	30,	1,	1,	80.0000,	'0000-00-00',	'0000-00-00');
 
 DROP TABLE IF EXISTS `oc_product_to_category`;
 CREATE TABLE `oc_product_to_category` (
@@ -2363,12 +2355,21 @@ CREATE TABLE `oc_product_to_category` (
 
 INSERT INTO `oc_product_to_category` (`product_id`, `category_id`) VALUES
 (28,	59),
+(29,	59),
 (30,	59),
+(31,	59),
+(33,	59),
+(35,	59),
 (36,	59),
+(40,	59),
+(41,	59),
 (42,	59),
+(44,	59),
 (45,	59),
 (46,	59),
-(47,	59);
+(47,	59),
+(48,	59),
+(49,	59);
 
 DROP TABLE IF EXISTS `oc_product_to_download`;
 CREATE TABLE `oc_product_to_download` (
@@ -2393,7 +2394,16 @@ INSERT INTO `oc_product_to_layout` (`product_id`, `store_id`, `layout_id`) VALUE
 (28,	0,	0),
 (36,	0,	0),
 (45,	0,	0),
-(46,	0,	0);
+(46,	0,	0),
+(29,	0,	0),
+(33,	0,	0),
+(41,	0,	0),
+(40,	0,	0),
+(48,	0,	0),
+(49,	0,	0),
+(35,	0,	0),
+(31,	0,	0),
+(44,	0,	0);
 
 DROP TABLE IF EXISTS `oc_product_to_store`;
 CREATE TABLE `oc_product_to_store` (
@@ -2600,132 +2610,70 @@ INSERT INTO `oc_setting` (`setting_id`, `store_id`, `code`, `key`, `value`, `ser
 (95,	0,	'voucher',	'voucher_status',	'1',	0),
 (103,	0,	'free_checkout',	'free_checkout_status',	'1',	0),
 (104,	0,	'free_checkout',	'free_checkout_order_status_id',	'1',	0),
-(2293,	0,	'config',	'config_robots',	'abot\r\ndbot\r\nebot\r\nhbot\r\nkbot\r\nlbot\r\nmbot\r\nnbot\r\nobot\r\npbot\r\nrbot\r\nsbot\r\ntbot\r\nvbot\r\nybot\r\nzbot\r\nbot.\r\nbot/\r\n_bot\r\n.bot\r\n/bot\r\n-bot\r\n:bot\r\n(bot\r\ncrawl\r\nslurp\r\nspider\r\nseek\r\naccoona\r\nacoon\r\nadressendeutschland\r\nah-ha.com\r\nahoy\r\naltavista\r\nananzi\r\nanthill\r\nappie\r\narachnophilia\r\narale\r\naraneo\r\naranha\r\narchitext\r\naretha\r\narks\r\nasterias\r\natlocal\r\natn\r\natomz\r\naugurfind\r\nbackrub\r\nbannana_bot\r\nbaypup\r\nbdfetch\r\nbig brother\r\nbiglotron\r\nbjaaland\r\nblackwidow\r\nblaiz\r\nblog\r\nblo.\r\nbloodhound\r\nboitho\r\nbooch\r\nbradley\r\nbutterfly\r\ncalif\r\ncassandra\r\nccubee\r\ncfetch\r\ncharlotte\r\nchurl\r\ncienciaficcion\r\ncmc\r\ncollective\r\ncomagent\r\ncombine\r\ncomputingsite\r\ncsci\r\ncurl\r\ncusco\r\ndaumoa\r\ndeepindex\r\ndelorie\r\ndepspid\r\ndeweb\r\ndie blinde kuh\r\ndigger\r\nditto\r\ndmoz\r\ndocomo\r\ndownload express\r\ndtaagent\r\ndwcp\r\nebiness\r\nebingbong\r\ne-collector\r\nejupiter\r\nemacs-w3 search engine\r\nesther\r\nevliya celebi\r\nezresult\r\nfalcon\r\nfelix ide\r\nferret\r\nfetchrover\r\nfido\r\nfindlinks\r\nfireball\r\nfish search\r\nfouineur\r\nfunnelweb\r\ngazz\r\ngcreep\r\ngenieknows\r\ngetterroboplus\r\ngeturl\r\nglx\r\ngoforit\r\ngolem\r\ngrabber\r\ngrapnel\r\ngralon\r\ngriffon\r\ngromit\r\ngrub\r\ngulliver\r\nhamahakki\r\nharvest\r\nhavindex\r\nhelix\r\nheritrix\r\nhku www octopus\r\nhomerweb\r\nhtdig\r\nhtml index\r\nhtml_analyzer\r\nhtmlgobble\r\nhubater\r\nhyper-decontextualizer\r\nia_archiver\r\nibm_planetwide\r\nichiro\r\niconsurf\r\niltrovatore\r\nimage.kapsi.net\r\nimagelock\r\nincywincy\r\nindexer\r\ninfobee\r\ninformant\r\ningrid\r\ninktomisearch.com\r\ninspector web\r\nintelliagent\r\ninternet shinchakubin\r\nip3000\r\niron33\r\nisraeli-search\r\nivia\r\njack\r\njakarta\r\njavabee\r\njetbot\r\njumpstation\r\nkatipo\r\nkdd-explorer\r\nkilroy\r\nknowledge\r\nkototoi\r\nkretrieve\r\nlabelgrabber\r\nlachesis\r\nlarbin\r\nlegs\r\nlibwww\r\nlinkalarm\r\nlink validator\r\nlinkscan\r\nlockon\r\nlwp\r\nlycos\r\nmagpie\r\nmantraagent\r\nmapoftheinternet\r\nmarvin/\r\nmattie\r\nmediafox\r\nmediapartners\r\nmercator\r\nmerzscope\r\nmicrosoft url control\r\nminirank\r\nmiva\r\nmj12\r\nmnogosearch\r\nmoget\r\nmonster\r\nmoose\r\nmotor\r\nmultitext\r\nmuncher\r\nmuscatferret\r\nmwd.search\r\nmyweb\r\nnajdi\r\nnameprotect\r\nnationaldirectory\r\nnazilla\r\nncsa beta\r\nnec-meshexplorer\r\nnederland.zoek\r\nnetcarta webmap engine\r\nnetmechanic\r\nnetresearchserver\r\nnetscoop\r\nnewscan-online\r\nnhse\r\nnokia6682/\r\nnomad\r\nnoyona\r\nnutch\r\nnzexplorer\r\nobjectssearch\r\noccam\r\nomni\r\nopen text\r\nopenfind\r\nopenintelligencedata\r\norb search\r\nosis-project\r\npack rat\r\npageboy\r\npagebull\r\npage_verifier\r\npanscient\r\nparasite\r\npartnersite\r\npatric\r\npear.\r\npegasus\r\nperegrinator\r\npgp key agent\r\nphantom\r\nphpdig\r\npicosearch\r\npiltdownman\r\npimptrain\r\npinpoint\r\npioneer\r\npiranha\r\nplumtreewebaccessor\r\npogodak\r\npoirot\r\npompos\r\npoppelsdorf\r\npoppi\r\npopular iconoclast\r\npsycheclone\r\npublisher\r\npython\r\nrambler\r\nraven search\r\nroach\r\nroad runner\r\nroadhouse\r\nrobbie\r\nrobofox\r\nrobozilla\r\nrules\r\nsalty\r\nsbider\r\nscooter\r\nscoutjet\r\nscrubby\r\nsearch.\r\nsearchprocess\r\nsemanticdiscovery\r\nsenrigan\r\nsg-scout\r\nshai\'hulud\r\nshark\r\nshopwiki\r\nsidewinder\r\nsift\r\nsilk\r\nsimmany\r\nsite searcher\r\nsite valet\r\nsitetech-rover\r\nskymob.com\r\nsleek\r\nsmartwit\r\nsna-\r\nsnappy\r\nsnooper\r\nsohu\r\nspeedfind\r\nsphere\r\nsphider\r\nspinner\r\nspyder\r\nsteeler/\r\nsuke\r\nsuntek\r\nsupersnooper\r\nsurfnomore\r\nsven\r\nsygol\r\nszukacz\r\ntach black widow\r\ntarantula\r\ntempleton\r\n/teoma\r\nt-h-u-n-d-e-r-s-t-o-n-e\r\ntheophrastus\r\ntitan\r\ntitin\r\ntkwww\r\ntoutatis\r\nt-rex\r\ntutorgig\r\ntwiceler\r\ntwisted\r\nucsd\r\nudmsearch\r\nurl check\r\nupdated\r\nvagabondo\r\nvalkyrie\r\nverticrawl\r\nvictoria\r\nvision-search\r\nvolcano\r\nvoyager/\r\nvoyager-hc\r\nw3c_validator\r\nw3m2\r\nw3mir\r\nwalker\r\nwallpaper\r\nwanderer\r\nwauuu\r\nwavefire\r\nweb core\r\nweb hopper\r\nweb wombat\r\nwebbandit\r\nwebcatcher\r\nwebcopy\r\nwebfoot\r\nweblayers\r\nweblinker\r\nweblog monitor\r\nwebmirror\r\nwebmonkey\r\nwebquest\r\nwebreaper\r\nwebsitepulse\r\nwebsnarf\r\nwebstolperer\r\nwebvac\r\nwebwalk\r\nwebwatch\r\nwebwombat\r\nwebzinger\r\nwhizbang\r\nwhowhere\r\nwild ferret\r\nworldlight\r\nwwwc\r\nwwwster\r\nxenu\r\nxget\r\nxift\r\nxirq\r\nyandex\r\nyanga\r\nyeti\r\nyodao\r\nzao\r\nzippp\r\nzyborg',	0),
 (2307,	0,	'ncategory',	'ncategory_bnews_order',	'0',	0),
 (2306,	0,	'ncategory',	'ncategory_status',	'0',	0),
-(2299,	0,	'config',	'config_file_max_size',	'300000',	0),
-(2300,	0,	'config',	'config_file_ext_allowed',	'zip\r\ntxt\r\npng\r\njpe\r\njpeg\r\njpg\r\ngif\r\nbmp\r\nico\r\ntiff\r\ntif\r\nsvg\r\nsvgz\r\nzip\r\nrar\r\nmsi\r\ncab\r\nmp3\r\nqt\r\nmov\r\npdf\r\npsd\r\nai\r\neps\r\nps\r\ndoc',	0),
-(2301,	0,	'config',	'config_file_mime_allowed',	'text/plain\r\nimage/png\r\nimage/jpeg\r\nimage/gif\r\nimage/bmp\r\nimage/tiff\r\nimage/svg+xml\r\napplication/zip\r\n&quot;application/zip&quot;\r\napplication/x-zip\r\n&quot;application/x-zip&quot;\r\napplication/x-zip-compressed\r\n&quot;application/x-zip-compressed&quot;\r\napplication/rar\r\n&quot;application/rar&quot;\r\napplication/x-rar\r\n&quot;application/x-rar&quot;\r\napplication/x-rar-compressed\r\n&quot;application/x-rar-compressed&quot;\r\napplication/octet-stream\r\n&quot;application/octet-stream&quot;\r\naudio/mpeg\r\nvideo/quicktime\r\napplication/pdf',	0),
-(2302,	0,	'config',	'config_error_display',	'0',	0),
-(2303,	0,	'config',	'config_error_log',	'1',	0),
-(2304,	0,	'config',	'config_error_filename',	'error.log',	0),
-(2294,	0,	'config',	'config_compression',	'0',	0),
-(2295,	0,	'config',	'config_secure',	'0',	0),
-(2296,	0,	'config',	'config_password',	'1',	0),
-(2297,	0,	'config',	'config_shared',	'0',	0),
-(2298,	0,	'config',	'config_encryption',	'uID5Vyw2jy7de6OJpIrSQb2ykBOJkSsLaLH8lUr3a384FdSEgegdGWJNpvPqhPP6yBO865czbdT1jxxYmWX4KCQXEEaIU0ltDPAN4BW7ZMmZx8jB5NeNIl3uXxdqkuxSvKl3ZcotsnVWETFCnm53MGBxp9yKHacz9XLQqaRFfKSJxIHElvUisT71WuwMNsvzfmTdAIIWyMmsalCLe5iiHLZkaUfSTRYnsvUZedUsJbrWgSte5lgnZdYpK7NIB98nX4Z35e6QEiLDNVVEw7JXL6peRIQ1i5eGS16zUsisYxiU4BuM2jApEoQb0crO3200mCXji58S50X5a13uTisnsj9xPZf2uwOaD23OOlnzjJxapHLDgaMnKYTa3G3sXFFk3n3PUCtDccfNSOz7zEiKTpk35Wv5wpqirVPjCvJqhxk7oxxwhTJdyWXBCzQOJD1iKD9CGLWRTWIFllWeEtd9nXfTwoDXRbceEJUrDjscNzWfLYny8uXig7Jw4vpykdH6FeWeWTHw1MdZbVFKtWHozacR2a3NkB0ejdYCEC7o7eDyCtkAy3Z9DpbeAtoesgSqJ4GZRihuJkLtyhPFGEgVod2bDB4vGj9P2AAHS2BDVtc8s5arWgyZIa4rklVARYDcCbKAzF84cyPW0tho3hIQ8wB2ozZYaimNHOSo3fH12KlMSrF4AVNbRh1N8qPGR61GGs36kQJ3JnNlYEEWL9OzU2vKqNv9L6bclS7VHW3dtAzhJFEYt3GU6DcMUs1M3DlYpbHcXyS1DzY9JgTwgFk8RZifRTSvOZ9rgHWdqQVLJAWbwiLlgQzpKbRf5PrXgK7UyOKSH2MctweASF0G2WZHL8snxhFl4t4UWFiMh0IZWnlOAEqCiCWp28X6Q2hu4najVNBwVM4nYePMQB2amgon3h33QMHABQcwOnBXpsXEXlm8ne7uBkDZxKr3nfFH1P6tQLHtWJ2f6a5QDL3dmNtvA3pPjUVfIMyt3mkJlkCYbAWE9uXqqfgbii7zJcjPORXa',	0),
-(2292,	0,	'config',	'config_seo_url',	'0',	0),
-(2291,	0,	'config',	'config_maintenance',	'0',	0),
-(2290,	0,	'config',	'config_mail_alert',	'',	0),
-(2289,	0,	'config',	'config_mail_smtp_timeout',	'5',	0),
-(2288,	0,	'config',	'config_mail_smtp_port',	'25',	0),
-(2287,	0,	'config',	'config_mail_smtp_password',	'',	0),
-(2286,	0,	'config',	'config_mail_smtp_username',	'',	0),
-(2285,	0,	'config',	'config_mail_smtp_hostname',	'',	0),
-(2284,	0,	'config',	'config_mail_parameter',	'',	0),
-(2283,	0,	'config',	'config_mail_protocol',	'mail',	0),
-(2282,	0,	'config',	'config_ftp_status',	'0',	0),
-(2281,	0,	'config',	'config_ftp_root',	'',	0),
-(2280,	0,	'config',	'config_ftp_password',	'',	0),
-(2279,	0,	'config',	'config_ftp_username',	'',	0),
-(2278,	0,	'config',	'config_ftp_port',	'21',	0),
-(2277,	0,	'config',	'config_ftp_hostname',	'opencart',	0),
-(2276,	0,	'config',	'config_image_location_height',	'50',	0),
-(2275,	0,	'config',	'config_image_location_width',	'268',	0),
-(2274,	0,	'config',	'config_image_cart_height',	'47',	0),
-(2273,	0,	'config',	'config_image_cart_width',	'47',	0),
-(2272,	0,	'config',	'config_image_wishlist_height',	'47',	0),
-(2271,	0,	'config',	'config_image_wishlist_width',	'47',	0),
-(2270,	0,	'config',	'config_image_compare_height',	'90',	0),
-(2269,	0,	'config',	'config_image_compare_width',	'90',	0),
-(2268,	0,	'config',	'config_image_related_height',	'80',	0),
-(2267,	0,	'config',	'config_image_related_width',	'80',	0),
-(2266,	0,	'config',	'config_image_additional_height',	'74',	0),
-(2265,	0,	'config',	'config_image_additional_width',	'74',	0),
-(2264,	0,	'config',	'config_image_product_height',	'228',	0),
-(2263,	0,	'config',	'config_image_product_width',	'228',	0),
-(2262,	0,	'config',	'config_image_popup_height',	'500',	0),
-(2261,	0,	'config',	'config_image_popup_width',	'500',	0),
-(2260,	0,	'config',	'config_image_thumb_height',	'228',	0),
-(2259,	0,	'config',	'config_image_thumb_width',	'228',	0),
-(2258,	0,	'config',	'config_image_category_height',	'80',	0),
-(2257,	0,	'config',	'config_image_category_width',	'80',	0),
-(2255,	0,	'config',	'config_logo',	'catalog/123/logo.svg',	0),
-(2256,	0,	'config',	'config_icon',	'catalog/cart.png',	0),
-(2253,	0,	'config',	'config_captcha',	'',	0),
-(2254,	0,	'config',	'config_captcha_page',	'[\"review\",\"return\",\"contact\"]',	1),
-(2252,	0,	'config',	'config_return_status_id',	'2',	0),
+(2920,	0,	'config',	'config_error_display',	'0',	0),
+(2921,	0,	'config',	'config_error_log',	'1',	0),
+(2917,	0,	'config',	'config_file_max_size',	'300000',	0),
+(2918,	0,	'config',	'config_file_ext_allowed',	'zip\r\ntxt\r\npng\r\njpe\r\njpeg\r\njpg\r\ngif\r\nbmp\r\nico\r\ntiff\r\ntif\r\nsvg\r\nsvgz\r\nzip\r\nrar\r\nmsi\r\ncab\r\nmp3\r\nqt\r\nmov\r\npdf\r\npsd\r\nai\r\neps\r\nps\r\ndoc',	0),
+(2919,	0,	'config',	'config_file_mime_allowed',	'text/plain\r\nimage/png\r\nimage/jpeg\r\nimage/gif\r\nimage/bmp\r\nimage/tiff\r\nimage/svg+xml\r\napplication/zip\r\n&quot;application/zip&quot;\r\napplication/x-zip\r\n&quot;application/x-zip&quot;\r\napplication/x-zip-compressed\r\n&quot;application/x-zip-compressed&quot;\r\napplication/rar\r\n&quot;application/rar&quot;\r\napplication/x-rar\r\n&quot;application/x-rar&quot;\r\napplication/x-rar-compressed\r\n&quot;application/x-rar-compressed&quot;\r\napplication/octet-stream\r\n&quot;application/octet-stream&quot;\r\naudio/mpeg\r\nvideo/quicktime\r\napplication/pdf',	0),
+(2912,	0,	'config',	'config_compression',	'0',	0),
+(2913,	0,	'config',	'config_secure',	'0',	0),
+(2914,	0,	'config',	'config_password',	'1',	0),
+(2915,	0,	'config',	'config_shared',	'0',	0),
+(2916,	0,	'config',	'config_encryption',	'uID5Vyw2jy7de6OJpIrSQb2ykBOJkSsLaLH8lUr3a384FdSEgegdGWJNpvPqhPP6yBO865czbdT1jxxYmWX4KCQXEEaIU0ltDPAN4BW7ZMmZx8jB5NeNIl3uXxdqkuxSvKl3ZcotsnVWETFCnm53MGBxp9yKHacz9XLQqaRFfKSJxIHElvUisT71WuwMNsvzfmTdAIIWyMmsalCLe5iiHLZkaUfSTRYnsvUZedUsJbrWgSte5lgnZdYpK7NIB98nX4Z35e6QEiLDNVVEw7JXL6peRIQ1i5eGS16zUsisYxiU4BuM2jApEoQb0crO3200mCXji58S50X5a13uTisnsj9xPZf2uwOaD23OOlnzjJxapHLDgaMnKYTa3G3sXFFk3n3PUCtDccfNSOz7zEiKTpk35Wv5wpqirVPjCvJqhxk7oxxwhTJdyWXBCzQOJD1iKD9CGLWRTWIFllWeEtd9nXfTwoDXRbceEJUrDjscNzWfLYny8uXig7Jw4vpykdH6FeWeWTHw1MdZbVFKtWHozacR2a3NkB0ejdYCEC7o7eDyCtkAy3Z9DpbeAtoesgSqJ4GZRihuJkLtyhPFGEgVod2bDB4vGj9P2AAHS2BDVtc8s5arWgyZIa4rklVARYDcCbKAzF84cyPW0tho3hIQ8wB2ozZYaimNHOSo3fH12KlMSrF4AVNbRh1N8qPGR61GGs36kQJ3JnNlYEEWL9OzU2vKqNv9L6bclS7VHW3dtAzhJFEYt3GU6DcMUs1M3DlYpbHcXyS1DzY9JgTwgFk8RZifRTSvOZ9rgHWdqQVLJAWbwiLlgQzpKbRf5PrXgK7UyOKSH2MctweASF0G2WZHL8snxhFl4t4UWFiMh0IZWnlOAEqCiCWp28X6Q2hu4najVNBwVM4nYePMQB2amgon3h33QMHABQcwOnBXpsXEXlm8ne7uBkDZxKr3nfFH1P6tQLHtWJ2f6a5QDL3dmNtvA3pPjUVfIMyt3mkJlkCYbAWE9uXqqfgbii7zJcjPORXa',	0),
+(2911,	0,	'config',	'config_robots',	'abot\r\ndbot\r\nebot\r\nhbot\r\nkbot\r\nlbot\r\nmbot\r\nnbot\r\nobot\r\npbot\r\nrbot\r\nsbot\r\ntbot\r\nvbot\r\nybot\r\nzbot\r\nbot.\r\nbot/\r\n_bot\r\n.bot\r\n/bot\r\n-bot\r\n:bot\r\n(bot\r\ncrawl\r\nslurp\r\nspider\r\nseek\r\naccoona\r\nacoon\r\nadressendeutschland\r\nah-ha.com\r\nahoy\r\naltavista\r\nananzi\r\nanthill\r\nappie\r\narachnophilia\r\narale\r\naraneo\r\naranha\r\narchitext\r\naretha\r\narks\r\nasterias\r\natlocal\r\natn\r\natomz\r\naugurfind\r\nbackrub\r\nbannana_bot\r\nbaypup\r\nbdfetch\r\nbig brother\r\nbiglotron\r\nbjaaland\r\nblackwidow\r\nblaiz\r\nblog\r\nblo.\r\nbloodhound\r\nboitho\r\nbooch\r\nbradley\r\nbutterfly\r\ncalif\r\ncassandra\r\nccubee\r\ncfetch\r\ncharlotte\r\nchurl\r\ncienciaficcion\r\ncmc\r\ncollective\r\ncomagent\r\ncombine\r\ncomputingsite\r\ncsci\r\ncurl\r\ncusco\r\ndaumoa\r\ndeepindex\r\ndelorie\r\ndepspid\r\ndeweb\r\ndie blinde kuh\r\ndigger\r\nditto\r\ndmoz\r\ndocomo\r\ndownload express\r\ndtaagent\r\ndwcp\r\nebiness\r\nebingbong\r\ne-collector\r\nejupiter\r\nemacs-w3 search engine\r\nesther\r\nevliya celebi\r\nezresult\r\nfalcon\r\nfelix ide\r\nferret\r\nfetchrover\r\nfido\r\nfindlinks\r\nfireball\r\nfish search\r\nfouineur\r\nfunnelweb\r\ngazz\r\ngcreep\r\ngenieknows\r\ngetterroboplus\r\ngeturl\r\nglx\r\ngoforit\r\ngolem\r\ngrabber\r\ngrapnel\r\ngralon\r\ngriffon\r\ngromit\r\ngrub\r\ngulliver\r\nhamahakki\r\nharvest\r\nhavindex\r\nhelix\r\nheritrix\r\nhku www octopus\r\nhomerweb\r\nhtdig\r\nhtml index\r\nhtml_analyzer\r\nhtmlgobble\r\nhubater\r\nhyper-decontextualizer\r\nia_archiver\r\nibm_planetwide\r\nichiro\r\niconsurf\r\niltrovatore\r\nimage.kapsi.net\r\nimagelock\r\nincywincy\r\nindexer\r\ninfobee\r\ninformant\r\ningrid\r\ninktomisearch.com\r\ninspector web\r\nintelliagent\r\ninternet shinchakubin\r\nip3000\r\niron33\r\nisraeli-search\r\nivia\r\njack\r\njakarta\r\njavabee\r\njetbot\r\njumpstation\r\nkatipo\r\nkdd-explorer\r\nkilroy\r\nknowledge\r\nkototoi\r\nkretrieve\r\nlabelgrabber\r\nlachesis\r\nlarbin\r\nlegs\r\nlibwww\r\nlinkalarm\r\nlink validator\r\nlinkscan\r\nlockon\r\nlwp\r\nlycos\r\nmagpie\r\nmantraagent\r\nmapoftheinternet\r\nmarvin/\r\nmattie\r\nmediafox\r\nmediapartners\r\nmercator\r\nmerzscope\r\nmicrosoft url control\r\nminirank\r\nmiva\r\nmj12\r\nmnogosearch\r\nmoget\r\nmonster\r\nmoose\r\nmotor\r\nmultitext\r\nmuncher\r\nmuscatferret\r\nmwd.search\r\nmyweb\r\nnajdi\r\nnameprotect\r\nnationaldirectory\r\nnazilla\r\nncsa beta\r\nnec-meshexplorer\r\nnederland.zoek\r\nnetcarta webmap engine\r\nnetmechanic\r\nnetresearchserver\r\nnetscoop\r\nnewscan-online\r\nnhse\r\nnokia6682/\r\nnomad\r\nnoyona\r\nnutch\r\nnzexplorer\r\nobjectssearch\r\noccam\r\nomni\r\nopen text\r\nopenfind\r\nopenintelligencedata\r\norb search\r\nosis-project\r\npack rat\r\npageboy\r\npagebull\r\npage_verifier\r\npanscient\r\nparasite\r\npartnersite\r\npatric\r\npear.\r\npegasus\r\nperegrinator\r\npgp key agent\r\nphantom\r\nphpdig\r\npicosearch\r\npiltdownman\r\npimptrain\r\npinpoint\r\npioneer\r\npiranha\r\nplumtreewebaccessor\r\npogodak\r\npoirot\r\npompos\r\npoppelsdorf\r\npoppi\r\npopular iconoclast\r\npsycheclone\r\npublisher\r\npython\r\nrambler\r\nraven search\r\nroach\r\nroad runner\r\nroadhouse\r\nrobbie\r\nrobofox\r\nrobozilla\r\nrules\r\nsalty\r\nsbider\r\nscooter\r\nscoutjet\r\nscrubby\r\nsearch.\r\nsearchprocess\r\nsemanticdiscovery\r\nsenrigan\r\nsg-scout\r\nshai\'hulud\r\nshark\r\nshopwiki\r\nsidewinder\r\nsift\r\nsilk\r\nsimmany\r\nsite searcher\r\nsite valet\r\nsitetech-rover\r\nskymob.com\r\nsleek\r\nsmartwit\r\nsna-\r\nsnappy\r\nsnooper\r\nsohu\r\nspeedfind\r\nsphere\r\nsphider\r\nspinner\r\nspyder\r\nsteeler/\r\nsuke\r\nsuntek\r\nsupersnooper\r\nsurfnomore\r\nsven\r\nsygol\r\nszukacz\r\ntach black widow\r\ntarantula\r\ntempleton\r\n/teoma\r\nt-h-u-n-d-e-r-s-t-o-n-e\r\ntheophrastus\r\ntitan\r\ntitin\r\ntkwww\r\ntoutatis\r\nt-rex\r\ntutorgig\r\ntwiceler\r\ntwisted\r\nucsd\r\nudmsearch\r\nurl check\r\nupdated\r\nvagabondo\r\nvalkyrie\r\nverticrawl\r\nvictoria\r\nvision-search\r\nvolcano\r\nvoyager/\r\nvoyager-hc\r\nw3c_validator\r\nw3m2\r\nw3mir\r\nwalker\r\nwallpaper\r\nwanderer\r\nwauuu\r\nwavefire\r\nweb core\r\nweb hopper\r\nweb wombat\r\nwebbandit\r\nwebcatcher\r\nwebcopy\r\nwebfoot\r\nweblayers\r\nweblinker\r\nweblog monitor\r\nwebmirror\r\nwebmonkey\r\nwebquest\r\nwebreaper\r\nwebsitepulse\r\nwebsnarf\r\nwebstolperer\r\nwebvac\r\nwebwalk\r\nwebwatch\r\nwebwombat\r\nwebzinger\r\nwhizbang\r\nwhowhere\r\nwild ferret\r\nworldlight\r\nwwwc\r\nwwwster\r\nxenu\r\nxget\r\nxift\r\nxirq\r\nyandex\r\nyanga\r\nyeti\r\nyodao\r\nzao\r\nzippp\r\nzyborg',	0),
+(2910,	0,	'config',	'config_seo_url',	'0',	0),
+(2909,	0,	'config',	'config_maintenance',	'0',	0),
+(2908,	0,	'config',	'config_mail_alert',	'',	0),
+(2907,	0,	'config',	'config_mail_smtp_timeout',	'5',	0),
+(2906,	0,	'config',	'config_mail_smtp_port',	'25',	0),
+(2905,	0,	'config',	'config_mail_smtp_password',	'',	0),
+(2904,	0,	'config',	'config_mail_smtp_username',	'',	0),
+(2903,	0,	'config',	'config_mail_smtp_hostname',	'',	0),
+(2902,	0,	'config',	'config_mail_parameter',	'',	0),
+(2901,	0,	'config',	'config_mail_protocol',	'mail',	0),
+(2900,	0,	'config',	'config_ftp_status',	'0',	0),
+(2899,	0,	'config',	'config_ftp_root',	'',	0),
+(2898,	0,	'config',	'config_ftp_password',	'',	0),
+(2896,	0,	'config',	'config_ftp_port',	'21',	0),
+(2897,	0,	'config',	'config_ftp_username',	'',	0),
+(2895,	0,	'config',	'config_ftp_hostname',	'opencart',	0),
+(2893,	0,	'config',	'config_image_location_width',	'268',	0),
 (1234,	0,	'lt_newsletter',	'lt_newsletter_status',	'1',	0),
 (1233,	0,	'lt_newsletter',	'lt_newsletter_notify',	'1',	0),
-(2251,	0,	'config',	'config_return_id',	'0',	0),
-(2249,	0,	'config',	'config_affiliate_id',	'4',	0),
-(2250,	0,	'config',	'config_affiliate_mail',	'0',	0),
-(2248,	0,	'config',	'config_affiliate_commission',	'5',	0),
-(2247,	0,	'config',	'config_affiliate_auto',	'0',	0),
-(2246,	0,	'config',	'config_affiliate_approval',	'0',	0),
-(2245,	0,	'config',	'config_stock_checkout',	'0',	0),
-(2244,	0,	'config',	'config_stock_warning',	'0',	0),
-(2243,	0,	'config',	'config_stock_display',	'0',	0),
-(2242,	0,	'config',	'config_api_id',	'1',	0),
-(2241,	0,	'config',	'config_order_mail',	'0',	0),
-(2240,	0,	'config',	'config_fraud_status_id',	'7',	0),
-(2239,	0,	'config',	'config_complete_status',	'[\"5\",\"3\"]',	1),
-(2238,	0,	'config',	'config_processing_status',	'[\"5\",\"1\",\"2\",\"12\",\"3\"]',	1),
-(2237,	0,	'config',	'config_order_status_id',	'1',	0),
-(2236,	0,	'config',	'config_checkout_id',	'5',	0),
-(2235,	0,	'config',	'config_checkout_guest',	'1',	0),
-(2234,	0,	'config',	'config_cart_weight',	'1',	0),
-(2233,	0,	'config',	'config_invoice_prefix',	'INV-2013-00',	0),
-(2232,	0,	'config',	'config_account_mail',	'0',	0),
-(2230,	0,	'config',	'config_login_attempts',	'5',	0),
-(2231,	0,	'config',	'config_account_id',	'3',	0),
-(2229,	0,	'config',	'config_customer_price',	'0',	0),
-(2228,	0,	'config',	'config_customer_group_display',	'[\"1\"]',	1),
-(2227,	0,	'config',	'config_customer_group_id',	'1',	0),
-(2226,	0,	'config',	'config_customer_online',	'0',	0),
-(2225,	0,	'config',	'config_tax_customer',	'shipping',	0),
-(2224,	0,	'config',	'config_tax_default',	'shipping',	0),
+(2894,	0,	'config',	'config_image_location_height',	'50',	0),
+(2892,	0,	'config',	'config_image_cart_height',	'47',	0),
+(2891,	0,	'config',	'config_image_cart_width',	'47',	0),
+(2890,	0,	'config',	'config_image_wishlist_height',	'47',	0),
+(2888,	0,	'config',	'config_image_compare_height',	'90',	0),
+(2889,	0,	'config',	'config_image_wishlist_width',	'47',	0),
+(2886,	0,	'config',	'config_image_related_height',	'263',	0),
+(2887,	0,	'config',	'config_image_compare_width',	'90',	0),
+(2884,	0,	'config',	'config_image_additional_height',	'555',	0),
+(2885,	0,	'config',	'config_image_related_width',	'263',	0),
+(2883,	0,	'config',	'config_image_additional_width',	'555',	0),
 (1945,	0,	'mega_filter_seo',	'mega_filter_seo',	'{\"enabled\":\"0\"}',	1),
 (1946,	0,	'mega_filter_status',	'mega_filter_status',	'1',	0),
 (1947,	0,	'mfilter_version',	'mfilter_version',	'2.0.4.4.7',	0),
 (1948,	0,	'mfilter_license',	'mfilter_license',	'{\"order_id\":\"202cb962ac59075b964b07152d234b70\",\"email\":\"2bd1c9bd55605a52c6abd23789562b07\",\"time\":1565709038}',	1),
-(2223,	0,	'config',	'config_tax',	'1',	0),
-(2222,	0,	'config',	'config_voucher_max',	'1000',	0),
-(2221,	0,	'config',	'config_voucher_min',	'1',	0),
-(2220,	0,	'config',	'config_review_mail',	'0',	0),
-(2219,	0,	'config',	'config_review_guest',	'1',	0),
-(2218,	0,	'config',	'config_review_status',	'1',	0),
-(2217,	0,	'config',	'config_limit_admin',	'20',	0),
-(2216,	0,	'config',	'config_product_description_length',	'100',	0),
-(2215,	0,	'config',	'config_product_limit',	'15',	0),
-(2214,	0,	'config',	'config_product_count',	'1',	0),
-(2213,	0,	'config',	'config_weight_class_id',	'1',	0),
-(2212,	0,	'config',	'config_length_class_id',	'1',	0),
-(2211,	0,	'config',	'config_currency_auto',	'1',	0),
-(2210,	0,	'config',	'config_currency',	'USD',	0),
-(2209,	0,	'config',	'config_admin_language',	'ru',	0),
-(2208,	0,	'config',	'config_language',	'ru',	0),
-(2207,	0,	'config',	'config_zone_id',	'',	0),
-(2206,	0,	'config',	'config_country_id',	'222',	0),
-(2205,	0,	'config',	'config_comment',	'',	0),
-(2204,	0,	'config',	'config_open',	'',	0),
-(2202,	0,	'config',	'config_fax',	'',	0),
-(2203,	0,	'config',	'config_image',	'',	0),
-(2191,	0,	'config',	'config_layout_id',	'4',	0),
-(2192,	0,	'config',	'config_name',	'Your Store',	0),
-(2193,	0,	'config',	'config_owner',	'Your Name',	0),
-(2194,	0,	'config',	'config_address',	'Address 1',	0),
-(2195,	0,	'config',	'config_geocode',	'',	0),
-(2196,	0,	'config',	'config_email',	'vovazabalotny@gmail.com',	0),
-(2197,	0,	'config',	'config_telephone',	'+38 (096) 762-40-96',	0),
-(2198,	0,	'config',	'config_facebook',	'https://www.facebook.com/vtsocks/',	0),
-(2201,	0,	'config',	'config_youtube',	'https://www.youtube.com/',	0),
-(2200,	0,	'config',	'config_twitter',	'https://twitter.com/home?lang=ru',	0),
-(2199,	0,	'config',	'config_instagram',	'https://www.instagram.com/socks_vt/',	0),
-(2190,	0,	'config',	'config_template',	'default',	0),
-(2189,	0,	'config',	'config_meta_keyword',	'',	0),
-(2188,	0,	'config',	'config_meta_description',	'My Store',	0),
-(2187,	0,	'config',	'config_meta_title',	'Your Store',	0),
+(2881,	0,	'config',	'config_image_product_width',	'228',	0),
+(2882,	0,	'config',	'config_image_product_height',	'228',	0),
+(2880,	0,	'config',	'config_image_popup_height',	'500',	0),
+(2879,	0,	'config',	'config_image_popup_width',	'500',	0),
+(2878,	0,	'config',	'config_image_thumb_height',	'555',	0),
+(2877,	0,	'config',	'config_image_thumb_width',	'555',	0),
+(2875,	0,	'config',	'config_image_category_width',	'555',	0),
+(2876,	0,	'config',	'config_image_category_height',	'280',	0),
+(2874,	0,	'config',	'config_icon',	'catalog/cart.png',	0),
+(2873,	0,	'config',	'config_logo',	'catalog/123/logo.svg',	0),
+(2872,	0,	'config',	'config_captcha_page',	'[\"review\",\"return\",\"contact\"]',	1),
+(2871,	0,	'config',	'config_captcha',	'',	0),
+(2868,	0,	'config',	'config_affiliate_mail',	'0',	0),
+(2870,	0,	'config',	'config_return_status_id',	'2',	0),
+(2869,	0,	'config',	'config_return_id',	'0',	0),
+(2867,	0,	'config',	'config_affiliate_id',	'4',	0),
+(2866,	0,	'config',	'config_affiliate_commission',	'5',	0),
 (2308,	0,	'ncategory',	'ncategory_bnews_display_style',	'0',	0),
 (2309,	0,	'ncategory',	'ncategory_bnews_tplpick',	'0',	0),
 (2310,	0,	'ncategory',	'ncategory_bnews_display_elements',	'[\"name\",\"image\",\"da\",\"du\",\"author\",\"category\",\"desc\",\"button\",\"com\",\"custom1\",\"custom2\",\"custom3\",\"custom4\"]',	1),
@@ -2746,7 +2694,69 @@ INSERT INTO `oc_setting` (`setting_id`, `store_id`, `code`, `key`, `value`, `ser
 (2325,	0,	'ncategory',	'ncategory_bnews_facebook_tags',	'0',	0),
 (2326,	0,	'ncategory',	'ncategory_bnews_twitter_tags',	'0',	0),
 (2332,	0,	'mega_filter_module',	'mega_filter_module',	'{\"1\":{\"attribs\":{\"3\":{\"sort_order\":\"\",\"items\":{\"4\":{\"enabled\":\"1\",\"type\":\"checkbox\",\"display_live_filter\":\"\",\"collapsed\":\"0\",\"display_list_of_items\":\"\",\"sort_order_values\":\"\",\"sort_order\":\"\"},\"5\":{\"enabled\":\"1\",\"type\":\"checkbox\",\"display_live_filter\":\"\",\"collapsed\":\"0\",\"display_list_of_items\":\"\",\"sort_order_values\":\"\",\"sort_order\":\"\"},\"6\":{\"enabled\":\"1\",\"type\":\"checkbox\",\"display_live_filter\":\"\",\"collapsed\":\"0\",\"display_list_of_items\":\"\",\"sort_order_values\":\"\",\"sort_order\":\"\"},\"7\":{\"enabled\":\"1\",\"type\":\"checkbox\",\"display_live_filter\":\"\",\"collapsed\":\"0\",\"display_list_of_items\":\"\",\"sort_order_values\":\"\",\"sort_order\":\"\"},\"8\":{\"enabled\":\"1\",\"type\":\"checkbox\",\"display_live_filter\":\"\",\"collapsed\":\"0\",\"display_list_of_items\":\"\",\"sort_order_values\":\"\",\"sort_order\":\"\"},\"9\":{\"enabled\":\"1\",\"type\":\"checkbox\",\"display_live_filter\":\"\",\"collapsed\":\"0\",\"display_list_of_items\":\"\",\"sort_order_values\":\"\",\"sort_order\":\"\"},\"10\":{\"enabled\":\"1\",\"type\":\"checkbox\",\"display_live_filter\":\"\",\"collapsed\":\"0\",\"display_list_of_items\":\"\",\"sort_order_values\":\"\",\"sort_order\":\"\"},\"11\":{\"enabled\":\"1\",\"type\":\"checkbox\",\"display_live_filter\":\"\",\"collapsed\":\"0\",\"display_list_of_items\":\"\",\"sort_order_values\":\"\",\"sort_order\":\"\"}}},\"6\":{\"sort_order\":\"\",\"items\":{\"3\":{\"enabled\":\"1\",\"type\":\"checkbox\",\"display_live_filter\":\"\",\"collapsed\":\"0\",\"display_list_of_items\":\"\",\"sort_order_values\":\"\",\"sort_order\":\"\"},\"1\":{\"enabled\":\"1\",\"type\":\"checkbox\",\"display_live_filter\":\"\",\"collapsed\":\"0\",\"display_list_of_items\":\"\",\"sort_order_values\":\"\",\"sort_order\":\"\"},\"2\":{\"enabled\":\"1\",\"type\":\"checkbox\",\"display_live_filter\":\"\",\"collapsed\":\"0\",\"display_list_of_items\":\"\",\"sort_order_values\":\"\",\"sort_order\":\"\"}}}},\"options\":{\"1\":{\"enabled\":\"0\",\"type\":\"checkbox\",\"display_live_filter\":\"\",\"collapsed\":\"0\",\"display_list_of_items\":\"\",\"sort_order_values\":\"\",\"sort_order\":\"\"},\"2\":{\"enabled\":\"0\",\"type\":\"checkbox\",\"display_live_filter\":\"\",\"collapsed\":\"0\",\"display_list_of_items\":\"\",\"sort_order_values\":\"\",\"sort_order\":\"\"},\"5\":{\"enabled\":\"0\",\"type\":\"checkbox\",\"display_live_filter\":\"\",\"collapsed\":\"0\",\"display_list_of_items\":\"\",\"sort_order_values\":\"\",\"sort_order\":\"\"},\"11\":{\"enabled\":\"0\",\"type\":\"checkbox\",\"display_live_filter\":\"\",\"collapsed\":\"0\",\"display_list_of_items\":\"\",\"sort_order_values\":\"\",\"sort_order\":\"\"}},\"base_attribs\":{\"price\":{\"enabled\":\"1\",\"sort_order\":\"2\",\"collapsed\":\"0\"},\"search\":{\"enabled\":\"0\",\"sort_order\":\"\",\"collapsed\":\"\",\"refresh_delay\":\"1000\",\"button\":\"0\"},\"manufacturers\":{\"enabled\":\"0\",\"sort_order\":\"\",\"display_list_of_items\":\"\",\"display_as_type\":\"checkbox\",\"collapsed\":\"0\",\"display_live_filter\":\"\"},\"model\":{\"enabled\":\"0\",\"sort_order\":\"\",\"display_list_of_items\":\"\",\"display_as_type\":\"text\",\"collapsed\":\"0\",\"display_live_filter\":\"\"},\"sku\":{\"enabled\":\"0\",\"sort_order\":\"\",\"display_list_of_items\":\"\",\"display_as_type\":\"text\",\"collapsed\":\"0\",\"display_live_filter\":\"\"},\"upc\":{\"enabled\":\"0\",\"sort_order\":\"\",\"display_list_of_items\":\"\",\"display_as_type\":\"text\",\"collapsed\":\"0\",\"display_live_filter\":\"\"},\"ean\":{\"enabled\":\"0\",\"sort_order\":\"\",\"display_list_of_items\":\"\",\"display_as_type\":\"text\",\"collapsed\":\"0\",\"display_live_filter\":\"\"},\"jan\":{\"enabled\":\"0\",\"sort_order\":\"\",\"display_list_of_items\":\"\",\"display_as_type\":\"text\",\"collapsed\":\"0\",\"display_live_filter\":\"\"},\"isbn\":{\"enabled\":\"0\",\"sort_order\":\"\",\"display_list_of_items\":\"\",\"display_as_type\":\"text\",\"collapsed\":\"0\",\"display_live_filter\":\"\"},\"mpn\":{\"enabled\":\"0\",\"sort_order\":\"\",\"display_list_of_items\":\"\",\"display_as_type\":\"text\",\"collapsed\":\"0\",\"display_live_filter\":\"\"},\"location\":{\"enabled\":\"0\",\"sort_order\":\"\",\"display_list_of_items\":\"\",\"display_as_type\":\"text\",\"collapsed\":\"0\",\"display_live_filter\":\"\"},\"length\":{\"enabled\":\"0\",\"sort_order\":\"\",\"display_list_of_items\":\"\",\"display_as_type\":\"slider\",\"collapsed\":\"0\",\"display_live_filter\":\"\"},\"width\":{\"enabled\":\"0\",\"sort_order\":\"\",\"display_list_of_items\":\"\",\"display_as_type\":\"slider\",\"collapsed\":\"0\",\"display_live_filter\":\"\"},\"height\":{\"enabled\":\"0\",\"sort_order\":\"\",\"display_list_of_items\":\"\",\"display_as_type\":\"slider\",\"collapsed\":\"0\",\"display_live_filter\":\"\"},\"weight\":{\"enabled\":\"0\",\"sort_order\":\"\",\"display_list_of_items\":\"\",\"display_as_type\":\"slider\",\"collapsed\":\"0\",\"display_live_filter\":\"\"},\"stock_status\":{\"enabled\":\"0\",\"sort_order\":\"\",\"display_list_of_items\":\"\",\"display_as_type\":\"checkbox\",\"collapsed\":\"0\"},\"rating\":{\"enabled\":\"0\",\"sort_order\":\"\",\"collapsed\":\"0\"}},\"configuration\":{\"show_loader_over_results\":\"1\",\"show_loader_over_filter\":\"0\",\"auto_scroll_to_results\":\"0\",\"add_pixels_from_top\":\"0\",\"ajax_pagination\":\"0\",\"refresh_results\":\"immediately\",\"display_list_of_items\":{\"type\":\"scroll\",\"max_height\":\"155\",\"standard_scroll\":\"0\",\"limit_of_items\":\"4\"},\"display_live_filter\":{\"enabled\":\"0\",\"items\":\"1\"},\"background_color_counter\":\"#428bca\",\"text_color_counter\":\"#ffffff\",\"background_color_search_button\":\"#428bca\",\"background_color_slider\":\"\",\"background_color_header\":\"\",\"text_color_header\":\"\",\"border_bottom_color_header\":\"\",\"image_size_width\":\"20\",\"image_size_height\":\"20\",\"color_of_loader_over_results\":\"\",\"color_of_loader_over_filter\":\"\",\"background_color_widget_button\":\"\",\"css_style\":\"\",\"javascript\":\"MegaFilter.prototype.beforeRequest = function() {\\n\\tvar self = this;\\n};\\n\\nMegaFilter.prototype.beforeRender = function( htmlResponse, htmlContent, json ) {\\n\\tvar self = this;\\n};\\n\\nMegaFilter.prototype.afterRender = function( htmlResponse, htmlContent, json ) {\\n\\tvar self = this;\\n};\\n\",\"content_selector\":\"#mfilter-content-container\",\"type_of_condition\":\"or\",\"calculate_number_of_products\":\"1\",\"show_number_of_products\":\"1\",\"hide_inactive_values\":\"0\",\"show_reset_button\":\"0\",\"show_top_reset_button\":\"0\",\"in_stock_default_selected\":\"0\",\"manual_init\":\"0\",\"change_top_to_column_on_mobile\":\"0\"},\"filters\":{\"based_on_category\":\"0\"},\"name\":\"\",\"title\":{\"1\":\"\",\"2\":\"\\u041a\\u0430\\u0442\\u0435\\u0433\\u043e\\u0440\\u0438\\u0438\"},\"layout_id\":[\"3\"],\"store_id\":[\"0\"],\"position\":\"column_left\",\"inline_horizontal\":\"1\",\"display_always_as_widget\":\"0\",\"status\":\"1\",\"sort_order\":\"\"}}',	1),
-(2331,	0,	'mega_filter_settings',	'mega_filter_settings',	'{\"attribs\":{\"search\":{\"enabled\":\"0\",\"sort_order\":\"\",\"collapsed\":\"\",\"refresh_delay\":\"1000\",\"button\":\"0\"},\"price\":{\"enabled\":\"1\",\"sort_order\":\"10\",\"collapsed\":\"0\"},\"manufacturers\":{\"enabled\":\"0\",\"sort_order\":\"\",\"display_list_of_items\":\"\",\"display_as_type\":\"checkbox\",\"collapsed\":\"0\",\"display_live_filter\":\"\"},\"model\":{\"enabled\":\"0\",\"sort_order\":\"\",\"display_list_of_items\":\"\",\"display_as_type\":\"text\",\"collapsed\":\"0\",\"display_live_filter\":\"\"},\"sku\":{\"enabled\":\"0\",\"sort_order\":\"\",\"display_list_of_items\":\"\",\"display_as_type\":\"text\",\"collapsed\":\"0\",\"display_live_filter\":\"\"},\"upc\":{\"enabled\":\"0\",\"sort_order\":\"\",\"display_list_of_items\":\"\",\"display_as_type\":\"text\",\"collapsed\":\"0\",\"display_live_filter\":\"\"},\"ean\":{\"enabled\":\"0\",\"sort_order\":\"\",\"display_list_of_items\":\"\",\"display_as_type\":\"text\",\"collapsed\":\"0\",\"display_live_filter\":\"\"},\"jan\":{\"enabled\":\"0\",\"sort_order\":\"\",\"display_list_of_items\":\"\",\"display_as_type\":\"text\",\"collapsed\":\"0\",\"display_live_filter\":\"\"},\"isbn\":{\"enabled\":\"0\",\"sort_order\":\"\",\"display_list_of_items\":\"\",\"display_as_type\":\"text\",\"collapsed\":\"0\",\"display_live_filter\":\"\"},\"mpn\":{\"enabled\":\"0\",\"sort_order\":\"\",\"display_list_of_items\":\"\",\"display_as_type\":\"text\",\"collapsed\":\"0\",\"display_live_filter\":\"\"},\"location\":{\"enabled\":\"0\",\"sort_order\":\"\",\"display_list_of_items\":\"\",\"display_as_type\":\"text\",\"collapsed\":\"0\",\"display_live_filter\":\"\"},\"length\":{\"enabled\":\"0\",\"sort_order\":\"\",\"display_list_of_items\":\"\",\"display_as_type\":\"slider\",\"collapsed\":\"0\",\"display_live_filter\":\"\"},\"width\":{\"enabled\":\"0\",\"sort_order\":\"\",\"display_list_of_items\":\"\",\"display_as_type\":\"slider\",\"collapsed\":\"0\",\"display_live_filter\":\"\"},\"height\":{\"enabled\":\"0\",\"sort_order\":\"\",\"display_list_of_items\":\"\",\"display_as_type\":\"slider\",\"collapsed\":\"0\",\"display_live_filter\":\"\"},\"weight\":{\"enabled\":\"0\",\"sort_order\":\"\",\"display_list_of_items\":\"\",\"display_as_type\":\"slider\",\"collapsed\":\"0\",\"display_live_filter\":\"\"},\"stock_status\":{\"enabled\":\"0\",\"sort_order\":\"\",\"display_list_of_items\":\"\",\"display_as_type\":\"checkbox\",\"collapsed\":\"0\"},\"rating\":{\"enabled\":\"0\",\"sort_order\":\"\",\"collapsed\":\"0\"}},\"show_loader_over_results\":\"1\",\"show_loader_over_filter\":\"0\",\"auto_scroll_to_results\":\"0\",\"add_pixels_from_top\":\"0\",\"ajax_pagination\":\"0\",\"refresh_results\":\"immediately\",\"display_list_of_items\":{\"type\":\"scroll\",\"max_height\":\"155\",\"standard_scroll\":\"0\",\"limit_of_items\":\"4\"},\"display_live_filter\":{\"enabled\":\"0\",\"items\":\"1\"},\"background_color_counter\":\"#428bca\",\"text_color_counter\":\"#ffffff\",\"background_color_search_button\":\"#428bca\",\"background_color_slider\":\"\",\"background_color_header\":\"\",\"text_color_header\":\"\",\"border_bottom_color_header\":\"\",\"image_size_width\":\"20\",\"image_size_height\":\"20\",\"color_of_loader_over_results\":\"\",\"color_of_loader_over_filter\":\"\",\"background_color_widget_button\":\"\",\"css_style\":\"\",\"javascript\":\"MegaFilter.prototype.beforeRequest = function() {\\r\\n\\tvar self = this;\\r\\n};\\r\\n\\r\\nMegaFilter.prototype.beforeRender = function( htmlResponse, htmlContent, json ) {\\r\\n\\tvar self = this;\\r\\n};\\r\\n\\r\\nMegaFilter.prototype.afterRender = function( htmlResponse, htmlContent, json ) {\\r\\n\\tvar self = this;\\r\\n};\\r\\n\",\"content_selector\":\"#mfilter-content-container\",\"home_page_ajax\":\"0\",\"home_page_content_selector\":\"#content\",\"type_of_condition\":\"or\",\"calculate_number_of_products\":\"1\",\"show_number_of_products\":\"1\",\"hide_inactive_values\":\"0\",\"show_reset_button\":\"0\",\"show_top_reset_button\":\"0\",\"cache_enabled\":\"0\",\"level_products_from_subcategories\":\"1\",\"layout_c\":\"3\",\"in_stock_status\":\"7\",\"in_stock_default_selected\":\"0\",\"attribute_separator\":\"\",\"manual_init\":\"0\",\"change_top_to_column_on_mobile\":\"0\"}',	1);
+(2331,	0,	'mega_filter_settings',	'mega_filter_settings',	'{\"attribs\":{\"search\":{\"enabled\":\"0\",\"sort_order\":\"\",\"collapsed\":\"\",\"refresh_delay\":\"1000\",\"button\":\"0\"},\"price\":{\"enabled\":\"1\",\"sort_order\":\"10\",\"collapsed\":\"0\"},\"manufacturers\":{\"enabled\":\"0\",\"sort_order\":\"\",\"display_list_of_items\":\"\",\"display_as_type\":\"checkbox\",\"collapsed\":\"0\",\"display_live_filter\":\"\"},\"model\":{\"enabled\":\"0\",\"sort_order\":\"\",\"display_list_of_items\":\"\",\"display_as_type\":\"text\",\"collapsed\":\"0\",\"display_live_filter\":\"\"},\"sku\":{\"enabled\":\"0\",\"sort_order\":\"\",\"display_list_of_items\":\"\",\"display_as_type\":\"text\",\"collapsed\":\"0\",\"display_live_filter\":\"\"},\"upc\":{\"enabled\":\"0\",\"sort_order\":\"\",\"display_list_of_items\":\"\",\"display_as_type\":\"text\",\"collapsed\":\"0\",\"display_live_filter\":\"\"},\"ean\":{\"enabled\":\"0\",\"sort_order\":\"\",\"display_list_of_items\":\"\",\"display_as_type\":\"text\",\"collapsed\":\"0\",\"display_live_filter\":\"\"},\"jan\":{\"enabled\":\"0\",\"sort_order\":\"\",\"display_list_of_items\":\"\",\"display_as_type\":\"text\",\"collapsed\":\"0\",\"display_live_filter\":\"\"},\"isbn\":{\"enabled\":\"0\",\"sort_order\":\"\",\"display_list_of_items\":\"\",\"display_as_type\":\"text\",\"collapsed\":\"0\",\"display_live_filter\":\"\"},\"mpn\":{\"enabled\":\"0\",\"sort_order\":\"\",\"display_list_of_items\":\"\",\"display_as_type\":\"text\",\"collapsed\":\"0\",\"display_live_filter\":\"\"},\"location\":{\"enabled\":\"0\",\"sort_order\":\"\",\"display_list_of_items\":\"\",\"display_as_type\":\"text\",\"collapsed\":\"0\",\"display_live_filter\":\"\"},\"length\":{\"enabled\":\"0\",\"sort_order\":\"\",\"display_list_of_items\":\"\",\"display_as_type\":\"slider\",\"collapsed\":\"0\",\"display_live_filter\":\"\"},\"width\":{\"enabled\":\"0\",\"sort_order\":\"\",\"display_list_of_items\":\"\",\"display_as_type\":\"slider\",\"collapsed\":\"0\",\"display_live_filter\":\"\"},\"height\":{\"enabled\":\"0\",\"sort_order\":\"\",\"display_list_of_items\":\"\",\"display_as_type\":\"slider\",\"collapsed\":\"0\",\"display_live_filter\":\"\"},\"weight\":{\"enabled\":\"0\",\"sort_order\":\"\",\"display_list_of_items\":\"\",\"display_as_type\":\"slider\",\"collapsed\":\"0\",\"display_live_filter\":\"\"},\"stock_status\":{\"enabled\":\"0\",\"sort_order\":\"\",\"display_list_of_items\":\"\",\"display_as_type\":\"checkbox\",\"collapsed\":\"0\"},\"rating\":{\"enabled\":\"0\",\"sort_order\":\"\",\"collapsed\":\"0\"}},\"show_loader_over_results\":\"1\",\"show_loader_over_filter\":\"0\",\"auto_scroll_to_results\":\"0\",\"add_pixels_from_top\":\"0\",\"ajax_pagination\":\"0\",\"refresh_results\":\"immediately\",\"display_list_of_items\":{\"type\":\"scroll\",\"max_height\":\"155\",\"standard_scroll\":\"0\",\"limit_of_items\":\"4\"},\"display_live_filter\":{\"enabled\":\"0\",\"items\":\"1\"},\"background_color_counter\":\"#428bca\",\"text_color_counter\":\"#ffffff\",\"background_color_search_button\":\"#428bca\",\"background_color_slider\":\"\",\"background_color_header\":\"\",\"text_color_header\":\"\",\"border_bottom_color_header\":\"\",\"image_size_width\":\"20\",\"image_size_height\":\"20\",\"color_of_loader_over_results\":\"\",\"color_of_loader_over_filter\":\"\",\"background_color_widget_button\":\"\",\"css_style\":\"\",\"javascript\":\"MegaFilter.prototype.beforeRequest = function() {\\r\\n\\tvar self = this;\\r\\n};\\r\\n\\r\\nMegaFilter.prototype.beforeRender = function( htmlResponse, htmlContent, json ) {\\r\\n\\tvar self = this;\\r\\n};\\r\\n\\r\\nMegaFilter.prototype.afterRender = function( htmlResponse, htmlContent, json ) {\\r\\n\\tvar self = this;\\r\\n};\\r\\n\",\"content_selector\":\"#mfilter-content-container\",\"home_page_ajax\":\"0\",\"home_page_content_selector\":\"#content\",\"type_of_condition\":\"or\",\"calculate_number_of_products\":\"1\",\"show_number_of_products\":\"1\",\"hide_inactive_values\":\"0\",\"show_reset_button\":\"0\",\"show_top_reset_button\":\"0\",\"cache_enabled\":\"0\",\"level_products_from_subcategories\":\"1\",\"layout_c\":\"3\",\"in_stock_status\":\"7\",\"in_stock_default_selected\":\"0\",\"attribute_separator\":\"\",\"manual_init\":\"0\",\"change_top_to_column_on_mobile\":\"0\"}',	1),
+(2865,	0,	'config',	'config_affiliate_auto',	'0',	0),
+(2864,	0,	'config',	'config_affiliate_approval',	'0',	0),
+(2863,	0,	'config',	'config_stock_checkout',	'0',	0),
+(2862,	0,	'config',	'config_stock_warning',	'0',	0),
+(2861,	0,	'config',	'config_stock_display',	'0',	0),
+(2860,	0,	'config',	'config_api_id',	'1',	0),
+(2859,	0,	'config',	'config_order_mail',	'0',	0),
+(2858,	0,	'config',	'config_fraud_status_id',	'7',	0),
+(2857,	0,	'config',	'config_complete_status',	'[\"5\",\"3\"]',	1),
+(2856,	0,	'config',	'config_processing_status',	'[\"5\",\"1\",\"2\",\"12\",\"3\"]',	1),
+(2855,	0,	'config',	'config_order_status_id',	'1',	0),
+(2853,	0,	'config',	'config_checkout_guest',	'1',	0),
+(2854,	0,	'config',	'config_checkout_id',	'5',	0),
+(2852,	0,	'config',	'config_cart_weight',	'1',	0),
+(2851,	0,	'config',	'config_invoice_prefix',	'INV-2013-00',	0),
+(2850,	0,	'config',	'config_account_mail',	'0',	0),
+(2848,	0,	'config',	'config_login_attempts',	'5',	0),
+(2849,	0,	'config',	'config_account_id',	'3',	0),
+(2847,	0,	'config',	'config_customer_price',	'0',	0),
+(2846,	0,	'config',	'config_customer_group_display',	'[\"1\"]',	1),
+(2845,	0,	'config',	'config_customer_group_id',	'1',	0),
+(2844,	0,	'config',	'config_customer_online',	'0',	0),
+(2843,	0,	'config',	'config_tax_customer',	'shipping',	0),
+(2841,	0,	'config',	'config_tax',	'1',	0),
+(2842,	0,	'config',	'config_tax_default',	'shipping',	0),
+(2840,	0,	'config',	'config_voucher_max',	'1000',	0),
+(2839,	0,	'config',	'config_voucher_min',	'1',	0),
+(2838,	0,	'config',	'config_review_mail',	'0',	0),
+(2837,	0,	'config',	'config_review_guest',	'1',	0),
+(2836,	0,	'config',	'config_review_status',	'1',	0),
+(2835,	0,	'config',	'config_limit_admin',	'20',	0),
+(2834,	0,	'config',	'config_product_description_length',	'100',	0),
+(2833,	0,	'config',	'config_product_limit',	'15',	0),
+(2832,	0,	'config',	'config_product_count',	'1',	0),
+(2831,	0,	'config',	'config_weight_class_id',	'1',	0),
+(2830,	0,	'config',	'config_length_class_id',	'1',	0),
+(2829,	0,	'config',	'config_currency_auto',	'1',	0),
+(2828,	0,	'config',	'config_currency',	'USD',	0),
+(2827,	0,	'config',	'config_admin_language',	'ru',	0),
+(2826,	0,	'config',	'config_language',	'ru',	0),
+(2825,	0,	'config',	'config_zone_id',	'',	0),
+(2824,	0,	'config',	'config_country_id',	'222',	0),
+(2823,	0,	'config',	'config_comment',	'',	0),
+(2822,	0,	'config',	'config_open',	'',	0),
+(2812,	0,	'config',	'config_address',	'Address 1',	0),
+(2813,	0,	'config',	'config_geocode',	'',	0),
+(2814,	0,	'config',	'config_email',	'vovazabalotny@gmail.com',	0),
+(2815,	0,	'config',	'config_telephone',	'+38 (096) 762-40-96',	0),
+(2816,	0,	'config',	'config_facebook',	'https://www.facebook.com/vtsocks/',	0),
+(2821,	0,	'config',	'config_image',	'',	0),
+(2820,	0,	'config',	'config_fax',	'',	0),
+(2819,	0,	'config',	'config_youtube',	'https://www.youtube.com/',	0),
+(2818,	0,	'config',	'config_twitter',	'https://twitter.com/home?lang=ru',	0),
+(2817,	0,	'config',	'config_instagram',	'https://www.instagram.com/socks_vt/',	0),
+(2811,	0,	'config',	'config_owner',	'Your Name',	0),
+(2807,	0,	'config',	'config_meta_keyword',	'',	0),
+(2808,	0,	'config',	'config_template',	'default',	0),
+(2809,	0,	'config',	'config_layout_id',	'4',	0),
+(2810,	0,	'config',	'config_name',	'Your Store',	0),
+(2806,	0,	'config',	'config_meta_description',	'My Store',	0),
+(2805,	0,	'config',	'config_meta_title',	'Your Store',	0),
+(2922,	0,	'config',	'config_error_filename',	'error.log',	0);
 
 DROP TABLE IF EXISTS `oc_stock_status`;
 CREATE TABLE `oc_stock_status` (
@@ -2855,10 +2865,10 @@ CREATE TABLE `oc_url_alias` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 INSERT INTO `oc_url_alias` (`url_alias_id`, `query`, `keyword`) VALUES
-(824,	'product_id=48',	'ipod-classic'),
+(907,	'product_id=48',	'ipod-classic'),
 (730,	'manufacturer_id=8',	'apple'),
 (865,	'information_id=4',	'about_us'),
-(892,	'product_id=42',	'test'),
+(914,	'product_id=42',	'test'),
 (861,	'information_id=10',	''),
 (860,	'information_id=9',	''),
 (859,	'information_id=8',	''),
@@ -2869,20 +2879,20 @@ INSERT INTO `oc_url_alias` (`url_alias_id`, `query`, `keyword`) VALUES
 (853,	'category_id=68',	''),
 (862,	'information_id=11',	''),
 (864,	'information_id=13',	''),
-(884,	'product_id=30',	'canon-eos-5d'),
+(913,	'product_id=30',	'canon-eos-5d'),
 (889,	'product_id=47',	'hp-lp3065'),
 (888,	'product_id=28',	'htc-touch-hd'),
 (812,	'product_id=43',	'macbook'),
-(813,	'product_id=44',	'macbook-air'),
+(911,	'product_id=44',	'macbook-air'),
 (893,	'product_id=45',	'macbook-pro'),
-(816,	'product_id=31',	'nikon-d300'),
-(817,	'product_id=29',	'palm-treo-pro'),
-(818,	'product_id=35',	'product-8'),
-(819,	'product_id=49',	'samsung-galaxy-tab-10-1'),
-(820,	'product_id=33',	'samsung-syncmaster-941bw'),
+(910,	'product_id=31',	'nikon-d300'),
+(903,	'product_id=29',	'palm-treo-pro'),
+(909,	'product_id=35',	'product-8'),
+(908,	'product_id=49',	'samsung-galaxy-tab-10-1'),
+(904,	'product_id=33',	'samsung-syncmaster-941bw'),
 (894,	'product_id=46',	'sony-vaio'),
-(837,	'product_id=41',	'imac'),
-(823,	'product_id=40',	'iphone'),
+(905,	'product_id=41',	'imac'),
+(906,	'product_id=40',	'iphone'),
 (890,	'product_id=36',	'ipod-nano'),
 (826,	'product_id=34',	'ipod-shuffle'),
 (827,	'product_id=32',	'ipod-touch'),
@@ -7258,4 +7268,4 @@ INSERT INTO `oc_zone_to_geo_zone` (`zone_to_geo_zone_id`, `country_id`, `zone_id
 (108,	222,	3955,	3,	'0000-00-00 00:00:00',	'0000-00-00 00:00:00'),
 (109,	222,	3972,	3,	'0000-00-00 00:00:00',	'0000-00-00 00:00:00');
 
--- 2019-08-15 09:58:26
+-- 2019-08-20 09:37:36

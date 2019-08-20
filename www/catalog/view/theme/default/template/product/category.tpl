@@ -1,11 +1,92 @@
 <?php echo $header; ?>
+
+<div class="kart_nav">
+    <div class="container">
+
+        <ul>
+            <?php foreach ($breadcrumbs as $breadcrumb) { ?>
+                <li><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a></li>
+            <?php } ?>
+        </ul>
+    </div>
+</div>
+
 <div class="container">
-  <ul class="breadcrumb">
-    <?php foreach ($breadcrumbs as $breadcrumb) { ?>
-    <li><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a></li>
-    <?php } ?>
-  </ul>
-  <div class="row"><?php echo $column_left; ?>
+    <div class="katal_about">
+        <div class="about_image"><img src="<?php echo $thumb; ?>" alt="" class="img-respons"></div>
+        <div class="about_info">
+            <div class="about_title"><h1><?php echo $heading_title; ?></h1></div>
+            <div class="about_text">
+                <?php echo $description; ?>
+            </div>
+        </div>
+    </div>
+    <div class="main_content">
+        <div class="row">
+            <?php echo $column_left; ?>
+            <div class="col-sm-9 content">
+                <div class="content_head">
+                    <div class="head_select-amount">
+                        <div class="select-amount title">Показати по</div>
+                        <div class="select-amount_amount">
+                            <ul>
+                                <li><a href="#" class="active">3</a></li>
+                                <li><a href="#">4</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="head_sort-by">
+                        <div class="sort-by title"><label class="control-label" for="input-sort"><?php echo $text_sort; ?></label></div>
+                        <div class="sort-by_select">
+                            <div class="wrapper">
+                                <select id="input-sort" class="form-control sort-by btn" onchange="location = this.value;">
+                                    <?php foreach ($sorts as $sorts) { ?>
+                                        <?php if ($sorts['value'] == $sort . '-' . $order) { ?>
+                                            <option value="<?php echo $sorts['href']; ?>" selected="selected"><?php echo $sorts['text']; ?></option>
+                                        <?php } else { ?>
+                                            <option value="<?php echo $sorts['href']; ?>"><?php echo $sorts['text']; ?></option>
+                                        <?php } ?>
+                                    <?php } ?>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <?php foreach ($products as $product) { ?>
+                    <div class="prod-item col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                        <div class="prod-img"><a href="<?php echo $product['href']; ?>"><img src="<?php echo $product['thumb']; ?>" alt="<?php echo $product['name']; ?>" class="img-respons"></a></div>
+                        <div class="group">
+                            <div class="group_bag"></div>
+                            <div class="group_heart"></div>
+                        </div><div class="prod-title"><a href="<?php echo $product['href']; ?>"><?php echo $product['name']; ?></a></div>
+                        <div class="prod-price"><a href="<?php echo $product['href']; ?>"><?php echo $product['price']; ?></a></div>
+                    </div>
+                    <?php } ?>
+
+                </div>
+                <div class="content_foot">
+                    <div class="foot_pages">
+                        <?php echo $pagination; ?>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<section class="about">
+    <div class="container">
+
+        <div class="content">
+            <?php echo $description; ?>
+        </div>
+    </div>
+</section>
+
+
+
+  <div class="row">
     <?php if ($column_left && $column_right) { ?>
     <?php $class = 'col-sm-6'; ?>
     <?php } elseif ($column_left || $column_right) { ?>
@@ -14,46 +95,9 @@
     <?php $class = 'col-sm-12'; ?>
     <?php } ?>
     <div id="content" class="<?php echo $class; ?>"><?php echo $content_top; ?>
-      <h2><?php echo $heading_title; ?></h2>
-      <?php if ($thumb || $description) { ?>
-      <div class="row">
-        <?php if ($thumb) { ?>
-        <div class="col-sm-2"><img src="<?php echo $thumb; ?>" alt="<?php echo $heading_title; ?>" title="<?php echo $heading_title; ?>" class="img-thumbnail" /></div>
-        <?php } ?>
-        <?php if ($description) { ?>
-        <div class="col-sm-10"><?php echo $description; ?></div>
-        <?php } ?>
-      </div>
-      <hr>
-      <?php } ?>
-      <?php if ($categories) { ?>
-      <h3><?php echo $text_refine; ?></h3>
-      <?php if (count($categories) <= 5) { ?>
-      <div class="row">
-        <div class="col-sm-3">
-          <ul>
-            <?php foreach ($categories as $category) { ?>
-            <li><a href="<?php echo $category['href']; ?>"><?php echo $category['name']; ?></a></li>
-            <?php } ?>
-          </ul>
-        </div>
-      </div>
-      <?php } else { ?>
-      <div class="row">
-        <?php foreach (array_chunk($categories, ceil(count($categories) / 4)) as $categories) { ?>
-        <div class="col-sm-3">
-          <ul>
-            <?php foreach ($categories as $category) { ?>
-            <li><a href="<?php echo $category['href']; ?>"><?php echo $category['name']; ?></a></li>
-            <?php } ?>
-          </ul>
-        </div>
-        <?php } ?>
-      </div>
-      <?php } ?>
-      <?php } ?>
+
       <?php if ($products) { ?>
-      <p><a href="<?php echo $compare; ?>" id="compare-total"><?php echo $text_compare; ?></a></p>
+      <p><a href="<?php echo $compare; ?>" id="compare-total"><?php echo $text_compare; ?></a>1</p>
       <div class="row">
         <div class="col-md-4">
           <div class="btn-group hidden-xs">
@@ -93,6 +137,7 @@
       <br />
       <div class="row">
         <?php foreach ($products as $product) { ?>
+
         <div class="product-layout product-list col-xs-12">
           <div class="product-thumb">
             <div class="image"><a href="<?php echo $product['href']; ?>"><img src="<?php echo $product['thumb']; ?>" alt="<?php echo $product['name']; ?>" title="<?php echo $product['name']; ?>" class="img-responsive" /></a></div>
@@ -146,6 +191,6 @@
       </div>
       <?php } ?>
       <?php echo $content_bottom; ?></div>
-    <?php echo $column_right; ?></div>
-</div>
+        <?php echo $column_right; ?></div>
+
 <?php echo $footer; ?>

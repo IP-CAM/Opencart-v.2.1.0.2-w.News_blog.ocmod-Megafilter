@@ -3,6 +3,16 @@ $(function () {
         arrows: false,
         dots: true
     });
+
+
+
+    $('.js_select_count-del').click(function () {
+        $('#input-quantity').val(parseInt($('#input-quantity').val())-1);
+
+    });
+    $('.js_select_count-add').click(function () {
+    $('#input-quantity').val(parseInt($('#input-quantity').val())+1);
+    });
     $('.advantages-iner').slick(
         {
             nextArrow: '<button type="button" class="slick-next"></button>',
@@ -76,6 +86,20 @@ $(function () {
         slidesToShow: 5,
 
     });
+
+    $('.search').click(function () {
+        $('.search-box').slideToggle();
+    });
+    $('.currency').click(function () {
+        $('.currency_list').toggle();
+    });
+    $('.lang').click(function () {
+        $('.lang_list').toggle();
+    });
+    $('.category-list-parent').click(function () {
+        $('.child').slideToggle();
+        $('.category-list-parent').toggleClass('active');
+    });
 });
 
 function menu() {
@@ -115,7 +139,10 @@ function tab() {
     var col_tabs = document.querySelectorAll(".prod-items");
     var col_btns = document.querySelectorAll('.togle');
     console.log("work");
-    btns.addEventListener('click', change);
+    if(btns){
+        btns.addEventListener('click', change);
+
+    }
 
     function change(ev) {
 
@@ -186,31 +213,7 @@ function open_li() {
 
 }
 
-function open_select() {
-    console.log("os");
-    var ev = document.querySelector(".select");
-    ev.addEventListener("click", function (el) {
-        if (el.target.classList.contains("currency")) {
-            if (el.target.classList.contains("active")) {
-                el.target.classList.remove("active");
-                el.target.nextElementSibling.classList.remove("active");
 
-            } else {
-                el.target.classList.add("active");
-                el.target.nextElementSibling.classList.add("active");
-            }
-        } else if (el.target.classList.contains("lang")) {
-            if (el.target.classList.contains("active")) {
-                el.target.classList.remove("active");
-                el.target.nextElementSibling.classList.remove("active");
-
-            } else {
-                el.target.classList.add("active");
-                el.target.nextElementSibling.classList.add("active");
-            }
-        }
-    })
-}
 
 function header_menu_media() {
     var el = document.querySelector(".js_header_bottom_menu_btn");
@@ -246,7 +249,7 @@ function all() {
     menu();
     tab();
     open_li();
-    open_select();
+
 
 
 
