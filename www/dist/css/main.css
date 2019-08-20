@@ -12342,10 +12342,24 @@ textarea[name=comment]{
     position: relative;
     text-align: center;
     font-size: 14px;}
-.item__right-top{
+.item__right-top a{
+    color: black;
     font-size: 14px;
     letter-spacing: 1px;
 
+}
+.item__right-top button:after{
+    content: '\e919';
+    font-family: icomoon;
+    position: absolute;
+    top: 0;
+    right:0;
+    font-size: 12px;
+}
+.item__right-top{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
 }
 .checkout-list__item{
     padding: 15px;
