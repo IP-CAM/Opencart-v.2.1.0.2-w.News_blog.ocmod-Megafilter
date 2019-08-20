@@ -10969,7 +10969,7 @@ height: 80px;
   .icons a {
     position: relative; }
     .icons a span {
-      left: -31px;
+      left: 15px;
       top: -12px;
       position: absolute;
       z-index: 10;

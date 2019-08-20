@@ -1,7 +1,10 @@
 <?php
 class ControllerCheckoutCheckout extends Controller {
 	public function index() {
-		// Validate cart has products and has stock.
+
+        $this->load->model('tool/image');
+
+        // Validate cart has products and has stock.
 		if ((!$this->cart->hasProducts() && empty($this->session->data['vouchers'])) || (!$this->cart->hasStock() && !$this->config->get('config_stock_checkout'))) {
 			$this->response->redirect($this->url->link('checkout/cart'));
 		}
@@ -93,7 +96,6 @@ class ControllerCheckoutCheckout extends Controller {
 			$this->response->setOutput($this->load->view('default/template/checkout/checkout.tpl', $data));
 		}
 	}
-
 	public function country() {
 		$json = array();
 

@@ -116,7 +116,10 @@
                 <ul class="icons">
                     <li><a href="javascript:void(0);" class="search"></a></li>
                     <li><a href="#" class="heart"><span>4</span></a></li>
-                    <li><a href="#" class="bag"><span>4</span></a></li>
+                    <li>
+<!--                        <a href="#" class="bag"><span>4</span></a>-->
+                        <?= $cart; ?>
+                    </li>
                     <li><a href="#" class="user"></a></li>
                 </ul>
                 <div class="select">

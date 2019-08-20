@@ -1,10 +1,17 @@
 <?php echo $header; ?>
+
+<div class="kart_nav">
+    <div class="container">
+
+        <ul>
+            <?php foreach ($breadcrumbs as $breadcrumb) { ?>
+                <li><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a></li>
+            <?php } ?>
+        </ul>
+    </div>
+</div>
 <div class="container">
-  <ul class="breadcrumb">
-    <?php foreach ($breadcrumbs as $breadcrumb) { ?>
-    <li><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a></li>
-    <?php } ?>
-  </ul>
+
   <?php if ($attention) { ?>
   <div class="alert alert-info"><i class="fa fa-info-circle"></i> <?php echo $attention; ?>
     <button type="button" class="close" data-dismiss="alert">&times;</button>
@@ -28,6 +35,51 @@
     <?php } else { ?>
     <?php $class = 'col-sm-12'; ?>
     <?php } ?>
+      <div class="col-sm-6">
+          <div class="content__wrapper">
+              <div class="title">товари у вашому кошику</div>
+              <div class="checkout-list">
+                  <?php foreach ($products as $product) { ?>
+                  <div class="checkout-list__item">
+                      <div class="item__img"><img src="<?php echo $product['thumb']; ?>" alt="<?php echo $product['name']; ?>" class="img-respons"></div>
+                      <div class="item__right">
+                          <div class="item__right-top"><a href="<?php echo $product['href']; ?>"><?php echo $product['name']; ?></a><button onclick="cart.remove('<?php echo $product['cart_id']; ?>');"></button></div>
+                          <div class="item_right-bottom">
+                              <div class="right-bottom_title"><?php echo $product['price']; ?></div>
+                              <div class="kart-right_buy-btn_select_count">
+                                  <div class="js_select_count-del"></div>
+                                  <input type="text" name="quantity" value="<?php echo $product['quantity']; ?>" size="2" id="input-quantity">
+                                  <div class="js_select_count-add "></div>
+                              </div>
+                              <div class="right-bottom_title"><?php echo $product['total']; ?></div>
+                          </div>
+                      </div>
+                  </div>
+                  <?php } ?>
+              </div>
+              <div class="checkout__sum">
+                  <div class="checkout__sum-wrapper">
+                      <div class="sum__inner">
+                          <div class="sum-inner__title">Сума:</div>
+                          <div class="sum-inner-text">2600.00 UAH</div>
+                      </div>
+                      <div class="sum__inner">
+                          <div class="sum-inner__title">Доставка:</div>
+                          <div class="sum-inner-text">30.00 UAH</div>
+                      </div>
+                      <div class="sum__inner">
+                          <div class="sum-inner__title">Всього:</div>
+                          <div class="sum-inner-text">2630.00 UAH</div>
+                      </div>
+                  </div>
+
+              </div>
+              <div class="btn-group">
+                  <button type="button" class="default-btn">продовжити покупки </button>
+                  <button type="button" class="default-btn">оформити замовлення</button>
+              </div>
+          </div>
+      </div>
     <div id="content" class="<?php echo $class; ?>"><?php echo $content_top; ?>
       <h1><?php echo $heading_title; ?>
         <?php if ($weight) { ?>

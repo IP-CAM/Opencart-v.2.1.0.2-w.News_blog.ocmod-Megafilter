@@ -12407,6 +12407,21 @@ textarea[name=comment]{
     font-family: icomoon;
     transform: rotate(-90deg);
     font-size: 7px;}
+.alert {
+  position:fixed;
+
+}
+.alert_popup{
+
+  position:fixed;
+  right:20px;
+  top:20px;
+  width:200px;
+  height: 200px;
+  border-radius: 20%;
+  padding-top: 30px;
+  padding-left: 30px;
+}
 @media screen and (max-width: 992px) {
   .hiden_menu {
     width: 100%; }

@@ -15,7 +15,7 @@
 
 
     <div class="container">
-        <div class="kart-content">
+        <div id="product" class="kart-content">
 
             <div class="kart-left">
                 <?php if ($thumb || $images) { ?>
@@ -184,7 +184,8 @@
                     </div>
 
                 </div>
-                <div class="default-btn to-choise"><a href="#">до кошика</a></div>
+                <div class="default-btn to-choise"><a href="">до кошика</a>
+                </div>
                 <button type="button" id="button-cart" data-loading-text="<?php echo $text_loading; ?>"
                         class="default-btn buy-one-click"><?php echo $button_cart; ?></button>
             </div>
@@ -197,7 +198,7 @@
             </div>
 
         </div>
-    </div>
+
 
 
 
@@ -370,7 +371,7 @@
     </div>
 </div>
 </div>
-
+</div>
 <?php if(0) {?>
 
 <div class="container">
@@ -939,13 +940,13 @@
                 }
 
                 if (json['success']) {
-                    $('.breadcrumb').after('<div class="alert alert-success">' + json['success'] + '<button type="button" class="close" data-dismiss="alert">&times;</button></div>');
+                    $('.alert_popup').remove();
+                    $('body').after('<div class=" alert-success alert_popup">'+ json['success'] + '</div>');
+                    setTimeout(function () {
+                        $('.alert_popup').remove();
+                    },5000);
 
-                    $('#cart > button').html('<i class="fa fa-shopping-cart"></i> ' + json['total']);
-
-                    $('html, body').animate({scrollTop: 0}, 'slow');
-
-                    $('#cart > ul').load('index.php?route=common/cart/info ul li');
+                    $('#cart').parent().load('index.php?route=common/cart/info');
                 }
             },
             error: function (xhr, ajaxOptions, thrownError) {

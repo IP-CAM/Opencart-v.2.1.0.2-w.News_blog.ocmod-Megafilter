@@ -122,4 +122,5 @@
 </footer>
 
 <script src="catalog/view/html/js/common.js" type="text/javascript"></script>
+<script src="dist/js/common.js" type="text/javascript"></script>
 </body></html>
