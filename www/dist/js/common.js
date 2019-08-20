@@ -100,12 +100,13 @@ $(function () {
         }
     });
 
-    $('.js_select_count-del').click(function () {
-        $('#input-quantity').val(parseInt($('#input-quantity').val())-1);
+    $('.js_select_count-del').click(function (el) {
+        console.log($(el.target).next());
+        $(el.target).next().val(parseInt($(el.target).next().val())-1);
 
     });
-    $('.js_select_count-add').click(function () {
-        $('#input-quantity').val(parseInt($('#input-quantity').val())+1);
+    $('.js_select_count-add').click(function (el) {
+        $(el.target).prev().val(parseInt($(el.target).prev().val())+1);
     });
 });
 function menu() {
