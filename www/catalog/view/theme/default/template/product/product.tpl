@@ -23,11 +23,12 @@
                     <?php if ($thumb) { ?>
                         <a href="<?php echo $popup; ?>"> <img src="<?php echo $thumb; ?>"
                                                               alt="<?php echo $heading_title; ?>"
-                                                              class="img-respons"></a>
-                        <div class="kart-left_description">
-                            <div class="kart-left_description_text">До кінця акції залишилось:</div>
-                            <div class="kart-left_description_timer">38:18:45</div>
-                        </div>
+                                                              class="img-respons">
+                            <div class="kart-left_description">
+                                <div class="kart-left_description_text">До кінця акції залишилось:</div>
+                                <div class="kart-left_description_timer">38:18:45</div>
+                            </div></a>
+
                     <?php } ?>
                     <?php if ($images) { ?>
                         <div class="kart-left_slider">
@@ -194,7 +195,7 @@
 
             <div class="kart-right_details">
                 <div class="kart-right_details_title">Деталі</div>
-                <div class="kart-right_details_text"><?php echo $tab_description; ?>
+                <div class="kart-right_details_text"><?php echo $description; ?>
                 </div>
                 <div class="kart-right_details_more">розгорнути</div>
             </div>
@@ -532,6 +533,7 @@
                                                 <?php } ?>
                                             </div>
                                         </div>
+
                                     <?php } ?>
                                     <?php if ($option['type'] == 'image') { ?>
                                         <div class="form-group<?php echo($option['required'] ? ' required' : ''); ?>">
@@ -975,13 +977,16 @@
                 if (json['error']) {
                     $('#review').after('<div class="alert alert-danger"><i class="fa fa-exclamation-circle"></i> ' + json['error'] + '</div>');
                 }
-
                 if (json['success']) {
+                    console.log("1");
                     $('#review').after('<div class="alert alert-success"><i class="fa fa-check-circle"></i> ' + json['success'] + '</div>');
 
                     $('input[name=\'name\']').val('');
                     $('textarea[name=\'text\']').val('');
                     $('input[name=\'rating\']:checked').prop('checked', false);
+                    setTimeout(function () {
+                        $('.alert-success').remove();
+                    }, 5000);
                 }
             }
         });

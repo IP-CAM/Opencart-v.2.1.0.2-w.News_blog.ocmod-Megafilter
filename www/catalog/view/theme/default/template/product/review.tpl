@@ -36,9 +36,11 @@
     <div id ="js_review" class="default-btn black">
         <a href="javascript:void(0);">залишити відгук</a>
     </div>
-
         <div class="text-right"><?php echo $pagination; ?></div>
     <?php } else { ?>
+        <div id ="js_review" class="default-btn black">
+            <a href="javascript:void(0);">залишити відгук</a>
+        </div>
         <p><?php echo $text_no_reviews; ?></p>
     <?php } ?>
 </div>

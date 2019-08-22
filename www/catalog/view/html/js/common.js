@@ -4,8 +4,16 @@ $(function () {
         dots: true
     });
     $('#js_review').click(function () {
+
         $('#form-review').toggle();
-    })
+
+    });
+
+    $('.kart-right_details_more').click(function () {
+       $('.kart-right_details_text').toggleClass('show_disc');
+    });
+
+
     $('.close-search-btn').click(function(){
         console.log(1);
         $('.search-box').hide();

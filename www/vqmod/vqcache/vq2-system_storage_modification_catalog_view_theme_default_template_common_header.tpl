@@ -150,8 +150,8 @@
                                         <div class="bottom">
                                             <div class="title">Вхід через соцмережі</div>
                                             <div class="btn-group">
-                                                <button type="button" class="default-btn facebook">Facebook</button>
-                                                <button type="button" class="default-btn google">Google +</button>
+                                                <button type="button" class="default-btn facebook-btn">Facebook</button>
+                                                <button type="button" class="default-btn google-btn">Google +</button>
                                             </div>
                                         </div>
                                     </div>
