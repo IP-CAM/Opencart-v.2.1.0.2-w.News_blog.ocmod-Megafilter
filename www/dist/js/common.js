@@ -3,11 +3,13 @@ $(function () {
         arrows: false,
         dots: true
     });
-    $('.lang').click({function(){
+    $('.lang').click({
+        function() {
             console.log('work');
             $('.lang_list').slideToggle();
 
-        }});
+        }
+    });
     $('.advantages-iner').slick(
         {
             nextArrow: '<button type="button" class="slick-next"></button>',
@@ -91,24 +93,27 @@ $(function () {
         console.log(target);
         console.log(target.parent());
         console.log(target.parent().hasClass('select-wrapper'));
-        if(target.parent().hasClass('select-wrapper')){
+        if (target.parent().hasClass('select-wrapper')) {
 
             target.parent().children('ul').slideToggle();
-        }
-        else{
+        } else {
             target.parent().parent().children('ul').slideToggle();
         }
     });
 
     $('.js_select_count-del').click(function (el) {
         console.log($(el.target).next());
-        $(el.target).next().val(parseInt($(el.target).next().val())-1);
+        $(el.target).next().val(parseInt($(el.target).next().val()) - 1);
 
     });
     $('.js_select_count-add').click(function (el) {
-        $(el.target).prev().val(parseInt($(el.target).prev().val())+1);
+        $(el.target).prev().val(parseInt($(el.target).prev().val()) + 1);
     });
+
+
+
 });
+
 function menu() {
     let el = document.querySelector(".js_logo_btn");
     console.log(el);
@@ -146,7 +151,7 @@ function tab() {
     var col_tabs = document.querySelectorAll(".prod-items");
     var col_btns = document.querySelectorAll('.togle');
     console.log("work");
-    if(btns){
+    if (btns) {
         btns.addEventListener('click', change);
 
     }
@@ -184,7 +189,8 @@ function open_li() {
     var el_footer = document.querySelector(".footer_top .items");
 
     console.log(el_footer);
-    el_footer.addEventListener('click',open_iner_footer);
+    el_footer.addEventListener('click', open_iner_footer);
+
     function open_iner_footer(ev) {
         console.log("work_footer");
         console.log(ev.target);
@@ -201,6 +207,7 @@ function open_li() {
 
         }
     }
+
     function open_iner(ev) {
         console.log("work");
         console.log(ev.target);
@@ -254,8 +261,6 @@ function all() {
     menu();
     tab();
     open_li();
-
-
 
 
 }

@@ -109,12 +109,65 @@
             <div class="top-right">
                 <ul class="icons">
                     <li><a href="javascript:void(0);" class="search"></a></li>
-                    <li><a href="#" class="heart"><span>4</span></a></li>
+                    <li><a href="" class="heart"><span>4</span></a></li>
                     <li>
 <!--                        <a href="#" class="bag"><span>4</span></a>-->
                         <?= $cart; ?>
                     </li>
-                    <li><a href="#" class="user"></a></li>
+                    <li><a href="javascript:void(0);" class="user"></a></li>
+                    <div id="myModal2" class="modal fade">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <div class="modal__title">авторизація</div>
+                                    <button type="button" id="close_modal" class="close" data-dismiss="modal" aria-hidden="true"></button>
+
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row">
+                                    <div class="col-sm-6 left">
+                                        <div class="top">
+                                        <div class="title">вхід</div>
+                                        <input type="email" placeholder="Email">
+                                        <input type="password" placeholder="Пароль">
+                                        <div class="check-pass">
+                                        <div class="default-check">
+                                            <input type="checkbox" id="id_login">
+                                            <label for="id_login">Показати пароль</label>
+                                        </div>
+                                            <a href="#">Забули пароль?</a>
+                                        </div>
+                                        <div class="btn-wrapper">
+                                        <button type="button" class="default-btn">вхід<button>
+                                        </div>
+                                        </div>
+                                        <div class="bottom">
+                                            <div class="title">Вхід через соцмережі</div>
+                                            <div class="btn-group">
+                                                <button type="button" class="default-btn facebook">Facebook</button>
+                                                <button type="button" class="default-btn google">Google +</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                        <div class="col-sm-6 right">
+                                        <div class="title">реєстрація</div>
+                                        <input type="email" placeholder="Ім’я">
+                                        <input type="password" placeholder="Прізвище">
+                                        <input type="email" placeholder="Телефон">
+                                        <input type="password" placeholder="Пароль">
+                                        <input type="email" placeholder="Email">
+                                        <div class="default-check">
+                                            <input type="checkbox" id="id_regist">
+                                            <label for="id_regist">Показати пароль</label>
+                                        </div>
+                                        <button type="button" class="default-btn register">Зареєструватись</button>
+                                    </div>
+                                    </div>
+                                    </div>
+
+                            </div>
+                        </div>
+                    </div>
                 </ul>
                 <div class="select">
                     <div class="cur">
@@ -152,53 +205,6 @@
                             <?php } ?>
 
                         <?php } ?>
-
-               <!--      <li><a href="#" class="men">ЧОЛОВІКАМ</a>
-                        <div class="hidden_menu">
-                            <div class="container">
-                                <a href="#" class="hidden_item">
-                                    <div class="hidden_icons"><img src="img/man-1.svg" alt=""></div>
-                                    <div class="hidden_text">Довгі шкарпетки</div>
-                                </a>
-                                <a href="#" class="hidden_item">
-                                    <div class="hidden_icons"><img src="img/man-2.svg" alt=""></div>
-                                    <div class="hidden_text">Класичні шкарпетки</div>
-                                </a>
-                                <a href="#" class="hidden_item">
-                                    <div class="hidden_icons"><img src="img/man-3.svg" alt=""></div>
-                                    <div class="hidden_text">Короткі шкарпетки</div>
-                                </a>
-                                <a href="#" class="hidden_item">
-                                    <div class="hidden_icons"><img src="img/man-4.svg" alt=""></div>
-                                    <div class="hidden_text">Cлід, підслідок</div>
-                                </a>
-                            </div>
-                        </div>
-                    </li>
-                    <li><a href="#" class="kid">ДІТЯМ</a>
-                        <div class="hidden_menu">
-                            <div class="container">
-                                <a href="#" class="hidden_item">
-                                    <div class="hidden_icons"><img src="img/kid-1.svg" alt=""></div>
-                                    <div class="hidden_text">Довгі шкарпетки</div>
-                                </a>
-                                <a href="#" class="hidden_item">
-                                    <div class="hidden_icons"><img src="img/kid-2.svg" alt=""></div>
-                                    <div class="hidden_text">Класичні шкарпетки</div>
-                                </a>
-                                <a href="#" class="hidden_item">
-                                    <div class="hidden_icons"><img src="img/kid-3.svg" alt=""></div>
-                                    <div class="hidden_text">Короткі шкарпетки</div>
-                                </a>
-                                <a href="#" class="hidden_item">
-                                    <div class="hidden_icons"><img src="img/kid-4.svg" alt=""></div>
-                                    <div class="hidden_text">Cлід, підслідок</div>
-                                </a>
-                            </div>
-                        </div>
-                    </li>
-                    <li><a href="#">SALE</a></li>
-                    -->
                 </ul>
             </div>
 

@@ -35,7 +35,10 @@
     <?php } else { ?>
     <?php $class = 'col-sm-12'; ?>
     <?php } ?>
-      <div class="col-sm-6">
+      <div class="col-sm-6" id="cart_content">
+          <h1><?php echo $heading_title; ?>
+          </h1>
+          <div class="basket-content">
           <div class="content__wrapper">
               <div class="title">товари у вашому кошику</div>
               <div class="checkout-list">
@@ -59,32 +62,26 @@
               </div>
               <div class="checkout__sum">
                   <div class="checkout__sum-wrapper">
+                      <?php foreach ($totals as $total) { ?>
                       <div class="sum__inner">
-                          <div class="sum-inner__title">Сума:</div>
-                          <div class="sum-inner-text">2600.00 UAH</div>
+                          <div class="sum-inner__title"><?php echo $total['title']; ?></div>
+                          <div class="sum-inner-text"><?php echo $total['text']; ?></div>
+
                       </div>
-                      <div class="sum__inner">
-                          <div class="sum-inner__title">Доставка:</div>
-                          <div class="sum-inner-text">30.00 UAH</div>
-                      </div>
-                      <div class="sum__inner">
-                          <div class="sum-inner__title">Всього:</div>
-                          <div class="sum-inner-text">2630.00 UAH</div>
-                      </div>
+                      <?php } ?>
                   </div>
 
               </div>
               <div class="btn-group">
-                  <button type="button" class="default-btn">продовжити покупки </button>
-                  <button type="button" class="default-btn">оформити замовлення</button>
+                  <a href ="<?php echo $continue; ?>" class="default-btn"><?php echo $button_shopping; ?> </a>
+                  <a href="<?php echo $checkout; ?>" class="default-btn"><?php echo $button_checkout; ?></a>
               </div>
           </div>
+          </div>
       </div>
+      <?php if(0) { ?>
     <div id="content" class="<?php echo $class; ?>"><?php echo $content_top; ?>
       <h1><?php echo $heading_title; ?>
-        <?php if ($weight) { ?>
-        &nbsp;(<?php echo $weight; ?>)
-        <?php } ?>
       </h1>
       <form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data">
         <div class="table-responsive">
@@ -172,6 +169,7 @@
         <div class="pull-right"><a href="<?php echo $checkout; ?>" class="btn btn-primary"><?php echo $button_checkout; ?></a></div>
       </div>
       <?php echo $content_bottom; ?></div>
-    <?php echo $column_right; ?></div>
+    <?php } ?>
+      <?php echo $column_right; ?></div>
 </div>
 <?php echo $footer; ?>

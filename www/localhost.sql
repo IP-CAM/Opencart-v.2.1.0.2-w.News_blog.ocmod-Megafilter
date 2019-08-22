@@ -26,6 +26,8 @@ CREATE TABLE `oc_address` (
   KEY `customer_id` (`customer_id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
+INSERT INTO `oc_address` (`address_id`, `customer_id`, `firstname`, `lastname`, `company`, `address_1`, `address_2`, `city`, `postcode`, `country_id`, `zone_id`, `custom_field`) VALUES
+(1,	1,	'Vova',	'Zabolotniy',	'',	'Zarichans\'ka 6/4',	'Zarichans\'ka 6/4',	'Khmelnytskyi',	'29015',	220,	3488,	'');
 
 DROP TABLE IF EXISTS `oc_affiliate`;
 CREATE TABLE `oc_affiliate` (
@@ -316,6 +318,10 @@ CREATE TABLE `oc_cart` (
   KEY `cart_id` (`customer_id`,`session_id`,`product_id`,`recurring_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+INSERT INTO `oc_cart` (`cart_id`, `customer_id`, `session_id`, `product_id`, `recurring_id`, `option`, `quantity`, `date_added`) VALUES
+(12,	1,	'rv5mifgqn53ctpjhpn2a81svm1',	42,	0,	'{\"228\":\"21\",\"231\":[\"27\"]}',	2,	'2019-08-21 21:25:05'),
+(13,	1,	'rv5mifgqn53ctpjhpn2a81svm1',	40,	0,	'[]',	1,	'2019-08-21 21:29:32'),
+(17,	0,	'0q1iq3fpnbhd7m2sls1if8kf5f',	42,	0,	'{\"228\":\"18\",\"231\":[\"28\",\"29\"]}',	2,	'2019-08-22 10:59:38');
 
 DROP TABLE IF EXISTS `oc_category`;
 CREATE TABLE `oc_category` (
@@ -786,7 +792,7 @@ CREATE TABLE `oc_currency` (
 
 INSERT INTO `oc_currency` (`currency_id`, `title`, `code`, `symbol_left`, `symbol_right`, `decimal_place`, `value`, `status`, `date_modified`) VALUES
 (1,	'Pound Sterling',	'GBP',	'£',	'',	'2',	0.61250001,	1,	'2014-09-25 14:40:00'),
-(2,	'US Dollar',	'USD',	'$',	'',	'2',	1.00000000,	1,	'2019-08-19 15:00:27'),
+(2,	'US Dollar',	'USD',	'$',	'',	'2',	1.00000000,	1,	'2019-08-22 06:32:46'),
 (3,	'Euro',	'EUR',	'',	'€',	'2',	0.78460002,	1,	'2014-09-25 14:40:00');
 
 DROP TABLE IF EXISTS `oc_customer`;
@@ -815,6 +821,8 @@ CREATE TABLE `oc_customer` (
   PRIMARY KEY (`customer_id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
+INSERT INTO `oc_customer` (`customer_id`, `customer_group_id`, `store_id`, `firstname`, `lastname`, `email`, `telephone`, `fax`, `password`, `salt`, `cart`, `wishlist`, `newsletter`, `address_id`, `custom_field`, `ip`, `status`, `approved`, `safe`, `token`, `date_added`) VALUES
+(1,	1,	0,	'Vova',	'Zabolotniy',	'starix1310@gmail.com',	'0672877473',	'',	'c090b8dde421da4d24e917f27092a5e4a3b93399',	'BGPXYgMgM',	NULL,	NULL,	0,	1,	'',	'127.0.0.1',	1,	1,	0,	'',	'2019-08-21 21:25:05');
 
 DROP TABLE IF EXISTS `oc_customer_activity`;
 CREATE TABLE `oc_customer_activity` (
@@ -827,6 +835,8 @@ CREATE TABLE `oc_customer_activity` (
   PRIMARY KEY (`activity_id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
+INSERT INTO `oc_customer_activity` (`activity_id`, `customer_id`, `key`, `data`, `ip`, `date_added`) VALUES
+(1,	1,	'register',	'{\"customer_id\":1,\"name\":\"Vova Zabolotniy\"}',	'127.0.0.1',	'2019-08-21 21:25:05');
 
 DROP TABLE IF EXISTS `oc_customer_group`;
 CREATE TABLE `oc_customer_group` (
@@ -872,6 +882,8 @@ CREATE TABLE `oc_customer_ip` (
   KEY `ip` (`ip`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
+INSERT INTO `oc_customer_ip` (`customer_ip_id`, `customer_id`, `ip`, `date_added`) VALUES
+(1,	1,	'127.0.0.1',	'2019-08-21 21:25:05');
 
 DROP TABLE IF EXISTS `oc_customer_login`;
 CREATE TABLE `oc_customer_login` (
@@ -886,6 +898,8 @@ CREATE TABLE `oc_customer_login` (
   KEY `ip` (`ip`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
+INSERT INTO `oc_customer_login` (`customer_login_id`, `email`, `ip`, `total`, `date_added`, `date_modified`) VALUES
+(1,	'',	'127.0.0.1',	1,	'2019-08-21 18:05:35',	'2019-08-21 18:05:35');
 
 DROP TABLE IF EXISTS `oc_customer_online`;
 CREATE TABLE `oc_customer_online` (
@@ -2050,16 +2064,16 @@ INSERT INTO `oc_product` (`product_id`, `model`, `sku`, `upc`, `ean`, `jan`, `is
 (34,	'Product 7',	'',	'',	'',	'',	'',	'',	'',	1000,	6,	'catalog/demo/ipod_shuffle_1.jpg',	8,	1,	100.0000,	0,	9,	'2009-02-03',	5.00000000,	1,	0.00000000,	0.00000000,	0.00000000,	2,	1,	1,	0,	1,	0,	'2009-02-03 18:07:54',	'2011-09-30 01:07:17'),
 (35,	'Product 8',	'',	'',	'',	'',	'',	'',	'',	1000,	5,	'',	0,	0,	100.0000,	0,	9,	'2009-02-03',	5.00000000,	1,	0.00000000,	0.00000000,	0.00000000,	1,	1,	1,	0,	1,	0,	'2009-02-03 18:08:31',	'2019-08-17 20:36:26'),
 (36,	'Product 9',	'',	'',	'',	'',	'',	'',	'',	994,	6,	'catalog/demo/ipod_nano_1.jpg',	8,	0,	100.0000,	100,	9,	'2009-02-03',	5.00000000,	1,	0.00000000,	0.00000000,	0.00000000,	2,	1,	1,	0,	1,	2,	'2009-02-03 18:09:19',	'2019-08-14 19:49:11'),
-(40,	'product 11',	'',	'',	'',	'',	'',	'',	'',	970,	5,	'catalog/demo/iphone_1.jpg',	8,	1,	101.0000,	0,	9,	'2009-02-03',	10.00000000,	1,	0.00000000,	0.00000000,	0.00000000,	1,	1,	1,	0,	1,	9,	'2009-02-03 21:07:12',	'2019-08-17 20:34:58'),
+(40,	'product 11',	'',	'',	'',	'',	'',	'',	'',	970,	5,	'catalog/demo/iphone_1.jpg',	8,	1,	101.0000,	0,	9,	'2009-02-03',	10.00000000,	1,	0.00000000,	0.00000000,	0.00000000,	1,	1,	1,	0,	1,	10,	'2009-02-03 21:07:12',	'2019-08-17 20:34:58'),
 (41,	'Product 14',	'',	'',	'',	'',	'',	'',	'',	977,	5,	'catalog/demo/imac_1.jpg',	8,	1,	100.0000,	0,	9,	'2009-02-03',	5.00000000,	1,	0.00000000,	0.00000000,	0.00000000,	1,	1,	1,	0,	1,	1,	'2009-02-03 21:07:26',	'2019-08-17 20:34:40'),
-(42,	'Product 15',	'',	'',	'',	'',	'',	'',	'',	990,	5,	'catalog/demo/apple_cinema_30.jpg',	8,	1,	100.0000,	400,	9,	'2009-02-04',	12.50000000,	1,	1.00000000,	2.00000000,	3.00000000,	1,	1,	2,	0,	1,	197,	'2009-02-03 21:07:37',	'2019-08-19 16:14:09'),
-(43,	'Product 16',	'',	'',	'',	'',	'',	'',	'',	929,	5,	'catalog/demo/macbook_1.jpg',	8,	0,	500.0000,	0,	9,	'2009-02-03',	0.00000000,	1,	0.00000000,	0.00000000,	0.00000000,	2,	1,	1,	0,	1,	9,	'2009-02-03 21:07:49',	'2011-09-30 01:05:46'),
+(42,	'Product 15',	'',	'',	'',	'',	'',	'',	'',	990,	5,	'catalog/demo/apple_cinema_30.jpg',	8,	1,	100.0000,	400,	9,	'2009-02-04',	12.50000000,	1,	1.00000000,	2.00000000,	3.00000000,	1,	1,	2,	0,	1,	327,	'2009-02-03 21:07:37',	'2019-08-19 16:14:09'),
+(43,	'Product 16',	'',	'',	'',	'',	'',	'',	'',	929,	5,	'catalog/demo/macbook_1.jpg',	8,	0,	500.0000,	0,	9,	'2009-02-03',	0.00000000,	1,	0.00000000,	0.00000000,	0.00000000,	2,	1,	1,	0,	1,	24,	'2009-02-03 21:07:49',	'2011-09-30 01:05:46'),
 (44,	'Product 17',	'',	'',	'',	'',	'',	'',	'',	1000,	5,	'catalog/demo/macbook_air_1.jpg',	8,	1,	1000.0000,	0,	9,	'2009-02-03',	0.00000000,	1,	0.00000000,	0.00000000,	0.00000000,	2,	1,	1,	0,	1,	0,	'2009-02-03 21:08:00',	'2019-08-17 20:37:14'),
 (45,	'Product 18',	'',	'',	'',	'',	'',	'',	'',	998,	5,	'catalog/demo/macbook_pro_1.jpg',	8,	1,	2000.0000,	0,	0,	'2009-02-03',	0.00000000,	1,	0.00000000,	0.00000000,	0.00000000,	2,	1,	1,	0,	1,	3,	'2009-02-03 21:08:17',	'2019-08-15 11:43:41'),
 (46,	'Product 19',	'',	'',	'',	'',	'',	'',	'',	1000,	5,	'catalog/demo/sony_vaio_1.jpg',	10,	1,	1000.0000,	0,	9,	'2009-02-03',	0.00000000,	1,	0.00000000,	0.00000000,	0.00000000,	2,	1,	1,	0,	1,	2,	'2009-02-03 21:08:29',	'2019-08-15 11:44:28'),
 (47,	'Product 21',	'',	'',	'',	'',	'',	'',	'',	1000,	5,	'catalog/demo/hp_1.jpg',	7,	1,	100.0000,	400,	9,	'2009-02-03',	1.00000000,	1,	0.00000000,	0.00000000,	0.00000000,	1,	0,	1,	0,	1,	2,	'2009-02-03 21:08:40',	'2019-08-14 19:32:05'),
 (48,	'product 20',	'test 1',	'',	'',	'',	'',	'',	'test 2',	995,	5,	'catalog/demo/ipod_classic_1.jpg',	8,	1,	100.0000,	0,	9,	'2009-02-08',	1.00000000,	1,	0.00000000,	0.00000000,	0.00000000,	2,	1,	1,	0,	1,	12,	'2009-02-08 17:21:51',	'2019-08-17 20:35:14'),
-(49,	'SAM1',	'',	'',	'',	'',	'',	'',	'',	0,	8,	'catalog/demo/samsung_tab_1.jpg',	0,	1,	199.9900,	0,	9,	'2011-04-25',	0.00000000,	1,	0.00000000,	0.00000000,	0.00000000,	1,	1,	1,	1,	1,	6,	'2011-04-26 08:57:34',	'2019-08-17 20:36:05');
+(49,	'SAM1',	'',	'',	'',	'',	'',	'',	'',	0,	8,	'catalog/demo/samsung_tab_1.jpg',	0,	1,	199.9900,	0,	9,	'2011-04-25',	0.00000000,	1,	0.00000000,	0.00000000,	0.00000000,	1,	1,	1,	1,	1,	7,	'2011-04-26 08:57:34',	'2019-08-17 20:36:05');
 
 DROP TABLE IF EXISTS `oc_product_attribute`;
 CREATE TABLE `oc_product_attribute` (
@@ -2564,6 +2578,8 @@ CREATE TABLE `oc_review` (
   KEY `product_id` (`product_id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
+INSERT INTO `oc_review` (`review_id`, `product_id`, `customer_id`, `author`, `text`, `rating`, `status`, `date_added`, `date_modified`) VALUES
+(1,	42,	0,	'fsdsad',	'sadasddsadsffffffffffffffffffffffffffffffffffffffffffffff',	4,	1,	'2019-08-21 19:44:52',	'2019-08-21 19:45:51');
 
 DROP TABLE IF EXISTS `oc_setting`;
 CREATE TABLE `oc_setting` (
@@ -2656,7 +2672,7 @@ INSERT INTO `oc_setting` (`setting_id`, `store_id`, `code`, `key`, `value`, `ser
 (1945,	0,	'mega_filter_seo',	'mega_filter_seo',	'{\"enabled\":\"0\"}',	1),
 (1946,	0,	'mega_filter_status',	'mega_filter_status',	'1',	0),
 (1947,	0,	'mfilter_version',	'mfilter_version',	'2.0.4.4.7',	0),
-(1948,	0,	'mfilter_license',	'mfilter_license',	'{\"order_id\":\"202cb962ac59075b964b07152d234b70\",\"email\":\"2bd1c9bd55605a52c6abd23789562b07\",\"time\":1565709038}',	1),
+(1948,	0,	'mfilter_license',	'mfilter_license',	'{\"order_id\":\"202cb962ac59075b964b07152d234b70\",\"email\":\"2bd1c9bd55605a52c6abd23789562b07\",\"time\":1566404654}',	1),
 (2881,	0,	'config',	'config_image_product_width',	'228',	0),
 (2882,	0,	'config',	'config_image_product_height',	'228',	0),
 (2880,	0,	'config',	'config_image_popup_height',	'500',	0),
@@ -7268,4 +7284,4 @@ INSERT INTO `oc_zone_to_geo_zone` (`zone_to_geo_zone_id`, `country_id`, `zone_id
 (108,	222,	3955,	3,	'0000-00-00 00:00:00',	'0000-00-00 00:00:00'),
 (109,	222,	3972,	3,	'0000-00-00 00:00:00',	'0000-00-00 00:00:00');
 
--- 2019-08-20 09:37:36
+-- 2019-08-22 08:59:04

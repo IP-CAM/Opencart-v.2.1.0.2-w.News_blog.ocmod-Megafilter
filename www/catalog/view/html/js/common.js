@@ -3,8 +3,19 @@ $(function () {
         arrows: false,
         dots: true
     });
+    $('#js_review').click(function () {
+        $('#form-review').toggle();
+    })
+    $('.close-search-btn').click(function(){
+        console.log(1);
+        $('.search-box').hide();
+    });
 
 
+    $(".user").click(function () {
+        console.log('1');
+        $("#myModal2").modal('show');
+    });
 
     $('.js_select_count-del').click(function () {
         $('#input-quantity').val(parseInt($('#input-quantity').val())-1);

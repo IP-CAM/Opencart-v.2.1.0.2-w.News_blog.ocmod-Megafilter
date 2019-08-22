@@ -5908,7 +5908,7 @@ a.close.disabled {
 
 @media (min-width: 576px) {
   .modal-dialog {
-    max-width: 500px;
+
     margin: 1.75rem auto;
   }
   .modal-dialog-scrollable {
@@ -10853,6 +10853,7 @@ header {
 }
 
 .search-box{
+  z-index:1;
   background-color: white;
   display:none;
   left: 0;
@@ -11480,7 +11481,7 @@ text-transform: uppercase;}
           color: #1a1a1a;
           font-size: 6px; }
 .footer{
-  padding-top: 60px;
+
 }
 .footer .footer_top {
   padding-bottom: 60px; }
@@ -11658,6 +11659,140 @@ text-transform: uppercase;}
   background-color: #fff;
 
 }
+#cart_content h1{
+  text-align: center;
+  font-family: Geometria-Bold, sans-serif;
+  font-size: 24px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+.modal-header .close{
+  position: absolute;
+}
+#myModal2 .modal__title {
+  width: 100%;
+  border-bottom: 1px solid black;
+  padding: 30px 0px;
+  text-transform: uppercase;
+  font-family: Geometria-Bold, sans-serif;
+  font-size: 16px;
+  letter-spacing: 3px;
+  text-align: center;
+}
+#myModal2 .modal-header{
+  border-top-left-radius:0;
+  border-top-right-radius:0;
+  border:0;
+  position: relative;
+  padding: 0;
+}
+#myModal2 input[type=text], #myModal2 input[type=password], #myModal2 input[type=email] {
+  width: 100%;
+  display: block;
+  margin: 15px 0px;
+  font-size: 14px;
+  color: #999999;
+  padding: 20px 20px;
+}
+.check-pass{
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.check-pass a{
+  color:black;
+}
+#close_modal{
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+.register{
+  font-family: Geometria-Bold, sans-serif;
+  padding: 23px 0px;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-transform: uppercase;
+}
+#myModal2 .modal-dialog{
+  margin-top: 30px;
+}
+
+#close_modal:after{
+  content: '\e919';
+  font-family: icomoon;
+
+  color:#1a1a1a;
+  font-size: 14px;
+  font-weight: bold;
+}
+.btn-wrapper{
+  margin-top: 20px;
+  width: 100%;
+  justify-content: center;
+  display: flex;
+}
+#myModal2 .left{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#myModal2 .modal-content{
+  background-color: #f6f4f4;
+  border-top-left-radius:0;
+  border-top-right-radius:0;
+  border:0;
+
+  padding: 0;
+}
+.right .default-check{
+  margin: 30px 0px;
+}
+#myModal2 .title{
+
+  text-align: center;
+  text-transform: uppercase;
+  padding: 10px 0px;
+  font-size: 14px;
+  font-family: Geometria-Bold, sans-serif;
+  letter-spacing: 2px;
+  color:#999999;
+  line-height: 14px;
+}
+.bottom .btn-group{
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 0px;
+}
+
+#myModal2 .bottom .title{
+  text-transform: none;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+.facebook{
+  background-color: #3a5a98;
+}
+.google{
+  background-color: #dd4b39 ;
+}
+.bottom .btn-group .default-btn{
+  color:white;
+  min-width: 173px;
+  padding: 23px 30px;
+}
+.left .default-btn{
+  min-width: 224px;
+  text-transform: uppercase;
+  font-family: Geometria-Bold, sans-serif;
+  letter-spacing: 2px;
+  border: 1px solid black;
+  padding: 23px 45px;
+  margin:0 auto;
+}
+
 @media screen and (max-width: 992px) {
   .hiden_menu {
     width: 100%; }

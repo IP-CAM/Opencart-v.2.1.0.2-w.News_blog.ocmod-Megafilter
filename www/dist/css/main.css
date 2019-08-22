@@ -5908,7 +5908,6 @@ a.close.disabled {
 
 @media (min-width: 576px) {
   .modal-dialog {
-    max-width: 500px;
     margin: 1.75rem auto;
   }
   .modal-dialog-scrollable {
@@ -11314,8 +11313,7 @@ button {
 
 .about {
   background-color: #f6f4f4;
-  padding: 60px 0px;
-  margin-top: 60px; }
+  padding: 60px 0px;}
   .about .title {
     padding-bottom: 50px;
     text-transform: uppercase;
@@ -11806,7 +11804,6 @@ border:0;
   display: flex;
   justify-content: space-between; }
   .kart-right_buy-btn .kart-right_buy-btn_select {
-    margin-right: 25px;
     font-size: 12px; }
     .kart-right_buy-btn .kart-right_buy-btn_select .kart-right_buy-btn_select_count {
       display:flex;
@@ -11833,7 +11830,7 @@ border:0;
         transform: rotate(90deg);
         font-size: 7px; }
   .kart-right_buy-btn .buy-one-click {
-    margin-left: 15px; }
+}
     .kart-right_buy-btn .buy-one-click {
       padding: 20px 20px 18px 20px;
       width: 200px;
@@ -12301,9 +12298,12 @@ textarea[name=comment]{
   width: 100%;
   resize:none;
 }
-
+.buttons .kart-right_buy-btn #button-review{
+  margin: 30px auto;
+  padding: 23px;
+}
 .checkout__sum{
-  background-color: #f6f4f4;
+background-color: #f6f4f4;
 }
 .checkout__sum-wrapper{
   padding: 30px 15px;
@@ -12323,7 +12323,11 @@ textarea[name=comment]{
   font-family: Geometria-Bold, sans-serif;
 
 }
+#cart_content{
+  margin: 0 auto;
+}
 .btn-group{
+  width: 100%;
   padding-top: 20px;
   background-color: white;
   display: flex;
@@ -12332,6 +12336,7 @@ textarea[name=comment]{
 .btn-group .default-btn{
   padding: 20px 18px;
   margin:0px;
+    color:black;
 }
 
 .kart-right_buy-btn_select_count{
@@ -12347,6 +12352,12 @@ textarea[name=comment]{
     font-size: 14px;
     letter-spacing: 1px;
 
+}
+.buttons .clearfix{
+  margin:0 auto;
+}
+.form-horizontal{
+  display:none;
 }
 .item__right-top button:after{
     content: '\e919';
@@ -12421,6 +12432,37 @@ textarea[name=comment]{
   border-radius: 20%;
   padding-top: 30px;
   padding-left: 30px;
+}
+#myModal2 .modal-dialog{
+  width: 810px !important;
+  background-color: #f6f4f4;
+  margin:0 auto;
+  margin-top: 15%;
+  padding-right: 0px;
+  padding-left: 0px;
+}
+.modal-wrapper .modal__title{
+  border-bottom: 1px solid black;
+  padding: 10px 0px;
+  text-transform: uppercase;
+  font-family: Geometria-Bold, sans-serif;
+  font-size: 16px;
+  letter-spacing: 3px;
+  text-align: center;
+  position: relative;
+}
+
+.modal-wrapper .close:after{
+  cursor: pointer;
+  font-style: normal;
+  content: '\e919';
+  font-family: icomoon;
+  position: absolute;
+  right:30px;
+  top: 30px;
+  font-size: 14px;
+  font-weight: bold;
+
 }
 @media screen and (max-width: 992px) {
   .hiden_menu {
