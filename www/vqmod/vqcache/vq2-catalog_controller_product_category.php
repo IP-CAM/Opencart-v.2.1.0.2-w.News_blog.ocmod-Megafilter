@@ -329,6 +329,7 @@ class ControllerProductCategory extends Controller {
 				}
 
 				$data['products'][] = array(
+				    'newprod'     => $result['newprod'],
 					'product_id'  => $result['product_id'],
 					'thumb'       => $image,
 					'name'        => $result['name'],

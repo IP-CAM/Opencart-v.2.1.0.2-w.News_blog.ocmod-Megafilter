@@ -11130,17 +11130,7 @@ button {
   margin: 0px 15px;
   text-align: center;
   position: relative; }
-  .prod-item:before {
-    content: "NEW";
-    position: absolute;
-    top: 15px;
-    left: 15px;
-    text-transform: uppercase;
-    font-family: 'Geometria-Bold';
-    color: #1a1a1a;
-    font-size: 14px;
-    padding: 11px 4px 13px 6px;
-    background-color: #f6f4f4; }
+
 
 .prod-img {
   border: solid 1px #e6e6e6; }

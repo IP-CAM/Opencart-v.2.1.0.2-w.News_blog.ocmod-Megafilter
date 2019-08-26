@@ -8,7 +8,7 @@
       <h1><?php echo $heading_title; ?></h1>
       <ul class="breadcrumb">
         <?php foreach ($breadcrumbs as $breadcrumb) { ?>
-        <li><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a></li>
+        <li><a href="<?php echo $breadcrumb['href']; ?>"input-model><?php echo $breadcrumb['text']; ?></a></li>
         <?php } ?>
       </ul>
     </div>
@@ -111,6 +111,27 @@
                   <?php } ?>
                 </div>
               </div>
+
+<!--             New check       -->
+
+                <div class="form-group">
+                    <label class="col-sm-2 control-label" for="input-newprod"><?php echo $entry_newprod; ?></label>
+                    <div class="col-sm-10">
+                        <select name="newprod" id="input-newprod" class="form-control">
+
+                            <?php if ($newprod) { ?>
+                                <option value="1" selected="selected"><?php echo $text_yes; ?></option>
+                                <option value="0"><?php echo $text_no; ?></option>
+                            <?php } else { ?>
+                                <option value="1"><?php echo $text_yes; ?></option>
+                                <option value="0" selected="selected"><?php echo $text_no; ?></option>
+                            <?php } ?>
+                        </select>
+                    </div>
+                </div>
+
+
+
               <div class="form-group">
                 <label class="col-sm-2 control-label" for="input-sku"><span data-toggle="tooltip" title="<?php echo $help_sku; ?>"><?php echo $entry_sku; ?></span></label>
                 <div class="col-sm-10">

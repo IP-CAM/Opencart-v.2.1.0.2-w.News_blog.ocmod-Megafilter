@@ -562,6 +562,7 @@ class ControllerCatalogProduct extends Controller {
 		$data['entry_points'] = $this->language->get('entry_points');
 		$data['entry_option_points'] = $this->language->get('entry_option_points');
 		$data['entry_subtract'] = $this->language->get('entry_subtract');
+		$data['entry_newprod'] = $this->language->get('entry_newprod');
 		$data['entry_weight_class'] = $this->language->get('entry_weight_class');
 		$data['entry_weight'] = $this->language->get('entry_weight');
 		$data['entry_dimension'] = $this->language->get('entry_dimension');
@@ -911,6 +912,15 @@ class ControllerCatalogProduct extends Controller {
 			$data['subtract'] = 1;
 		}
 
+        if (isset($this->request->post['newprod'])) {
+            $data['newprod'] = $this->request->post['snewprod'];
+        } elseif (!empty($product_info)) {
+            $data['newprod'] = $product_info['newprod'];
+        } else {
+            $data['newprod'] = 1;
+        }
+
+
 		if (isset($this->request->post['sort_order'])) {
 			$data['sort_order'] = $this->request->post['sort_order'];
 		} elseif (!empty($product_info)) {
@@ -1115,6 +1125,7 @@ class ControllerCatalogProduct extends Controller {
 						'option_value_id'         => $product_option_value['option_value_id'],
 						'quantity'                => $product_option_value['quantity'],
 						'subtract'                => $product_option_value['subtract'],
+						'newprod'                 => $product_option_value['newprod'],
 						'price'                   => $product_option_value['price'],
 						'price_prefix'            => $product_option_value['price_prefix'],
 						'points'                  => $product_option_value['points'],

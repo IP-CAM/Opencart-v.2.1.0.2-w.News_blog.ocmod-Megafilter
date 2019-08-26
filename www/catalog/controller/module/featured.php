@@ -29,7 +29,7 @@ class ControllerModuleFeatured extends Controller {
 
 				if ($product_info) {
 					if ($product_info['image']) {
-						$image = $this->model_tool_image->resize($product_info['image'], $setting['width'], $setting['height']);
+						$image = $this->model_tool_image->resize($product_info['image'], 263, 263);
 					} else {
 						$image = $this->model_tool_image->resize('placeholder.png', $setting['width'], $setting['height']);
 					}
@@ -60,6 +60,7 @@ class ControllerModuleFeatured extends Controller {
 
 					$data['products'][] = array(
 						'product_id'  => $product_info['product_id'],
+						'newprod'  => $product_info['newprod'],
 						'thumb'       => $image,
 						'name'        => $product_info['name'],
 						'description' => utf8_substr(strip_tags(html_entity_decode($product_info['description'], ENT_QUOTES, 'UTF-8')), 0, $this->config->get('config_product_description_length')) . '..',

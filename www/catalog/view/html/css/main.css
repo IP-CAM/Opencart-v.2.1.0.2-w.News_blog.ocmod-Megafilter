@@ -11237,15 +11237,7 @@ text-transform: uppercase;}
   margin: 0px 15px;
   text-align: center;
   position: relative; }
-  .prod-item:before {
-    content: "NEW";
-    position: absolute;
-    top: 30px;
-    left: 20px;
-    text-transform: uppercase;
-    font-family: 'Geometria-Bold';
-    color: #1a1a1a;
-    font-size: 14px; }
+
 
 .prod-img {
   border: solid 1px #e6e6e6; }
@@ -11758,6 +11750,20 @@ text-transform: uppercase;}
 }
 .right .default-check{
   margin: 30px 0px;
+}
+.news{
+  padding-bottom: 60px;
+}
+.new_label{
+  padding: 11px 4px 13px 6px;
+  background-color: #f6f4f4;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  text-transform: uppercase;
+  font-family: 'Geometria-Bold';
+  color: #1a1a1a;
+  font-size: 14px;
 }
 #myModal2 .title{
 

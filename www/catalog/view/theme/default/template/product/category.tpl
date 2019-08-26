@@ -24,7 +24,7 @@
     <div class="main_content">
         <div class="row">
             <?php echo $column_left; ?>
-            <div class="col-sm-9 content">
+            <div id="content"  class="col-sm-9 content">
                 <div class="content_head">
                     <div class="head_select-amount">
                         <div class="select-amount title">Показати по</div>
@@ -94,7 +94,7 @@
     <?php } else { ?>
     <?php $class = 'col-sm-12'; ?>
     <?php } ?>
-    <div id="content" class="<?php echo $class; ?>"><?php echo $content_top; ?>
+    <div  class="<?php echo $class; ?>"><?php echo $content_top; ?>
 
       <?php if ($products) { ?>
       <p><a href="<?php echo $compare; ?>" id="compare-total"><?php echo $text_compare; ?></a>1</p>
